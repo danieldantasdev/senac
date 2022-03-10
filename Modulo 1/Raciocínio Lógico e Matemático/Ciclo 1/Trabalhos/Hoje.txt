@@ -1,0 +1,101 @@
+1) a) ¬c → ¬p ˅ ¬q ˅ ¬r ˅ ¬s ˅ ¬t
+
+F -> F v F v F v F v F
+F -> F
+VERDADEIRO
+
+
+b) ¬p ˅ ¬q ˅ ¬r ˅ ¬s ˅ ¬t ˄ c 
+
+F v F v F v F v F v V
+F ^ V
+FALSO
+
+
+
+3) 
+
+p	q	~p	~q	~p^~q	pvq	~pvq
+v	v	f	f	f	v	f
+v	f	f	v	f	v	f
+f	v	v	f	f	v	f
+f	f	v	v	v	f	v
+
+
+
+4)
+
+105 + 200 + 160 = 465
+-25 +25 +40 = 375
++5 +120 = 500
+
+
+5) a)
+
+p	~p	p^~p	p<->p^~p	p<->p^~p<->~p	
+v	f	f	f		v
+f	v	f	v		v
+
+Tautologia
+
+
+b)
+
+p	q	pvq	p^q	pvq -> p^q
+v	v	v	v	v
+v	f	v	f	f
+f	v	v	f	f	
+f	f	f	f	v
+
+Contingência
+
+
+
+c)
+
+p	q	~p	~q	pvq	~p^~q	pvq^~p^~q
+v	v	f	f	v	f	f			
+v	f	f	v	v	f	f
+f	v	v	f	v	f	f
+f	f	v	v	f	v	f
+
+Contradição
+
+
+6)
+
+1- P ^ (~T) = P e não T = Fumar deve ser proibido e não é verdade que muitos
+europeus fumam.
+
+Errada
+
+A representação correta seria P ^ T.
+
+
+2- (~P) ^ (~R) = não P e não R ou Fumar não deve ser proibido e fumar faz
+bem à saúde.
+
+Correta
+
+3- Temos que R → P = Se R, então P ou Se fumar não faz bem à saúde, então
+fumar deve ser proibido.
+Correto.
+
+4- Temos que (R ^ (~T)) → P = Se R e não T, então P ou Se fumar não faz
+bem à saúde e não é verdade que muitos europeus fumam,
+então fumar deve ser proibido.
+
+Correto.
+
+
+5-Temos que: T → ((~R) ^(~P)) = Se T, então não R e não P ou Se muitos
+europeus fumam, então é falso que fumar não faz bem à saúde e é
+falso que fumar deve ser proibido.
+
+Errado.
+
+Percebam que a sentença V inverte a ordem da condicional acima.
+Sabemos que p → q não é equivalente a q → p.
+
+A representação correta seria ((~R) ^ (~P)) →T .
+

@@ -1,0 +1,16 @@
+Reunião dia 18-10-21
+
+Alex está deferindo as tarefas...
+
+Bruno ficou responsável pela realização da especificação do caso de uso da tela cadastrar, o aluno Felipe será sua dupla para acompanhar a realização do mesmo, sugerindo sugestões e aprendendo sobre a tarefa.
+
+Vitor ficou responsável pela realização da especificação do caso de uso da tela editar, o aluno Igor será sua dupla para acompanhar a realização do mesmo, sugerindo sugestões e aprendendo sobre a tarefa.
+
+João Ficou responsável por popular a tabela de recursos, com objetivo de gerar script SQL para inserir os dados de teste na mesma. Rafael o aconselhou a utilizar o software Debever, enfatizando que o mesmo é excelente.
+
+Isabella ficou responsável pela especificação de caso de uso da tela de listagem, o aluno Daniel será sua dupla para acompanhar a realização do mesmo, sugerindo sugestões e aprendendo sobre a tarefa.
+
+isabella e joao ficaram responsáveis por alterar a guia de estilos de acordo com as especificações e mudanças que a professora Gabriela estipulou.
+
+!!!!TENHO QUE FAZER DIARIO DE BORDO DO MODULO 2 E ACOMPANHAMENTO DA ESPECIFICAÇÃO DO CASO DE USO COM A ISABELLA!!! 
+

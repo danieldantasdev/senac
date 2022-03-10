@@ -1,0 +1,94 @@
+Atividade 5 - Tautologia
+
+1. Construir as tabelas-verdade das seguintes proposições:
+
+a) ¬ (p v ¬q) 
+
+p	q	~p	~q	~(pv~q)
+v	v	f	f	v
+v	f	f	v	f
+f	v	v	f	v
+f	f	v	v	v
+
+
+b) p ^ q —> p v q
+
+p	q	p^q	pvq	p^q -> pvq
+v	v	v	v	v
+v	f	f	v	v
+f	v	f	v	v	
+f	f	f	f	v
+
+
+
+c) ¬p ^ r —> q v ¬r 
+
+p	q	~p	r	~r	~p^r	qv~r	~p^r -> qv~r
+v	v	f	v	f	f	v	v
+v	v	f	f	v	f	v	v
+v	f	f	v	f	f	f	v
+v	f	f	f	v	f	f	v
+f	v	v	v	f	v	v	v	
+f	v	v	f	v	f	v	v	
+f	f	v	v	f	v	v	v
+f	f	v	f	v	f	v	v
+
+
+
+d) (p ^ ¬q) v r
+
+p	q	~q	r	p^~q	(p^~q)vr
+v	v	f	v	f	f
+v	v	f	f	f	f
+v	f	v	v	v	v
+v	f	v	f	v	f
+f	v	f	v	f	f
+f	v	f	f	f	f
+f	f	v	v	f	f	
+f	f	v	f	f	f
+
+
+
+
+2. Avaliar a proposição abaixo e classificá-la. Depois, sabendo que
+os valores lógicos das proposições p e q são respectivamente F e
+V, determinar o valor lógico da proposição:
+(p ^ (¬q —> p)) ^ ¬ ((p v ¬q) —> q v ¬p)
+
+p	q	~p	~q	~q -> p		~pvq	~qvp	(p^(~q -> p))	(~pvq)->~qvp)	(p^(~q -> p)^(~pvq)->~qvp)		
+f	f	v	v	f		v	v	f		f		f		
+f	v	v	f	v		f	v	f		f		f
+v	f	f	v	v		v	f	v		v		v
+v	v	f	f	v		v	v	v		f		f
+
+
+
+3. Demonstrar qual a classificação desta proposição (Tautologia,
+Contradição, contingência): p ^ r —> q v r
+
+p	q	r	p^r	qvr	p^r -> qvr	
+v	v	v	v	v	v
+v	v	f	f	v	v
+v	f	v	v	v	v
+v	f	f	f	f	v
+f	v	v	f	v	v
+f	v	f	f	v	v
+f	f	v	f	v	v
+f	f	f	f	f	v
+
+TAUTOLOGIA
+
+
+4. Demonstrar qual a classificação desta proposição:
+(p ^ q) ^ ¬ (p v q)
+
+p	q	~p	~q	p^q	pvq	~pvq	(p^q)^~(pvq)
+v	v	f	f	v	v	v	v	
+v	f	f	v	f	v	f	f
+f	v	v	f	f	v	v	f
+f	f	v	v	f	f	v	f
+
+CONTINGÊNCIA
+
+
+

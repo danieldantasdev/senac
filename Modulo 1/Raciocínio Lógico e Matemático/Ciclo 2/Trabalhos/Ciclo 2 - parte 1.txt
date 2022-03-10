@@ -1,0 +1,55 @@
+Efetuar a tradução dos fatos para as proposições:
+
+(a) p
+(b) q ∨ r
+(c) s → t
+(d) q → u
+(e) ¬s → ¬r
+(f) r → v
+
+Utilizar as deduções: Modus Ponens, Silogismo Hipotético e
+Contradição, Modus Ponens, Silogismo Disjuntivo, Modus
+Ponens. Tomando por base as regras de inferência
+aprendidas e desenvolver as deduções lógicas até até chegar
+a uma conclusão:
+
+
+(dedução 1) 
+
+Vamos supor que o fato "s" seja verdade, vamos considerar que o cozinheiro estava na cozinha no momento do assassinato.
+
+s → t		(proposição "c")
+s	 	(Suposição)
+t	 	(usamos o Modus Ponens)
+
+
+(dedução 2) 
+
+O fato t → "contradição", uma vez que Lord Andrew não foi morto com arsênico e sim por uma pancada na cabeça (proposição "a"). Logo, a suposição que o cozinheiro estava na cozinha é falsa. Assim, temos ¬s.
+
+s → t			 (proposição "c")
+t → "contradição"	 (dedução 1)
+¬s 			 (usamos Silogismo Hipotético e Contradição)
+
+
+(dedução 3) 
+
+¬s → ¬r			(proposição "e")
+¬s 			(dedução 2)
+¬r			(usamos o Modus Ponens)
+
+
+(dedução 4)
+
+q ∨ r			(proposição "b")
+¬r 			(dedução 3)
+q			(usamos o Silogismo Disjuntivo)
+
+
+(dedução 5)
+
+q → u			(proposição "d")
+q 			(dedução 4)
+u			(usamos o Modus Ponens)
+
+Concluimos que o motorista matou Lord Andrew.

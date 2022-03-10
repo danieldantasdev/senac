@@ -1,0 +1,140 @@
+1)
+
+Se Carina é amiga de Carol, então Carmem é cunhada de
+Carol. A -> C 		
+
+Carmem não é cunhada de Carol. ~C		
+
+Se Carina não é cunhada de Carol, então Carina é amiga de Carol. ~B -> A		
+	
+[v]...f->f...a=f
+[v]...~C=f
+[v]...f->f...b=v
+
+
+A = Carina é amiga de Carol
+
+B = Carina é cunhada de Carol
+
+C = Carmem é cunhada de Carol
+
+
+A	B	C	~B	~C	A -> C	~B -> A
+v	v	v	f	f	v	v
+v	v	f	f	v	f	v
+v	f	v	v	f	v	v
+v	f	f	v	v	f	v
+f	v	v	f	f	v	v
+f	v	f	f	v	v	f
+f	f	v	v	f	v	v
+f	f	f	v	v	v	f
+
+LETRA B
+
+
+2) -. Se o projeto for aprovado, o departamento receberá novos
+computadores e terá seu laboratório reformado. A -> B ^ C
+
+-. Se o laboratório for reformado, passará a ter capacidade para
+processar o sangue de 50 pacientes por dia. C -> D
+
+-. Se for possível processar o sangue de 50 pacientes por dia, o
+número de atendimentos diários no ambulatório será duplicado. D -> E
+
+A - Projeto aprovado
+
+B - Departamento recebendo computadores novos
+
+C - O laboratório reformado
+
+D - Capacidade para processar sangue
+
+E - Número de atendimentos diários duplicados
+
+A	B	C	D	E	B^C	A->B^C	C->D	D->E
+v	v	v	v	v	v	v	v	v
+v	v	v	v	f	v	v	v	f
+v	v	v	f	v	v	v	f	v
+v	v	v	f	f	v	v	f	v
+v	v	f	v	v	f	f	v	v
+v	v	f	v	f	f	f	v	f
+v	v	f	f	v	f	f	v	v
+v	v	f	f	f	f	f	v	v
+v	f	v	v	v	f	f	v	v
+v	f	v	v	f	f	f	v	f
+v	f	v	f	v	f	f	f	v
+v	f	v	f	f	f	f	f	v
+v	f	f	v	v	f	f	v	v
+v	f	f	v	f	f	f	v	f
+v	f	f	f	v	f	f	v	v
+v	f	f	f	f	f	f	v	v
+f	v	v	v	v	v	v	v	v
+f	v	v	v	f	v	v	v	f
+f	v	v	f	v	v	v	f	v
+f	v	v	f	f	v	v	f	v
+f	v	f	v	v	f	v	v	v
+f	v	f	v	f	f	v	v	f
+f	v	f	f	v	f	v	v	v
+f	v	f	f	f	f	v	v	v
+f	f	v	v	v	f	v	v	v
+f	f	v	v	f	f	v	v	f
+f	f	v	f	v	f	v	f	v
+f	f	v	f	f	f	v	f	v
+f	f	f	v	v	f	v	v	v
+f	f	f	v	f	f	v	v	f
+f	f	f	f	v	f	v	v	v
+f	f	f	f	f	f	v	v	v
+
+No enunciado diz que, a capacidade de processamento do
+laboratório em 2015 é de apenas 25 pacientes por dia. A frase número 2 dizia que
+seu laboratório fosse reformado a capacidade passaria para 50 pacientes por dia.
+Como é essa capacidade permaneceu em 25 pacientes por dia, podemos concluir
+que o laboratório não foi reformado. Voltando na frase de número 1, e sabendo
+que o laboratório não foi reformado, podemos dizer que o trecho " o departamento
+receberá novos computadores e terá seu laboratório reformado" é falso, de modo
+que para esta proposição condicional ser verdadeira é preciso que o trecho " o
+projeto for aprovado" também seja falso. Isso nos permite concluir que o projeto
+não foi aprovado, de modo que podemos marcar a alternativa D. Observe ainda
+que na frase número 3 o trecho " se for possível processar o sangue de 50
+pacientes por dia" é falso, o que por si só já torna essa proposição condicional
+verdadeira, independente do fado do número de atendimentos ter sido duplicado ou
+não. Portanto, não podemos concluir nada a respeito da duplicação do número de
+atendimentos.
+
+LETRA D
+
+
+3) I. Se ocorrer uma crise econômica, então o dólar não
+subirá; A -> ~B
+
+II. Ou o dólar subirá, ou os salários serão reajustados, mas
+não ambos; B v C
+
+III. Os salários serão reajustados se, e somente se, não
+ocorrer uma crie econômica; C <-> ~A
+
+A - crise economica;
+
+B - Dolar subindo
+
+C - Salarios reajustados
+
+
+Sabendo que as três afirmações são verdadeiras é correto
+afirmar que: 
+
+A	B 	C	~A	~B	A -> ~B		B v C		C <-> ~A
+v	v	v	f	f	f		v		f	
+v	v	f	f	f	f		v		f
+v	f	v	f	v	v		v		f
+v	f	f	f	v	v		f		v
+f	v	v	v	f	v		v		v
+f	v	f	v	f	v		v		f
+f	f	v	v	v	v		v		v
+f	f	f	v	v	v		f		f
+
+e) O dólar não subirá, os salários serão reajustados e
+não ocorrerá uma crise econômica;
+
+LETRA E 
+							

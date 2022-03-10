@@ -1,0 +1,6 @@
+
+p    q   p^q  pvq  ~(pvq)   (p^q)^~(pvq)
+v    v    v    v      f          f
+v    f    f    v      f          f
+f    v    f    v      f          f
+f    f    f    f      v          f

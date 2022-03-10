@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+
+header.topo {
+    background-color: #eaeaea;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    /* adicionei uma margin para a logo, para centralizar */
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+.carousel {
+    margin-top: 3px;
+}
+
+.destaques {
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: black;
+    width: 18rem;
+    color: white;
+
+    margin: 0 auto; /* adicionei uma margin para os cards, para centralizar */
+}
+
+.card-title {
+    color: grey;
+    font-size: 16px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+.container-formulario {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    background-color: white;
+}
+.footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media (min-width: 992px) {
+    .topo {
+        justify-content: space-between;
+    }
+}

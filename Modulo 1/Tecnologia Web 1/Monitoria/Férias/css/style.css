@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(255, 174, 0);
+}
+
+/* CONTAINER GERAL */
+.container {
+    margin: 0 2rem;
+    background: white;
+}
+
+/* HEADER */
+.container-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../img/background-topo.jpg);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li + li {
+    margin-left: 2rem;
+}
+
+.menu li a {
+    padding: 0.5rem;
+    background: red;
+    color: white;
+    font-weight: 700;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+}
+
+/* MAIN */
+.container-main {
+    display: flex;
+}
+
+/* ASIDE */
+.card-item-aside {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.card-item-aside:nth-child(1) {
+    background: red;
+}
+
+.card-item-aside:nth-child(2) {
+    background: rgb(35, 204, 255);
+}
+
+.card-item-aside p {
+    margin-left: 1rem;
+}
+
+/* SECTION */
+.card-item-section {
+    margin-top: 1rem;
+}
+
+.card-item-section a h3 {
+    color: black;
+}
+
+.card-item-section h3 {
+    margin-bottom: 1rem;
+}
+
+.img-title {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.title {
+    margin-left: 2rem;
+}
+
+.title h3 {
+    margin-bottom: 1rem;
+}
+
+button {
+    border: none;
+    background: chocolate;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    margin: 0 2rem;
+    min-height: 13vh;
+    background: chocolate;
+}
+
+footer p {
+    text-align: center;
+    padding: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+/* MEDIAS */
+@media (max-width: 768px) {
+    /* HEADER */
+    .header-imagens {
+        width: 100%;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-imagens img {
+        margin: 0.2rem;
+    }
+
+    .logo {
+        margin: 2rem;
+    }
+
+    /* MAIN */
+    .container-main {
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+    /* ASIDE */
+    .card-item-aside {
+        flex-wrap: wrap;
+    }
+
+    .card-item-aside img {
+        margin: 1rem auto;
+    }
+
+    .card-item-aside p {
+        margin: 2rem auto;
+    }
+
+    /* SECTION */
+    .container-section {
+        padding: 1rem;
+    }
+
+    .card-item-section .img-title {
+        flex-wrap: wrap;
+    }
+
+    .imagem {
+        margin: 3rem auto;
+    }
+}

@@ -1,0 +1,51 @@
+Questão 2) Defina o que é UML? E para que ela serve no processo de desenvolvimento de
+sistemas?
+
+A Unified Modeling Language, ou Linguagem Unificada de Modelagem, é, como o nome indica, uma linguagem de notação utilizada para modelar e documentar as diversas fases do desenvolvimento de sistemas orientados a objetos. 
+
+A linguagem UML procura fornecer meios para auxiliar no levantamento dos requisitos que irão constituir um sistema
+
+Para isso, a mesma define elementos gráficos - como setas, retângulos, linhs e balões - usados em diagramas para representar os componentes.
+
+Os diagramas UML são essenciais para evitar dois problemas comuns no desenvolvimento de software: os erros das fases de especificação do projeto e a comunicação entre as diferentes partes envolvidas, como gerentes, pessoas desenvolvedoras, analistas, Scrum Master e Product Owner, por exemplo.
+
+
+Questão 3) Atualmente a utilização de metodologias ágeis como o Scrum são predominantes
+no desenvolvimento de softwares. Sobre esta metodologia defina os seguintes itens abaixo:
+a. Backlog do Produto
+
+O Backlog do Produto é uma lista priorizada de itens sobre os quais o Time de Desenvolvimento trabalhará no decorrer do projeto. Trata-se da lista de funcionalidades e requisitos que deverão ser entregues ao cliente ao longo das Sprints.
+
+b. Backlog da Sprint
+
+O Backlog da Sprint é um conjunto de itens do Backlog do Produto selecionados para a Sprint (representado na forma de um Quadro de Tarefas), juntamente com o plano para entregar o incremento "Pronto" e atingir a Meta da Sprint.
+
+c. Sprint
+
+Uma sprint é uma reunião de pessoas envolvidas num projeto para promover um desenvolvimento mais focalizado do projeto. O termo está fortemente relacionado ao framework de desenvolvimento ágil Scrum.
+
+d. Story Points.
+
+O Story Point é unidade de complexidade de esforço que a gente tem para construir um pedaço de software, por exemplo uma User Story ou qualquer tipo de demanda que você tenha para construir.
+
+Questão 4) Em metodologias ágeis normalmente utilizamos Cartões para descrever requisitos,
+normalmente chamados de Histórias. Faça o que se pede:
+
+a) No cartão abaixo indique o que é cada informação marcada com uma letra
+representa.
+
+A - Número do cartão
+B - Prioridade
+C - Estimativa
+D - um gerente de projeto
+E - obter o score de participação dos colaboradores em todas as sprints
+F - acompanhar o desempenho de cada um dos colaboradores
+
+b) Crie um exemplo de História, preenchendo um cartão como o do item (a) acima.
+
+A - Número do cartão
+B - Prioridade
+C - Estimativa
+D - estudante
+E - olhar o calendário de aula no Portal da faculdade
+F - organizar minha agenda

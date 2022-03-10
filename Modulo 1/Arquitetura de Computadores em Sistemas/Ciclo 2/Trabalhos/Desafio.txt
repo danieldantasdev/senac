@@ -1,0 +1,11 @@
+T	B	S
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+
+OU 		T-------------)OU
+EXCLUSIVO	B-------------)EXCLUSIVO
+
+S = T.B' + T'.B

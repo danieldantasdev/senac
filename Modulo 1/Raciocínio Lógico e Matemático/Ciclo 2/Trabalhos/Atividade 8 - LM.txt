@@ -1,0 +1,132 @@
+1)
+
+C = cozinheiro
+J = jardineiro
+M = mordomo
+Z = zelador
+
+(a) M → C [se o mordomo está dizendo a verdade, então o cozinheiro também está]
+(b) ¬C ^ ¬J [o cozinheiro e o jardineiro, ambos, não podem estar dizendo a verdade]
+(c) ¬J ^ ¬Z [o jardineiro e o zelador, ambos, não podem estar dizendo a verdade]
+(d) Z → ¬C [se o zelador está dizendo a verdade, então o cozinheiro está mentindo]
+
+
+
+
+Variáveis 	Premissas
+C J M Z 	(a) (b) (c) (d)
+V V V V 	V    F   F   F
+V V V F 	V    F   V   V
+V V F V 	V    F   F   F
+V V F F 	V    F   V   V
+V F V V 	V    V   V   F
+V F V F 	V    V   F   V
+V F F V 	V    V   V   F
+V F F F 	V    V   F   V
+F V V V 	F    V   F   V
+F V V F 	F    V   V   V
+F V F V 	V    V   F   V
+F V F F 	V    V   V   V
+F F V V 	F    V   V   V 
+F F V F 	F    F   F   V
+F F F V 	V    F   V   V
+F F F F 	V    F   F   V
+
+Somente o Jardineiro fala a verdade.
+
+
+2)
+
+Argumentos:
+
+p = O roteador pode enviar mensagens para o sistema principal.
+q = O roteador trata um novo espaço de endereço.
+r = A última versão do software seja instalada.
+
+Tradução dos fatos para as proposições:
+
+(a) p somente se q ≡ p → q
+(b) para q é necessário r ≡ r é uma condição necessária para q ≡ q → r
+(c) p se r ≡ r → p ≡ ¬p → ¬r
+(d) ¬q
+
+Dedução:
+
+(dedução 1)
+ 
+p → q 			(proposição "a")
+¬q 			(proposição "d")
+¬p 			(usamos o Modus Tollens)
+
+
+(dedução 2) 
+
+¬p → ¬r 		(proposição "c")
+¬p 			(dedução 1)
+¬r 			(usamos o Modus Ponens)
+
+
+As três proposições são falsas: 
+
+¬q de acordo com (proposição "d");
+
+¬p de acordo com (1 dedução);
+
+¬r de acordo com (2 dedução);
+ 
+Se todas três proposições são falsas, as quatro especicações são verdadeiras e elas são
+consistentes.
+
+
+3)
+
+p = O sistema está em um estado de multiuso.
+q = O sistema está operando normalmente.
+r = O núcleo do sistema operacional (kernel) está funcionando.
+s = O sistema está no modo de interrupção.
+
+Tradução dos fatos para as proposições:
+
+(a) p ↔ q ≡ (p → q) ∧ (q → p)
+(b) q → r
+(c) ¬r ∨ s
+(d) ¬p → s
+(e) ¬s
+
+Deduções:
+
+(dedução 1)     
+
+	¬r ∨ s 			(proposição "c")
+        ¬s 			(proposição "e")
+        ¬r 			(usamos o Silogismo Disjuntivo)
+
+
+(dedução 2) 
+	
+	q → r 			(proposição "b")
+	¬r 			(dedução 1)
+	¬q 			(usamos o Modus Tollens)
+
+
+(dedução 3) 	
+
+	¬p → s 			(proposição "d")
+	¬s 			(proposição "e")
+	p 			(usamos o Modus Tollens)
+
+
+(dedução 4) 	
+
+	(p → q) ∧ (q → p) 	(proposição "a")
+	p → q 			(usamos a Simplicação Conjuntiva)
+
+
+(dedução 5) 	
+
+	p → q 			(dedução 4)
+	¬q 			(dedução 2)
+	¬p 			(usamos o Modus Tollens)
+
+
+As conclusões (dedução 3) e (dedução 5) dizem que p e ¬p devem ser verdadeiros, sendo inconsistente.

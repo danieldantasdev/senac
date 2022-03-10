@@ -1,0 +1,31 @@
+Jorge compra camisas se elas forem diferentes de preta ou branca e tem que ser sobre samba. As variáveis são cores e a preferência pessoal dele. Então quando Jorge compra a camisa?
+
+C:ação de comprar
+p:cor preta
+q:cor branca
+r:tema da camisa de samba
+
+~(pvq)^r
+
+	p	q	r	~p	~q	~r	pvq	~pvq	~(pvq)^r			
+	v	v	v	f	f	f	f	v	f			
+	v	v	f	f	f	v	f	v	v	
+	v	f	v	f	v	f	v	f	f	
+	v	f	f	f	v	v	v	f	f	
+	f	v	v	v	f	f	v	f	f	
+	f	v	f	v	f	v	v	f	f	
+	f	f	v	v	v	f	v	f	f	
+	f	f	f	v	v	v	v	f	f	
+									
+									
+Daniel Dantas, Daniel Bastos, Diego Morais, Pedro Azamor, Júlio Perota e Ruddy.									
+									
+									
+									
+									
+									
+
+
+
+
+
