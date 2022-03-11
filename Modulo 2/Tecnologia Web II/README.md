@@ -164,4 +164,29 @@ console.log('x') //saída referenceError: y não está definido
 
 const PI = 3.14;
 
+### Tipos de Dados em JavaScript
 
+`Boolean`
+
+- Tipo de dado lógico que pode ter apenas um de dois valores possíveis: verdadeiro ou falso
+
+if (condição booleana){
+    //código a executar se o booleano for TRUE
+}
+
+if (condição booleana){
+    //código a executar se o booleano for TRUE
+    console.log('booleano verdadeiro');
+} else { 
+    console.log('booleano falso')
+}
+
+//JavaScript for loop
+
+for (variavel de controle; condição booleana; contador) {
+    //código a se repetir se o booleano for TRUE
+}
+
+for (var i = 0; i < 4; i++) {
+    console.log('código a executar se a condição for verdadeira, ou seja, até 'i' atingir o valor de 4);
+}
