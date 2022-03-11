@@ -54,3 +54,17 @@
 `Servidor`
 
 - Fornece objetos relevantes à execução do JavaScript em um servidor. Operações com BD e arquivos
+
+### JavaScript não é Java
+
+- JavaScript segue a sintaxe básica do Java, convenções de nomenclatura e construções de controle fluxo
+- Sistema em tempo de execução com base em um pequeno númeor de tipos de dados representando valores númericos, booleanos e strings
+- Suporta funções sem quaisquer requisitos especiais declarativos. As funções podem ser propriedades de objetos, executando como métodos
+- Não tem de declarar todas as variáveis, classes e métodos
+- Não tem que se preocupar com o fato dos métodos serem públicos, privados ou protegidos
+- Variáveis, parâmetros e tipo de retorno da função não são explicitamente tipados
+
+JavaScript | Java 
+:--------- | :------: 
+Orietado a objeto. Sem distinção entre tipos e objetos. A herança é feita através do protótipo e as propriedades e métodos podem ser adicionadas a qualquer objeto dinamicamente | Baseado em classe. Objetos são dividos em classes e instâncias com toda a herança através da hierarquia de classe. Classes e instâncias não podem ter propriedades ou métodos adicionados dinamicamente 
+
