@@ -66,13 +66,10 @@
 
 JavaScript | Java 
 :--------- | :------: 
-Orietado a objeto. Sem distinção entre tipos e objetos. A herança é feita através do protótipo e as propriedades e métodos podem ser adicionadas a qualquer objeto dinamicamente | Baseado em classe. Objetos são dividos em classes e instâncias com toda a herança através da hierarquia de classe. Classes e instâncias não podem ter propriedades ou métodos adicionados dinamicamente
- 
-Os tipos de dados das variáveis não precisam ser declarados (tipagem dinâmica) | Os tipos de dados das variáveis devem ser declarados (tipagem estática)
- 
-Não pode escrever automaticamente no disco rígido | Pode escrever automaticamente no disco rígido
-
-Liguagem não compilada (linguagem interpretada) | Linguagem compilada
+| Orietado a objeto. Sem distinção entre tipos e objetos. A herança é feita através do protótipo e as propriedades e métodos podem ser adicionadas a qualquer objeto dinamicamente | Baseado em classe. Objetos são dividos em classes e instâncias com toda a herança através da hierarquia de classe. Classes e instâncias não podem ter propriedades ou métodos adicionados dinamicamente |
+| Os tipos de dados das variáveis não precisam ser declarados (tipagem dinâmica) | Os tipos de dados das variáveis devem ser declarados (tipagem estática) |
+| Não pode escrever automaticamente no disco rígido | Pode escrever automaticamente no disco rígido |
+| Liguagem não compilada (linguagem interpretada) | Linguagem compilada |
 
 
 
