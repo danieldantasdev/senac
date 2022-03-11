@@ -134,3 +134,34 @@ Exemplos válidos
 - Nome_funcionario
 - _Salario e $Cidade
 
+`Variável Global`
+
+- Declaradas fora de uma função
+- Disponível para todos os blocos
+
+`Variável Local`
+
+- Declarada dentro de uma função
+- Disponível apenas para função ond foi declarada
+
+if (true) {
+    var x = 5;
+}
+console.log('x') //saída 5
+
+if (true) {
+    let x = 5;
+}
+console.log('x') //saída referenceError: y não está definido
+
+`const`
+
+- Para declarar use a palavra-chave 'const'
+- Apenas leitura
+- A sintaxe de um identificador de uma constante é semelhante ao identificador de uma variável
+- Não pode alterar seu valor por meio de uma atribuição ou ser declarada novamente enquanto o script está em execução
+- Deve ser inicializada com um valor
+
+const PI = 3.14;
+
+
