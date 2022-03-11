@@ -44,3 +44,13 @@
 -   JavaScript tem uma biblioteca padrão de objetos, como `Array`, `Date` e `Math` e um conjunto de elementos que formam o núcleo da linguagem, tais como `Operadores`, `Estruturas de controle` e `Declarações`
 
 **Dentro do browser tem o engine v8, por isso não precisamos compilar JavaScript**
+
+### O núcleo do JavaScript
+
+`Cliente`
+
+- Fornece objetos para controlar um navegador web e seu Document Object Model (DOM), eventos de usuários
+
+`Servidor`
+
+- Fornece objetos relevantes à execução do JavaScript em um servidor. Operações com BD e arquivos
