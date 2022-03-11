@@ -103,3 +103,73 @@
 -   UML é útil aqui:
     -   Se os objetos forem do domínio do problema
     -   Se os objetos não tiverem métodos
+
+**Implantar é pegar o software e colocar ele em produção**
+**Atributos são valores e métodos são comportamentos**
+
+`Processos do desenvolvimento de software`
+
+-   Análise de projetos
+
+-   Análise, projeto, implementação e testes
+
+-   O que são Artefatos? São objetos concretos, ou seja, os subprodutos concretos de um projeto (Metodologia RUP)
+    -   Exemplos: Executável do projeto, código fonte, framework ou biblioteca e etc
+
+`Processo unificado - PU`
+
+-   A motivação para o uso da abordagem de Craig Lamar ao processo unificado deve-se ao fato de que este é um processo bastante conciso e eficiente para análise e projeto de sistemas orientados a objetos
+
+`UML - Unified Modeling Language`
+
+-   Serve para se comunicar com todo mundo
+
+-   Uma linguagem de comunicação iconográfica
+
+-   Conhecer uma boa linguagem não implica na habilidade de saber usa-lá para produzir artefatos úteis
+
+-   Escrever bons projetos é como escrever poesia. Não basta conhecer a linguagem. É preciso dominar certas técnicas de escrita
+
+`Software Deselegante`
+
+-   Software deselegante é aquele feito sem uma estrutura clara
+-   O software deselegante é aquele do qual não se consegue reusar blocos do mesmo
+
+`Software Elegante`
+
+-   O software elegante é aquele documentado, reutilizável e etc
+-   Ele é mais fácil de reutilizar
+
+> Livros
+
+-   Padrões de projetos
+-   Design pattern
+-   Domain-Drive Design
+
+`Design patterns`
+
+-   Lições aprendidas ao longo d anos de projeto
+
+`Etapas do desenvolvimento`
+
+1. Análise
+    - A qualidade do processo de análise é importante para não dar erros
+2. Projetos
+    - Apresenta a solução
+3. Implementação
+    - Utilização de técnicas sistemáticas nas fases de análise (CI/CD - GitFlow)
+4. Testes
+    - A fase de testes envolve testar a unidade, feitas pelo programador, para verificar e validar se os componentes gerados atendem à especificação do projetista, e aos testes de caso de uso. Normalmente efetuados pelo analista experiente, que visam verificar a adequação do sistema aos requisitos inicialmente levantados
+
+`Fases do Processo Unificado`
+
+1. Concepção
+    - Estuda a viabilidade e elaborar o problema
+2. Elaboração
+    - Elaborar os modelos para solucionar o problema
+3. Construção
+    - Criação
+4. Transição
+    - Implantação
+
+**Antes de programar, precisamos elaborar muito bem o que vamos produzir**
