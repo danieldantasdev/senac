@@ -123,5 +123,14 @@ Sal = 1560; (declaração global)
 let idade = 22; (declaração local (bloco))
 
 
+### Regras para identificadores de variáveis
 
+- Podem conter somente caracteres alfanúmericos (ou '$' ou '_')
+- Não podem iniciar com um dígito
+- É `case-sensitive`, Estado_origem é diferente de estado_origem
+
+Exemplos válidos
+
+- Nome_funcionario
+- _Salario e $Cidade
 
