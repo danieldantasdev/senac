@@ -166,6 +166,8 @@ const PI = 3.14;
 
 ### Tipos de Dados em JavaScript
 
+#### Tipos Primitivos
+
 `Boolean`
 
 - Tipo de dado lógico que pode ter apenas um de dois valores possíveis: verdadeiro ou falso
@@ -190,3 +192,45 @@ for (variavel de controle; condição booleana; contador) {
 for (var i = 0; i < 4; i++) {
     console.log('código a executar se a condição for verdadeira, ou seja, até 'i' atingir o valor de 4);
 }
+
+`Null`
+
+- O valor null é um literal que representa um valor nulo ou vazio
+
+//marca não existe, não foi definido e jamais foi inicializado
+
+Entrada: marca
+
+Saída: "ReferenceError: marca is not defined"
+
+//marca é conhecida e existe, mas não aponta para nenhum tipo ou valor
+
+Entrada: var marca = null;
+
+Saída: marca null
+
+`Undefined`
+
+- É um valor primitivo atribuído automaticamente a variáveis que acabaram de ser declaradas ou a argumentos formais para os quais não existem argumentos reais
+
+//Cria a variável mas não atribui o valor
+
+Entrada: var x
+
+Saída: value is undefined
+
+`Number`
+
+- É um tipo de dado numérico
+
+Entrada: var x = 1
+
+Saída: console.log('x') //1
+
+`String`
+
+- É uma sequência de caracteres para representar texto
+
+var x = 'Uma string'
+var y = '515151'
+var z = '757257%%$%%¨&'
