@@ -71,5 +71,57 @@ JavaScript | Java
 | Não pode escrever automaticamente no disco rígido | Pode escrever automaticamente no disco rígido |
 | Liguagem não compilada (linguagem interpretada) | Linguagem compilada |
 
+### Padronização ECMAScript
+
+- Padronização pela ECMA International - a associação Euroupeia para a padronização de Sistemas de comunicação e Informação
+- ECMAScript é documentado na especificação ECMA-262
+- ECMA-262 também é aprovado pela ISO (International Organization for Standardization) como ISO-16262
+
+### Sintaxe de comandos em JavaScript
+
+- JavaScript é `case-sensitive`, ou seja, Maiuscula é diferente de Minuscula
+- Espaços, tabulação e uma nova linha são considerados espaços em branco
+- O código fonte dos scripts em Java Script são lidos daesquerda para direita e são convertidos em uma sequência de elementos de entrada
+- Recomenda-se sempre adicionar ponto e vírgula no final de suas declarações
+- Escolha nomes coerentes para seu sistema
+
+var Nome = "Maria";
+
+#### Cometários
+
+- São usados para inserir dicas, notas, sugestões ou alertas no código
+- Torna mais fácil de ler ou entender o que o código faz
+- Também pode ser usado para desabilitar código, evitando sua execução
+
+function comment() {
+    //Isto é um comentário de linha
+    console.log('Olá, mundo!");
+}
+comment();
+
+function comment() {
+    /*
+    Isto é um comentário de várias linhas (comentário de bloco)
+    console.log('Olá, mundo!");
+    */
+}
+comment();
+
+
+#### Declarações
+
+##### Tipos:
+
+`var` - declara uma variável local ou global e a inicializa com um valor
+`let` - declara uma variável local, escopo de bloco, a inicialização do valor é opcional
+`const`- declara uma constante de escopo de bloco, somente leitura
+
+var Nome = 'Maria'; (declaração local ou global)
+
+Sal = 1560; (declaração global)
+
+let idade = 22; (declaração local (bloco))
+
+
 
 
