@@ -234,3 +234,7 @@ Saída: console.log('x') //1
 var x = 'Uma string'
 var y = '515151'
 var z = '757257%%$%%¨&'
+
+`Objeto`
+
+- Estrutura de dados contento dados
