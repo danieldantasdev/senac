@@ -173,3 +173,40 @@
     - Implantação
 
 **Antes de programar, precisamos elaborar muito bem o que vamos produzir**
+
+`Análise de requisitos`
+
+-   É fundamental para o Desenvolvimento de sistemas, pois trata justamente os problemas do cliente
+
+`Técnicas de análise`
+
+1. Etnografia
+
+    - A etnografia é uma técnica de observação que pode ser utilizada para compreender os requisitos sociais e organizacionais, ou seja, entender a política organizacional bem como a cultura de trabalho com objetivo de familiarizar-se com o sistema e sua história. Os cientistas sociais e antropólogos usam técnicas de observação para desenvolver um entendimento completo e detalhado de culturas particulares.
+
+2. Workshops
+
+    - Trata-se de uma técnica de elicitação em grupo usada em uma reunião estruturada. Devem fazer parte do grupo uma equipe de analistas e uma seleção dos stakeholders que melhor representam a organização e o contexto em que o sistema será usado, obtendo assim um conjunto de requisitos bem definidos.
+
+3. Prototipagem
+
+    - Protótipo tem por objetivo explorar aspectos críticos dos requisitos de um produto, implementando de forma rápida um pequeno subconjunto de funcionalidades deste produto.
+
+4. Entrevistas
+
+    - A entrevista é uma das técnicas tradicionais mais simples de utilizar e que produz bons resultados na fase inicial de obtenção de dados. Convém que o entrevistador dê margem ao entrevistado para expor as suas idéias.
+
+5. Entrevistas
+
+    - A entrevista é uma das técnicas tradicionais mais simples de utilizar e que produz bons resultados na fase inicial de obtenção de dados. Convém que o entrevistador dê margem ao entrevistado para expor as suas idéias.
+
+6. Entrevistas
+
+    - A entrevista é uma das técnicas tradicionais mais simples de utilizar e que produz bons resultados na fase inicial de obtenção de dados. Convém que o entrevistador dê margem ao entrevistado para expor as suas idéias.
+
+`Requisitos`
+
+-   Funcionais: O que o sistema faz
+-   Não funcionais: Restrições sobre como o sistema deve desempenhar suas funções
+
+**Deve ficar claro ao analista que requisitos que o cliente ou usuário solicitam, e não coisas que ele, como analista, planejou**
