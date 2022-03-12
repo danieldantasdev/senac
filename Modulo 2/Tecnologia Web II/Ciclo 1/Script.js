@@ -31,6 +31,8 @@ var STR = 'JavaScript'
 console.log(STR.toLocaleUpperCase())
 
 var TAMANHO = 'JavaScript e Python'
+var JAVA = 'Java'
+
 console.log(TAMANHO.length)
 console.log(TAMANHO.charAt(7))
 console.log(TAMANHO.indexOf('Python'))
@@ -40,4 +42,5 @@ console.log(TAMANHO.substring(0, 12))
 // Descobrir qual é a posição do Python e vamos colocar outra coisa
 console.log(TAMANHO.substring(13, 19) + ' e Java')
 console.log(TAMANHO.substring(13, 19) + ' e ' + TAMANHO.substring(0, 4))
+console.log(TAMANHO.substring(13, 19) + ' e ' + TAMANHO.slice(0, 4))
 console.log(TAMANHO.substring(13, 19) + ' e ' + TAMANHO.indexOf('Java'))
