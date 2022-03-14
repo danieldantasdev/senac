@@ -227,6 +227,10 @@ Entrada: var x = 1
 
 Saída: console.log('x') //1
 
+`BigInt`
+
+- No JavaScript, BigInt é um tipo de dado numérico que representa inteiros no formato de precisão arbritrária. Em outras linguagens de programação existem tipos numéricos diferentes, como por exemplo: Integers, Floats, Doubles ou Bignums.
+
 `String`
 
 - É uma sequência de caracteres para representar texto
@@ -237,4 +241,20 @@ var z = '757257%%$%%¨&'
 
 `Objeto`
 
-- Estrutura de dados contento dados
+- Estrutura de dados contento dados contendo dados e instruções
+- Objetos muitas das vezes se referem a coisas do mundo real, por exemplo um objeto de carro ou um mapa em um jogo de corrida
+- Os objetos podemo ser criados usando o constutor `Object()` ou o `inicializador de objetos`
+
+new Object()
+new Object(valor)
+
+let = new Object()
+o.numero=42
+console.log('o') //Object {numero:42}
+
+`Symbol type`
+
+- Symbols são novos no JavaScript ECMAScript edição 6. Um Symbol é um valor primitivo `único` e `imutável` e pode ser usado como chave de uma propriedade de Object
+- Em algumas linguagens de programação, Symbols são chamados de atoms (átomos). Você também pode compará-los à enumerações nomeadas (enum) em C. Para mais detalhes veja Symbol e o Symbol object wrapper em JavaScript.
+
+
