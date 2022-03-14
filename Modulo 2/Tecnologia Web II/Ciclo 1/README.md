@@ -257,4 +257,19 @@ console.log('o') //Object {numero:42}
 - Symbols são novos no JavaScript ECMAScript edição 6. Um Symbol é um valor primitivo `único` e `imutável` e pode ser usado como chave de uma propriedade de Object
 - Em algumas linguagens de programação, Symbols são chamados de atoms (átomos). Você também pode compará-los à enumerações nomeadas (enum) em C. Para mais detalhes veja Symbol e o Symbol object wrapper em JavaScript.
 
+#### Conversão de tipos
+
+- JavaScript é uma lingaugem `dinamicamente tipada`
+- Não precisa especificar o tipo de dado de uma variável quando declará-la
+- Os tipos de dados são `convertidos automaticamente` conforme a necessidade durante a execução do script
+
+var resp = 42
+resp = 'João tem 42 anos'
+
+x = 'A resposta é' + 42 //'A resposta é 42'
+y =  42 + 'é a resposta' //'42 'é a resposta'
+z = `A resposta é ${resp}`
+
+**Em expressões envolvendo valores númerico e string com o poerador +, JavaScript converte valores númerico para string**
+
 
