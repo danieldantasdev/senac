@@ -271,5 +271,3 @@ y =  42 + 'é a resposta' //'42 'é a resposta'
 z = `A resposta é ${resp}`
 
 **Em expressões envolvendo valores númerico e string com o poerador +, JavaScript converte valores númerico para string**
-
-
