@@ -19,7 +19,7 @@
 
 ## 🧠 Meu Roadmap de estudos até o segundo período dentro da faculdade
 
-| Linguagens   | Frameworks, Bibliotecas              | Ferramentas              |
+| Linguagens   | Frameworks, Bibliotecas              | Checks                   |
 | ------------ | ------------------------------------ | ------------------------ |
 | `C/C++`      | `stdio.h` - `stdio.lib` - `string.h` | **Execute no terminal!** |
 | `HTML5`      | `-`                                  | **Execute no terminal!** |
@@ -29,13 +29,13 @@
 
 ## 🧠 Meu Roadmap de estudos pessoal fora da faculdade
 
-| Linguagens   | Frameworks, Bibliotecas, Pré-processadores e etc... | Ferramentas              |
-| ------------ | --------------------------------------------------- | ------------------------ |
-| `C/C++`      | `stdio.h` - `stdio.lib` - `string.h`                | **Execute no terminal!** |
-| `HTML5`      | `Pug`                                               | **Execute no terminal!** |
-| `CSS3`       | `Bootstrap` - `SASS`                                | **Execute no terminal!** |
-| `JavaScript` | `ReactJs` - `ReactNative`                           | **Execute no terminal!** |
-| `Java`       | `-`                                                 | **Execute no terminal!** |
+| Frameworks, Bibliotecas, Pré-processadores e etc... | Checks                   |
+| --------------------------------------------------- | ------------------------ |
+| `stdio.h` - `stdio.lib` - `string.h`                | **Execute no terminal!** |
+| `Pug`                                               | **Execute no terminal!** |
+| `CSS3`                                              | **Execute no terminal!** |
+| `ReactJs` - `ReactNative`                           | **Execute no terminal!** |
+| `-`                                                 | **Execute no terminal!** |
 
 ### Mobile
 
