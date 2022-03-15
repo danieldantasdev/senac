@@ -1,4 +1,4 @@
-# Estrutura de dados
+# Estrutura de dados - Dia 08/03/22
 
 ## Roteiro de aula
 
@@ -398,3 +398,53 @@ int s = strlen (nome);
 > Função strlwr(string)
 
 -   A função strupr(string) converte o conteúdo da string informada em letras minúsculas
+
+---
+
+# Estrutura de dados - Dia 15/03/22
+
+## Matriz
+
+-   São comumente referenciadas através de suas dimensões
+-   Bi-dimensional
+-   Linhas e colunas
+-   Assim como no vetor, sempre começamos da posição 0
+-   Notação comum: MxN
+-   M é a quantidade de linhas
+-   N é a quantidade de colunas
+
+### Sintaxe
+
+`Vetor`
+
+tipo_dado vetor [tamanho1],[tamanho2]
+
+`Matriz`
+
+tipo_dado matriz [tamanho1] [coluna1]
+
+### Como acessar?
+
+mat[0][2]
+scanf("%d",mat)
+
+#include <stdio.h>
+int main(){
+int vetor [10]
+int matriz [3] [3]
+
+//vetor
+int i
+for (i=0; i<10 ;i++){
+printf("Informe um valor: ")
+scanf("%d",&vetor[])}
+
+//matriz
+int lin,col
+for (lin=0;lin<3;i++){
+for(col=0;col<3;i++){
+printf("Informe um valor: ")
+scanf("%d",&matriz [lin] [col])
+}
+}
+}
