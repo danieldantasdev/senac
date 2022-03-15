@@ -15,10 +15,10 @@ int main()
     printf("Segunda frase: ");
     fgets(vet2, 50, stdin);
 
-    for (i = 0; vet1[i] != '\0'; i++)
+    for (i = 0; vet1[i] != '\n'; i++)
         ;
 
-    for (j = 0; vet2[j] != '\0'; j++)
+    for (j = 0; vet2[j] != '\n'; j++)
         vet1[i++] = vet2[j];
     printf("%s", vet1);
 }
