@@ -1,4 +1,4 @@
-# Engenharia de Software II
+# Engenharia de Software II - 09/03/22
 
 ## Carga horária de 80 Horas
 
@@ -210,3 +210,20 @@
 -   Não funcionais: Restrições sobre como o sistema deve desempenhar suas funções
 
 **Deve ficar claro ao analista que requisitos que o cliente ou usuário solicitam, e não coisas que ele, como analista, planejou**
+
+---
+
+# Engenharia de Software II - 09/03/22
+
+`CRUD`
+
+-   Criar
+-   Listar
+-   Atualizar
+-   Deletar
+
+`Daemon`
+
+-   Antivírus
+-   Monitor impressora (spooler)
+-   Email

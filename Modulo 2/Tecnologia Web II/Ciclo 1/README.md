@@ -1,4 +1,4 @@
-# Tecnologia Web II
+# Tecnologia Web II - 09/03/22
 
 ## JavaScript
 
@@ -49,64 +49,63 @@
 
 `Cliente`
 
-- Fornece objetos para controlar um navegador web e seu Document Object Model (DOM), eventos de usuários
+-   Fornece objetos para controlar um navegador web e seu Document Object Model (DOM), eventos de usuários
 
 `Servidor`
 
-- Fornece objetos relevantes à execução do JavaScript em um servidor. Operações com BD e arquivos
+-   Fornece objetos relevantes à execução do JavaScript em um servidor. Operações com BD e arquivos
 
 ### JavaScript não é Java
 
-- JavaScript segue a sintaxe básica do Java, convenções de nomenclatura e construções de controle fluxo
-- Sistema em tempo de execução com base em um pequeno númeor de tipos de dados representando valores númericos, booleanos e strings
-- Suporta funções sem quaisquer requisitos especiais declarativos. As funções podem ser propriedades de objetos, executando como métodos
-- Não tem de declarar todas as variáveis, classes e métodos
-- Não tem que se preocupar com o fato dos métodos serem públicos, privados ou protegidos
-- Variáveis, parâmetros e tipo de retorno da função não são explicitamente tipados
+-   JavaScript segue a sintaxe básica do Java, convenções de nomenclatura e construções de controle fluxo
+-   Sistema em tempo de execução com base em um pequeno númeor de tipos de dados representando valores númericos, booleanos e strings
+-   Suporta funções sem quaisquer requisitos especiais declarativos. As funções podem ser propriedades de objetos, executando como métodos
+-   Não tem de declarar todas as variáveis, classes e métodos
+-   Não tem que se preocupar com o fato dos métodos serem públicos, privados ou protegidos
+-   Variáveis, parâmetros e tipo de retorno da função não são explicitamente tipados
 
-JavaScript | Java 
-:--------- | :------: 
+| JavaScript                                                                                                                                                                       |                                                                                                  Java                                                                                                   |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Orietado a objeto. Sem distinção entre tipos e objetos. A herança é feita através do protótipo e as propriedades e métodos podem ser adicionadas a qualquer objeto dinamicamente | Baseado em classe. Objetos são dividos em classes e instâncias com toda a herança através da hierarquia de classe. Classes e instâncias não podem ter propriedades ou métodos adicionados dinamicamente |
-| Os tipos de dados das variáveis não precisam ser declarados (tipagem dinâmica) | Os tipos de dados das variáveis devem ser declarados (tipagem estática) |
-| Não pode escrever automaticamente no disco rígido | Pode escrever automaticamente no disco rígido |
-| Liguagem não compilada (linguagem interpretada) | Linguagem compilada |
+| Os tipos de dados das variáveis não precisam ser declarados (tipagem dinâmica)                                                                                                   |                                                                 Os tipos de dados das variáveis devem ser declarados (tipagem estática)                                                                 |
+| Não pode escrever automaticamente no disco rígido                                                                                                                                |                                                                              Pode escrever automaticamente no disco rígido                                                                              |
+| Liguagem não compilada (linguagem interpretada)                                                                                                                                  |                                                                                           Linguagem compilada                                                                                           |
 
 ### Padronização ECMAScript
 
-- Padronização pela ECMA International - a associação Euroupeia para a padronização de Sistemas de comunicação e Informação
-- ECMAScript é documentado na especificação ECMA-262
-- ECMA-262 também é aprovado pela ISO (International Organization for Standardization) como ISO-16262
+-   Padronização pela ECMA International - a associação Euroupeia para a padronização de Sistemas de comunicação e Informação
+-   ECMAScript é documentado na especificação ECMA-262
+-   ECMA-262 também é aprovado pela ISO (International Organization for Standardization) como ISO-16262
 
 ### Sintaxe de comandos em JavaScript
 
-- JavaScript é `case-sensitive`, ou seja, Maiuscula é diferente de Minuscula
-- Espaços, tabulação e uma nova linha são considerados espaços em branco
-- O código fonte dos scripts em Java Script são lidos daesquerda para direita e são convertidos em uma sequência de elementos de entrada
-- Recomenda-se sempre adicionar ponto e vírgula no final de suas declarações
-- Escolha nomes coerentes para seu sistema
+-   JavaScript é `case-sensitive`, ou seja, Maiuscula é diferente de Minuscula
+-   Espaços, tabulação e uma nova linha são considerados espaços em branco
+-   O código fonte dos scripts em Java Script são lidos daesquerda para direita e são convertidos em uma sequência de elementos de entrada
+-   Recomenda-se sempre adicionar ponto e vírgula no final de suas declarações
+-   Escolha nomes coerentes para seu sistema
 
 var Nome = "Maria";
 
 #### Cometários
 
-- São usados para inserir dicas, notas, sugestões ou alertas no código
-- Torna mais fácil de ler ou entender o que o código faz
-- Também pode ser usado para desabilitar código, evitando sua execução
+-   São usados para inserir dicas, notas, sugestões ou alertas no código
+-   Torna mais fácil de ler ou entender o que o código faz
+-   Também pode ser usado para desabilitar código, evitando sua execução
 
 function comment() {
-    //Isto é um comentário de linha
-    console.log('Olá, mundo!");
+//Isto é um comentário de linha
+console.log('Olá, mundo!");
 }
 comment();
 
 function comment() {
-    /*
-    Isto é um comentário de várias linhas (comentário de bloco)
-    console.log('Olá, mundo!");
-    */
+/_
+Isto é um comentário de várias linhas (comentário de bloco)
+console.log('Olá, mundo!");
+_/
 }
 comment();
-
 
 #### Declarações
 
@@ -122,45 +121,44 @@ Sal = 1560; (declaração global)
 
 let idade = 22; (declaração local (bloco))
 
-
 ### Regras para identificadores de variáveis
 
-- Podem conter somente caracteres alfanúmericos (ou '$' ou '_')
-- Não podem iniciar com um dígito
-- É `case-sensitive`, Estado_origem é diferente de estado_origem
+-   Podem conter somente caracteres alfanúmericos (ou '$' ou '\_')
+-   Não podem iniciar com um dígito
+-   É `case-sensitive`, Estado_origem é diferente de estado_origem
 
 Exemplos válidos
 
-- Nome_funcionario
-- _Salario e $Cidade
+-   Nome_funcionario
+-   \_Salario e $Cidade
 
 `Variável Global`
 
-- Declaradas fora de uma função
-- Disponível para todos os blocos
+-   Declaradas fora de uma função
+-   Disponível para todos os blocos
 
 `Variável Local`
 
-- Declarada dentro de uma função
-- Disponível apenas para função ond foi declarada
+-   Declarada dentro de uma função
+-   Disponível apenas para função ond foi declarada
 
 if (true) {
-    var x = 5;
+var x = 5;
 }
 console.log('x') //saída 5
 
 if (true) {
-    let x = 5;
+let x = 5;
 }
 console.log('x') //saída referenceError: y não está definido
 
 `const`
 
-- Para declarar use a palavra-chave 'const'
-- Apenas leitura
-- A sintaxe de um identificador de uma constante é semelhante ao identificador de uma variável
-- Não pode alterar seu valor por meio de uma atribuição ou ser declarada novamente enquanto o script está em execução
-- Deve ser inicializada com um valor
+-   Para declarar use a palavra-chave 'const'
+-   Apenas leitura
+-   A sintaxe de um identificador de uma constante é semelhante ao identificador de uma variável
+-   Não pode alterar seu valor por meio de uma atribuição ou ser declarada novamente enquanto o script está em execução
+-   Deve ser inicializada com um valor
 
 const PI = 3.14;
 
@@ -170,32 +168,32 @@ const PI = 3.14;
 
 `Boolean`
 
-- Tipo de dado lógico que pode ter apenas um de dois valores possíveis: verdadeiro ou falso
+-   Tipo de dado lógico que pode ter apenas um de dois valores possíveis: verdadeiro ou falso
 
 if (condição booleana){
-    //código a executar se o booleano for TRUE
+//código a executar se o booleano for TRUE
 }
 
 if (condição booleana){
-    //código a executar se o booleano for TRUE
-    console.log('booleano verdadeiro');
-} else { 
-    console.log('booleano falso')
+//código a executar se o booleano for TRUE
+console.log('booleano verdadeiro');
+} else {
+console.log('booleano falso')
 }
 
 //JavaScript for loop
 
 for (variavel de controle; condição booleana; contador) {
-    //código a se repetir se o booleano for TRUE
+//código a se repetir se o booleano for TRUE
 }
 
 for (var i = 0; i < 4; i++) {
-    console.log('código a executar se a condição for verdadeira, ou seja, até 'i' atingir o valor de 4);
+console.log('código a executar se a condição for verdadeira, ou seja, até 'i' atingir o valor de 4);
 }
 
 `Null`
 
-- O valor null é um literal que representa um valor nulo ou vazio
+-   O valor null é um literal que representa um valor nulo ou vazio
 
 //marca não existe, não foi definido e jamais foi inicializado
 
@@ -211,7 +209,7 @@ Saída: marca null
 
 `Undefined`
 
-- É um valor primitivo atribuído automaticamente a variáveis que acabaram de ser declaradas ou a argumentos formais para os quais não existem argumentos reais
+-   É um valor primitivo atribuído automaticamente a variáveis que acabaram de ser declaradas ou a argumentos formais para os quais não existem argumentos reais
 
 //Cria a variável mas não atribui o valor
 
@@ -221,7 +219,7 @@ Saída: value is undefined
 
 `Number`
 
-- É um tipo de dado numérico
+-   É um tipo de dado numérico
 
 Entrada: var x = 1
 
@@ -229,11 +227,11 @@ Saída: console.log('x') //1
 
 `BigInt`
 
-- No JavaScript, BigInt é um tipo de dado numérico que representa inteiros no formato de precisão arbritrária. Em outras linguagens de programação existem tipos numéricos diferentes, como por exemplo: Integers, Floats, Doubles ou Bignums.
+-   No JavaScript, BigInt é um tipo de dado numérico que representa inteiros no formato de precisão arbitrária. Em outras linguagens de programação existem tipos numéricos diferentes, como por exemplo: Integers, Floats, Doubles ou Bignums.
 
 `String`
 
-- É uma sequência de caracteres para representar texto
+-   É uma sequência de caracteres para representar texto
 
 var x = 'Uma string'
 var y = '515151'
@@ -241,9 +239,9 @@ var z = '757257%%$%%¨&'
 
 `Objeto`
 
-- Estrutura de dados contento dados contendo dados e instruções
-- Objetos muitas das vezes se referem a coisas do mundo real, por exemplo um objeto de carro ou um mapa em um jogo de corrida
-- Os objetos podemo ser criados usando o constutor `Object()` ou o `inicializador de objetos`
+-   Estrutura de dados contento dados contendo dados e instruções
+-   Objetos muitas das vezes se referem a coisas do mundo real, por exemplo um objeto de carro ou um mapa em um jogo de corrida
+-   Os objetos podemo ser criados usando o construtor `Object()` ou o `inicializador de objetos`
 
 new Object()
 new Object(valor)
@@ -254,20 +252,24 @@ console.log('o') //Object {numero:42}
 
 `Symbol type`
 
-- Symbols são novos no JavaScript ECMAScript edição 6. Um Symbol é um valor primitivo `único` e `imutável` e pode ser usado como chave de uma propriedade de Object
-- Em algumas linguagens de programação, Symbols são chamados de atoms (átomos). Você também pode compará-los à enumerações nomeadas (enum) em C. Para mais detalhes veja Symbol e o Symbol object wrapper em JavaScript.
+-   Symbols são novos no JavaScript ECMAScript edição 6. Um Symbol é um valor primitivo `único` e `imutável` e pode ser usado como chave de uma propriedade de Object
+-   Em algumas linguagens de programação, Symbols são chamados de atoms (átomos). Você também pode compará-los à enumerações nomeadas (enum) em C. Para mais detalhes veja Symbol e o Symbol object wrapper em JavaScript.
 
 #### Conversão de tipos
 
-- JavaScript é uma lingaugem `dinamicamente tipada`
-- Não precisa especificar o tipo de dado de uma variável quando declará-la
-- Os tipos de dados são `convertidos automaticamente` conforme a necessidade durante a execução do script
+-   JavaScript é uma linguagem `dinamicamente tipada`
+-   Não precisa especificar o tipo de dado de uma variável quando declará-la
+-   Os tipos de dados são `convertidos automaticamente` conforme a necessidade durante a execução do script
 
 var resp = 42
 resp = 'João tem 42 anos'
 
 x = 'A resposta é' + 42 //'A resposta é 42'
-y =  42 + 'é a resposta' //'42 'é a resposta'
+y = 42 + 'é a resposta' //'42 'é a resposta'
 z = `A resposta é ${resp}`
 
-**Em expressões envolvendo valores númerico e string com o poerador +, JavaScript converte valores númerico para string**
+**Em expressões envolvendo valores numérico e string com o operador +, JavaScript converte valores numérico para string**
+
+---
+
+# Tecnologia Web II - 16/03/22
