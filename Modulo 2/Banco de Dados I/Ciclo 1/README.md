@@ -152,3 +152,5 @@ Estudante(sid: string, nome: string, CR: float)
 - sid, nome e CR são os `atributos`
 
 - Em um SGBD, o conjunto de esquemas está contido no catálogo
+
+**Estudar sobre SQL Injection**
