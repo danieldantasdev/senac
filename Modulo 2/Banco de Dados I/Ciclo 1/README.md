@@ -90,11 +90,16 @@
 
 # Banco de Dados I - 17/03/22
 
+`Instalando o SQL Server 2019 Express`
+
+- Entrar no site da (Microsoft)[https://www.microsoft.com/pt-br/sql-server/sql-server-downloads]
+
 - Computador não tem cognição, ele é 'burro', por isso utilizamos a lógica para se comunicar com o mesmo, o famoso paradoxo de `>Turing`
 
 `SQL`
 
 - Standar Query Language, ou seja, é a linguagem padrão para criar queries
 - Baseada na teoria de conjuntos da matemática, teoria da álgebra relacional
+
 
 
