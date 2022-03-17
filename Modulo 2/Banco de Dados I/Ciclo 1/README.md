@@ -98,6 +98,7 @@
 `Instalando o SSMS`
 
 - Entrar no site da [Microsoft](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+- Baixar e executar instalando na máquina local
 
 - Computador não tem cognição, ele é 'burro', por isso utilizamos a lógica para se comunicar com o mesmo, o famoso paradoxo de `>Turing`
 
@@ -105,6 +106,55 @@
 
 - Standar Query Language, ou seja, é a linguagem padrão para criar queries
 - Baseada na teoria de conjuntos da matemática, teoria da álgebra relacional
+- Somente Strings
+
+## Referências
+
+- Elmasri & Navathe - "Sistemas de Banco de Dados"
+
+## Modelo Relacional
+
+- Modelo de dados, que se baseia no princípio em que todos os dados estão guardados como tabelas
+- Baseado em lógica de predicados e na teoria de conjuntos
+- Sucessor do modelo hierárquico e do modelo de rede
+
+`Por que o Modelo Relacional?`
+
+- Simplicidade dos conceitos
+- Definição formal dos conceitos
+- Paradigma formal para linguagens de consulta
+- SGBDs com desempenho adequqado, principalemnte quanto à otimização de consultas
+- Mais de 25 anos de desenvolvimento
+
+**Precisamos saber perguntar para o banco, precisamos diferenciar a linguagem coloquial da linguagem SQL**
+
+`> Exemplo`
+
+- Não podemos perguntar para o banco: "Quero calças azuis e brancas"
+
+``Continuando no modelo relacional ou Schema`
+
+- Um atributo ou coluna
+- Uma tupla ou linha ou registro
+
+`Definição`
+
+- Conjunto de relçoes e outors componentes do banco
+
+`Notação`
+
+- Simplificada de relação nos Schemas
+
+Estudante(sid: string, nome: string, CR: float)
+
+- Estudante seria o `nome da relação`
+- String, float e int são os domínios dos `atributos` (o domínio é o valor em si, não o tipo de dado
+- sid, nome e CR são os `atributos`
+
+- Em um SGBD, o conjunto de esquemas está contido no catálogo
+
+
+
 
 
 
