@@ -92,7 +92,12 @@
 
 `Instalando o SQL Server 2019 Express`
 
-- Entrar no site da (Microsoft)[https://www.microsoft.com/pt-br/sql-server/sql-server-downloads]
+- Entrar no site da [Microsoft](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+- Baixar e executar instalando na máquina local
+
+`Instalando o SSMS`
+
+- Entrar no site da [Microsoft](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 - Computador não tem cognição, ele é 'burro', por isso utilizamos a lógica para se comunicar com o mesmo, o famoso paradoxo de `>Turing`
 
