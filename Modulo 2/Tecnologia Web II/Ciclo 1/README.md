@@ -273,3 +273,71 @@ z = `A resposta é ${resp}`
 ---
 
 # Tecnologia Web II - 16/03/22
+
+## Operadores
+
+### Tipos
+
+`Binário`
+
+-   operando1 operador operando2
+-   2 + 3; 4 - 5; x - y
+
+`Unário`
+
+-   Operador operando ou ainda, operando operador
+-   ++z; x--; x++
+
+`Atribuição simples`
+
+-   =
+-   Atribuir um valor de uma variável a outro
+-   x = y
+
+`Atribuição de adição`
+
+-   x += y
+-   x = x + y
+
+`Atribuição de subtração`
+
+-   x -= y
+-   x = x - y
+
+`Atribuição de multiplicação`
+
+-   x \*= y
+-   x = x \* y
+
+`Atribuição de divisão`
+
+-   x /= y
+-   x = x / y
+
+`Atribuição de resto`
+
+-   x %= y
+-   x = x % y
+
+`Atribuição de exponencial`
+
+-   x \*\*= y
+-   x = x \*\* y
+
+`Incremento e decremento`
+
+-   var i = 1, j = i++ // j = 2 e i = 2
+-   var i = 1, j = ++i // j = 2 e i = 1
+-   var i = 1, j = i-- // j = 2 e i = 2
+-   var i = 1, j = --i // j = 2 e i = 1
+
+`Comparação`
+
+    1. == - true caso os operandos sejam iguais
+    2. != - true caso os operandos não sejam iguais
+    3. === - true caso os operandos sejam iguais e do mesmo tipo. Object.is e igualdade em JS
+    4. !== - true caso os operandos não sejam iguais e do mesmo tipo. Object.is e igualdade em JS
+    5. > - true caso os operando da esquerda seja maior que o da direita
+    6. < - true caso os operando da esquerda seja menor que o da direita
+    7. >= - true caso os operando da esquerda seja maior ou igual que o da direita
+    8. <= - true caso os operando da esquerda seja menor ou igual que o da direita

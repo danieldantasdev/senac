@@ -33,4 +33,4 @@
 
 ## O que vamos desenvolver
 
--   Sistema que gerencia processos jurídicos do Senac
+-   Sistema que gerenciar processos jurídicos do Senac
