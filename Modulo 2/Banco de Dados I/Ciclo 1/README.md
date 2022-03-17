@@ -1,4 +1,4 @@
-.'# Banco de Dados I
+# Banco de Dados I - 10/03/22
 
 -   O mais importante aqui são as informações
 -   Usamos qualquer informação para transformar em um dado útil
