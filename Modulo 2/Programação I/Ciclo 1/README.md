@@ -49,4 +49,9 @@ e normalmente é executado no seu browser
 - [Seguem alguns links sobre a linguagem Java](http://www.oracle.com/technetwork/java/)
 - [Oracle](http://www.oracle.com/technetwork/java/)
 
+-  Totalmente `orientada a objetos`, permitindo a herança e a reutilização de código
+**O lado bom é que temos uma reutilização de código muito grande, foi feito para não escrevermos código duas vezes**
+**O lado ruim é que não podemos ter outra opção, Java é necessariamente orientado a objetos**
+-  Derivada da linguagem
+
 
