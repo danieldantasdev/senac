@@ -86,7 +86,7 @@ Java
 
 `Perspectiva`
 
-- Conjunto dessas janelas, é o menu em si
+- Conjunto dessas janelas, é o menu em si, podemos definir didaticamente com a estética do Eclipse
 
 
 
