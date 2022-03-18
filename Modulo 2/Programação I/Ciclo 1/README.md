@@ -52,6 +52,31 @@ e normalmente é executado no seu browser
 -  Totalmente `orientada a objetos`, permitindo a herança e a reutilização de código
 **O lado bom é que temos uma reutilização de código muito grande, foi feito para não escrevermos código duas vezes**
 **O lado ruim é que não podemos ter outra opção, Java é necessariamente orientado a objetos**
--  Derivada da linguagem
+-  Derivada da linguagem C e C++, o que facilita a troca de informações
+-  Grande volume de frameworks que facilitam e aumentam a produtividade no desenvolvimento
+-  É multiplataforma, podendo ser executado em diversos sistemas operacionais (portabilidade)
+
+                    -> Compilação - Código binário para o SO-1 -> Execução - SO-1
+Código C ou Pascal 
+                    -> Compilação - Código binário para o SO-2 -> Execução - SO-2
+                    
+
+                                               -> Execução - Máquina virtual do SO-1
+Código fonte em Java -> Compilação - Bytecode 
+                                               -> Execução - Máquina virtual do SO-2
+                                         
+## Componentes do Java
+
+- JVM (Java Virtual Machine): É a máquina virtual do Java. Não existe download
+em separado para ela, visto que ela vem junto com outros componentes do Java
+
+- JRE (Java Runtime Environment): É o ambiente de execução do Java. É
+formado pela JVM e bibliotecas. É o que é necessário para executar uma
+aplicação Java
+
+- JDK (Java Platform, Standard Edition Development Kit: É o kit de
+desenvolvimento para Java. É formado pelo JRE e as ferramentas do compilador
+Java
+
 
 
