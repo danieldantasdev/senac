@@ -213,7 +213,7 @@
 
 ---
 
-# Engenharia de Software II - 09/03/22
+# Engenharia de Software II - 16/03/22
 
 `CRUD`
 
@@ -227,3 +227,23 @@
 -   Antivírus
 -   Monitor impressora (spooler)
 -   Email
+
+---
+
+# Engenharia de Software II - 17/03/22
+
+- Vamos usar o [Draw.io](https://drawio-app.com)
+
+`Broadcast`
+
+- Em telecomunicações e teoria da informação, broadcasting é um método de transferência de mensagem para todos os receptores simultaneamente
+
+`Assíncrona`
+
+- Quando enviamos um pedido, não precisamos esperar a resposta
+- Aula ao vivo, Mensagem do celular
+
+`Síncrono`
+
+- Envio de sinal com espero de resposta
+- Sinal de rádio
