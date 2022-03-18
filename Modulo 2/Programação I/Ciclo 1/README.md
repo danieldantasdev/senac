@@ -78,5 +78,15 @@ aplicação Java
 desenvolvimento para Java. É formado pelo JRE e as ferramentas do compilador
 Java
 
+## Eclipse
+
+`View`
+
+- View são as janelas que aparecem do lado do menu
+
+`Perspectiva`
+
+- Conjunto dessas janelas, é o menu em si
+
 
 
