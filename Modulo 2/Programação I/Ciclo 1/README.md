@@ -1,4 +1,4 @@
-# Programação I
+# Programação I - 11/03/22
 
 -   Basicamente aprendemos Java, com Reinaldo José Freitas
 -   Trabalhando com clipper summer 87
@@ -26,3 +26,27 @@
 
 > `Trabalhos 1 e 2` (Peso 1)
 > `Provas 1 e 2` (Peso 2)
+
+---
+
+# Programação I - 18/03/22
+
+`Java`
+
+- Java é uma linguagem de programação e plataforma
+computacional lançada pela primeira vez pela Sun
+Microsystems em 1995. A Sun foi adquirida pela
+Oracle em 2009
+
+- O Java é uma tecnologia usada para desenvolver
+aplicações que tornam a Web mais divertida e útil. O
+Java não é a mesma coisa que o javascript., que é
+uma tecnologia simples usada para criar páginas Web
+e normalmente é executado no seu browser
+
+**Oracle é a dona do maior banco de dados no mercado e dos anos 90 para cá, a mesma vem comprando várias empresas**
+
+- [Seguem alguns links sobre a linguagem Java](http://www.oracle.com/technetwork/java/)
+- [Oracle](http://www.oracle.com/technetwork/java/)
+
+
