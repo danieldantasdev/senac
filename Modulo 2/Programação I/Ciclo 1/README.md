@@ -90,4 +90,12 @@ Java
 
 **Todo programa Java é executado através de classes que conterão o código fonte de todos os meus programas**
 
+`Projeto em Java`
+
+- Conjunto de programas
+
+`Programas em Java`
+
+- É a classe propriamente dita, e essas classe segue todas as regras que regem a orientação a objetos
+
 
