@@ -88,5 +88,6 @@ Java
 
 - Conjunto dessas janelas, é o menu em si, podemos definir didaticamente com a estética do Eclipse
 
+**Todo programa Java é executado através de classes que conterão o código fonte de todos os meus programas**
 
 
