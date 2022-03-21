@@ -43,3 +43,8 @@
 - Ajudar a trabalhar um caso de caso
 - O diagrama é formado por símbolos com significados pré-determinados
 - 13 diagramas UML
+
+`Burn Down`
+
+- No primeiro dia, estamos cheio de atividades, e cada dia que passa colocamos a atividade para validação, com o passar do tempo a atividade finalizada, ela sai da tabela e cai um um dos pontos no gráfico
+- Realidade, os grupos só fazem as atividade no final da sprint
