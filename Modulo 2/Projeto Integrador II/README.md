@@ -48,3 +48,28 @@
 
 - No primeiro dia, estamos cheio de atividades, e cada dia que passa colocamos a atividade para validação, com o passar do tempo a atividade finalizada, ela sai da tabela e cai um um dos pontos no gráfico
 - Realidade, os grupos só fazem as atividade no final da sprint
+
+`Diagrama de atividade`
+
+- Diagramas de estado, sequência, comunicação e atividade
+- É um tipo especial de diagramas de estados, onde representados os estados de uma atividade
+- Exibe passos de uma computação
+- Cada atividade é um passo da computação
+- São um tipo de fluxograma estendido, posis permitem representar ações concorrentes e sua sincronização
+- Serve para detelhar um caso de uso
+
+  >`Elementos`
+
+    `Elementos em fluxos sequenciais`
+    - Estado de ação
+    - Estado de atividade
+    - Estado inicial efinal e condição de guarda
+    - transição de término
+    - Pontos de ramificação e de união
+
+    `Elementos em flucos paralelos`
+    - Barras de sincronização
+    - Barra de bifurcação (fork)
+    - Barra de junção (join)
+  
+  
