@@ -299,5 +299,13 @@
 2. A estrutura da informação (onde fica cada coisa)
 3. Uma descrição e visualização básica da interface da interação do usuário (como)
 
+- Os wireframes precisam ter informação suficiente para refletir o que precisa ser programado
+
+    `Wireframe de baixa fidelidade`
+    - São basicamente linhas sobre o fundo liso com laguns rótulos, o famoso "rabiscoframe"
+
+    `Wireframe de alta fidelidade`
+    - São basicamente um wireframe mais completo
+
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
