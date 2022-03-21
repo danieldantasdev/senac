@@ -1,4 +1,4 @@
-# Projeto Integrador II - 07-03-22
+# Projeto Integrador II - 07/03/22
 
 ## Projeto transversal
 
@@ -37,7 +37,7 @@
 
 ---
 
-# Projeto Integrador II - 21-03-22
+# Projeto Integrador II - 21/03/22
 
 - Vamos realizar o diagrama de atividade
 - Ajudar a trabalhar um caso de caso
