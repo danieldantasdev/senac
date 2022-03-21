@@ -274,6 +274,23 @@
 - A ideia é pegar as diferentes páginas da aplicação e separar em camadas diferentes
 - Página principal -> Home -> Login -> Página de roteiros
 - Auxilia para vermos quantas páginas serão desenhadas e juntas para serem programadas
+- Mostra quantas páginas preciso desenhar e programar
+- Nos mostra as páginas similares
+- Podemos planejar os lementos repetidos, denominados de componentes
+- Lista todas as URL's do seu site
+- Sitemap XML
+
+[XML GENERATOR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjJqKKUldj2AhUFI7kGHW7zBusQFnoECAcQAQ&url=https%3A%2F%2Fwww.xml-sitemaps.com%2F&usg=AOvVaw3Ppea8bdM1-NjZwJDs8qWQ)
+
+`Grid`
+
+- Estrutura invisível que reúne todos os elementos de uma página
+- Determina as dimensões desses elementos inseridos no design como: largura de texto e coluna, espaçamento das palavras, altura de linha e etc
+- Seu principal objetivo é criar uma boa usabilidade e organização
+- Vai depender da resolução que estamos trabalhamos
+
+[GRID CALCULATOR](http://gridcalculator.dk)
+**Depois do SiteMap precisamos fazer os Wireframes**
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
