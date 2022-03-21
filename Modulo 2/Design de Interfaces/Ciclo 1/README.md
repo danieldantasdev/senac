@@ -1,42 +1,42 @@
 # Design de Interfaces - 07/03/22
 
-### A importância de projetar interfaces para sistemas
+## A importância de projetar interfaces para sistemas
 
 -   Interface pode ser mais importante que todo resto, a interface é a ligação física ou lógica entre dois sistemas ou partes de um sistema que não poderiam ser conectados diretamente
 -   Precisamos fazer uma boa interface para conquistar o usuário
 -   Quero trazer soluções efetivas para meu usuário
 
-### O que é Interface
+## O que é Interface
 
 -   A interface é o ponto de encontro de ideia programada e os usuários que irão usar seus serviços
 -   É o elemento que proporciona uma ligação física ou lógica entre dois sistemas ou partes de um sistema que não poderiam se conectar fisicamente
 -   É a aparência
 -   Estabelecer os modos de interação e os modelos de interfaces para criar interfaces digitais
 
-### Usabilidade
+## Usabilidade
 
 -   Usabilidade é a facilidade com que as pessoas podem empregar uma ferramenta a fim d realizar uma tarefa
 -   Facilidade de uso da interface, com o objetivo de proporcionar a melhor experiência para o usuário final
 
-### Interface é molezinha... Será mesmo????
+## Interface é molezinha... Será mesmo????
 
 -   Sabe aquela torneira de shopping que te faz desistir de lavar as mãos porque não sabe ligar
 -   Ter que ir ao banco porque não acha o boleto no aplicativo
 -   ter que ligar para o suporte técnico porque não consegue resetar uma senha
 
-### Design de interface
+## Design de interface
 
 -   Parte visual, á usabilidade, arquitetura da informação, navegação, transição de telas, ou seja, todos recursos que incrementam e melhoram a forma como o usuário lida com o produto
 
-### Design de interface centrado no usuário
+## Design de interface centrado no usuário
 
 -   É o processo de design em que as necessidades, desejos e limitações do ser humano são levadas em conta durante todas as fases da concepção e desenvolvimento do projeto
 
-### Objetivo do Design de interface
+## Objetivo do Design de interface
 
 -   É tornar a interação com o sistema o mais simples possível para realização dos objetivos do usuário
 
-### Exemplos
+## Exemplos
 
 **A tela do computador, CLI**
 
@@ -49,19 +49,19 @@
 -   O Design deve refletir a função
 -   Se eu preciso colocar uma placa, `falhei`...
 
-### Situação
+## Situação
 
 -   Tive uma ideia genial! desenvolvi um sistema para celulares onde você pode saber se seus alunos estão vendo a aula ou não, mas `minha interface é ruim, meus alunos não irão interagir`
 
 **Homer fazendo besteira na Usina**
 **Se eu ter que te explicar uma piada, a mesma não é boa**
 
-### Exemplos da Netflix
+## Exemplos da Netflix
 
 -   Influencia no que as pessoas assistem
 -   The Orange the New Black
 
-### O que fazer
+## O que fazer
 
 1.  User Interface (Pensar no usuário)
 2.  Conteúdo estratégico
@@ -72,25 +72,25 @@
 7.  Usabilidade
 8.  Tipografia
 
-### Projeto
+## Projeto
 
 -   Briefing
 -   Benchmark
 -   Mapeamento
 
-### Mundo real
+## Mundo real
 
 -   lixeira no computador
 -   Botão do computador
 -   Ícones flats para usar no site
 
-### Do real ao virtual
+## Do real ao virtual
 
 -   Formas, estruturas e as funções de uma interface tem origem na nossa cultura e experiências reais
 -   Waze = guia de mapa
 -   Spotify = discoteca
 
-### Navegação do que o usuário faria?
+## Navegação do que o usuário faria?
 
 -   Onde estou aqui?
 -   O que tem aqui?
@@ -99,7 +99,7 @@
 -   Onde é a página principal (Logo)
 -   O que é mais importante daqui?
 
-### IHC (Interação Humano-Computador)
+## IHC (Interação Humano-Computador)
 
 -   Conhecer o usuário: Pesquisa, questionários, personas...
 -   Geração de ideias: Brainstorm, mindmaps
@@ -137,25 +137,25 @@
 -   Testes usuais
 -   Estabelecer os modos de interações e os modelos de interface para criar interfaces digitais
 
-### Indicadores de competências
+## Indicadores de competências
 
 -   Criar wireframes e gerar a grid do projeto para posicionar os elementos visuais por meio de softwares adequados (FigmaXD)
 -   Definir a paleta de cores de acordo com estratégias do projetos para consistência e padrão das telas
 -   Desenvolver os layouts das telas do projeto utilizando o Figma
 -   Avaliar os resultados obtidos por meio de testes de usabilidade relatando os acertos e erros e opiniões do usuário para criação de recomendações de melhorias
 
-### Referências
+## Referências
 
 -   KRUG, Steve. Não me faça Pensar.2.ed
 -   PREECE. Design de interação
 
-### Referências
+## Referências
 
 -   Criar Wireframes e gerar a grid do projeto para posicionar os elementos visuais por meio de softwares adequados
 -   Definir a paleta de cores de acordo com a estratégia do projeto para consistência do projetos
 -   Desenvolver os layouts no Figma e teste de usabilidade relatando os acertos e erros, enganos e opiniões dos usuários para criação de uma melhor interface
 
-### Tarefas
+## Tarefas
 
 -   Entrar no site (Archive)[https://archive.org/], escolher um site para fazer um relatório sobre o que mudou em 10 anos. Pode ser um dos sites que já comentamos. Vamos olhar a cara do que mudou
 
@@ -261,6 +261,19 @@
 
 -   Web 4.0 é a web simbiótica, pode ser considerada como um agente eletrônico ultrainteligente. Esse sistema será capaz de suportar as interações dos indivíduos com os dados disponíveis
 -   Os limites já não ficam mais tão demarcados no layout
+
+---
+
+## Design de Interfaces - 21/03/22
+
+- Ainda vamos ver como coletar referências, guias para craiação de interfaces mobile e web, princípios básicos de design, tipografia e cores
+
+`SiteMap ou Mapa de Navegação`
+
+- É ele que vai dizer como vai ser o fluxo de navegação do usuário, basicamente são os caminhos pelo os quais o usuário vai percorrer em uma detreminada aplicação
+- A ideia é pegar as diferentes páginas da aplicação e separar em camadas diferentes
+- Página principal -> Home -> Login -> Página de roteiros
+- Auxilia para vermos quantas páginas serão desenhadas e juntas para serem programadas
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
