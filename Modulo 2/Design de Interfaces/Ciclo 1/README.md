@@ -1,6 +1,4 @@
-# A importância de projetar interfaces para sistemas - Gabriela Silveira
-
-## Design de Interfaces - 07/03/22
+# Design de Interfaces - 07/03/22
 
 ### A importância de projetar interfaces para sistemas
 
