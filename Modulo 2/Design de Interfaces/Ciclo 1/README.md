@@ -292,5 +292,12 @@
 [GRID CALCULATOR](http://gridcalculator.dk)
 **Depois do SiteMap precisamos fazer os Wireframes**
 
+`Wireframes`
+
+- É uma representação de baixa fidelidade, deve mostrar claramente:
+1. Principais grupos de conteúdo (o que)
+2. A estrutura da informação (onde fica cada coisa)
+3. Uma descrição e visualização básica da interface da interação do usuário (como)
+
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
