@@ -1,4 +1,4 @@
-# Projeto Integrador II
+# Projeto Integrador II - 07-03-22
 
 ## Projeto transversal
 
@@ -34,3 +34,12 @@
 ## O que vamos desenvolver
 
 -   Sistema que gerenciar processos jurídicos do Senac
+
+---
+
+# Projeto Integrador II - 21-03-22
+
+- Vamos realizar o diagrama de atividade
+- Ajudar a trabalhar um caso de caso
+- O diagrama é formado por símbolos com significados pré-determinados
+- 13 diagramas UML
