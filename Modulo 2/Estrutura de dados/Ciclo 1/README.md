@@ -448,3 +448,28 @@ scanf("%d",&matriz [lin] [col])
 }
 }
 }
+
+---
+
+# Estrutura de dados - Dia 22/03/22
+
+`Tipos de dados`
+
+   >`Primnitivos`
+   - A partir dos quais podemos definir os demais
+   - inteiro, real, lógico, carácter
+
+   >`Estrutura de dados`
+   - Constituido de dados primitivos e ou estruturas
+   - Conjunto de informações agrupadas de uma forma coerente (com alguma relação entre eles)
+   - Exemplo: Lista de chamada de turma
+
+`Matriz`
+
+- Estrutura bidimensional
+
+`Tipos de dados estruturados homôgeneos - vetor e matriz`
+
+- Estruturas que permitem armazenar diversos elementos, mas apenas elementos do mesmo tipo de dado
+- Estrutura de dados que permite agrupar variáveios de tipos de dados diferentes
+
