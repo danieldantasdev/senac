@@ -251,3 +251,12 @@
 
 - Envio de sinal com espero de resposta
 - Sinal de rádio
+
+- Começamos a criação do diagrama de atividade designar técnico responável
+
+---
+
+# Engenharia de Software II - 23/03/22
+
+- Relizamos o aprofudamento do diagrama de atividade designar técnico responável
+
