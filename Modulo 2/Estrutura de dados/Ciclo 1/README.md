@@ -473,3 +473,12 @@ scanf("%d",&matriz [lin] [col])
 - Estruturas que permitem armazenar diversos elementos, mas apenas elementos do mesmo tipo de dado
 - Estrutura de dados que permite agrupar variáveios de tipos de dados diferentes
 
+`Registros`
+
+- Com os registros, podemos agrupar logicamente os elementos
+- Conseguimos criar novos registros e associar em algum local
+
+`Funções e procedimentos`
+
+- 
+
