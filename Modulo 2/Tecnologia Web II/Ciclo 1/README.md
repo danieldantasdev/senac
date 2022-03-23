@@ -366,6 +366,6 @@ var arr = [e1. e2, e3]
 
 `Funcionamento do JS`
 
-![ESQUEMA]()
+![ESQUEMA](.Imagens%20para%20estudo/main-qimg-efbf627e4d9d15ed4c58b7f26ff7a63c.png)
 
 
