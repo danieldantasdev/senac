@@ -349,3 +349,23 @@ z = `A resposta é ${resp}`
 `Node JS`
 
 - Node -v = retorna a versão do Node
+
+`Array`
+
+- O objeto Array do JavaScript é um objeto global usado na construção de 'arrays': objetos de alto nível semelhantes a listas
+- Lista de opbjetos
+- Objetos que contem múltiplos valores armazenados em uma lista
+- Um objeto array pode ser armazenado em variáveis e ser tratado de forma muito similar a qualquer outro tipo de valor
+- JavaScrpit não possui um tipo de dados especifico do array
+
+`Criando Array`
+
+var arr = new Array(e1, e2, e3)
+var arr = Array(e1, e2, e3)
+var arr = [e1. e2, e3]
+
+`Funcionamento do JS`
+
+![ESQUEMA]()
+
+
