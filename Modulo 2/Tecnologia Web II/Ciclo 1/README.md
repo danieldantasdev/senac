@@ -341,3 +341,11 @@ z = `A resposta é ${resp}`
     6. < - true caso os operando da esquerda seja menor que o da direita
     7. >= - true caso os operando da esquerda seja maior ou igual que o da direita
     8. <= - true caso os operando da esquerda seja menor ou igual que o da direita
+    
+---
+
+# Tecnologia Web II - 23/03/22
+
+`Node JS`
+
+- Node -v = retorna a versão do Node
