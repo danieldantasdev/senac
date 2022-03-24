@@ -368,4 +368,15 @@ var arr = [e1. e2, e3]
 
 ![ESQUEMA](https://github.com/lobinhodev/Senac/blob/master/Modulo%202/Tecnologia%20Web%20II/Ciclo%201/Imagens%20para%20estudo/main-qimg-efbf627e4d9d15ed4c58b7f26ff7a63c.png?raw=true)
 
+`Criando Array sem elementos e diferente de zero`
+
+var arr = new Array(e1, e2, e3)
+var arr = Array(e1, e2, e3)
+
+var arr = []
+arr.lentgh = (e1, e2, e3)
+
+var arr = [42]
+
+[Array](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_Collections)
 
