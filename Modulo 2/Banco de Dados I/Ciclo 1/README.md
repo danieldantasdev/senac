@@ -210,6 +210,35 @@ Chaves:  {CPF} ou {Mat}
 - Aponta para chave primária de outra relação
 - > Por convenção, ela paarece em itálico
 
+`Rstrições`
+
+- Uma Restrição é uma propriedade associada a uma coluna, ou conjunto de colunas numa tabela, que previne certos tipos de inconsistências de valores de dados serem colocados nestas coluna(s)
+- são utilizados para reforçar integridade dos dados, garantindo uma exatidão e confiabilidade dos dados no BD
+
+  `Integridade da entidade`
+  
+  - Nenhuma tupla da relação poderá ter valor nulo no atributo chave primária (PK)
+  - Propriedade da PK também garante que não existe 2 linhas (tuplas) duplicadas
+
+  `Intgridade de Domínio`
+  
+  - Reforça a validação dos dados, em termos de tipo, formato ou intervalo de valores
+  - Exemplo: credito > 0; Grau  > 0 e < 10; Sexo: {M, F}
+![image](https://user-images.githubusercontent.com/90552955/160017043-63d7b4f8-9246-4094-9783-b558ba8f300b.png)
+
+  `Integridade Referencial`
+
+  - Especificada entre 2 relações
+  - Mantem a consistência entre as tuplas
+
+  `Integridade definida pelo usuário`
+  
+  - Garante algumas regras de negócio, não cobertas por outras restrições
+  - Exemplo: 1 médico pode atender no máximo a 50 pacientes
+  - Exemplo: 1 aluno pode atender no máximo a 7 cursos por semestre
+
+
+
 
 
 
