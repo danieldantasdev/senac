@@ -154,3 +154,15 @@ Estudante(sid: string, nome: string, CR: float)
 - Em um SGBD, o conjunto de esquemas está contido no catálogo
 
 **Estudar sobre SQL Injection**
+
+---
+
+# Banco de Dados I - 24/03/22
+
+Tupla:  uma linha
+Atributo: é  o cabeçalho da coluna 
+Relação: é a tabela 
+Domínio: são os valores aceitáveis para um atributo 
+![image](https://user-images.githubusercontent.com/90552955/160014080-b75811b5-f6a6-4ad7-997c-c4156f25c111.png)
+
+
