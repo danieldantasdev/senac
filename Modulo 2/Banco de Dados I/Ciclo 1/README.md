@@ -165,4 +165,51 @@ Relação: é a tabela
 Domínio: são os valores aceitáveis para um atributo 
 ![image](https://user-images.githubusercontent.com/90552955/160014080-b75811b5-f6a6-4ad7-997c-c4156f25c111.png)
 
+Aluno(Nome: String, Mat: int, FoneRes: string, Idade: int, CR: float)
+Relação: Aluno
+Atributo: (7 atributos) - Nome, Mat, FoneRes, Idade, CR
+Domínio: Dom(Nome)=nomes; Dom(Mat)= números
+Tupla: <Roberto, 001,222-2222, 40, 9,1>
+![image](https://user-images.githubusercontent.com/90552955/160014177-69827ef2-b260-46c3-9513-1ae4a93e80d7.png)
+
+`Atributos Chaves`
+
+- As chaves são parte muito importante da base de dados relacional
+- Elas são usadas para estabelecer e identificar relacionamento entre as tabelas
+- Todas combinações possíveis na mesma linha
+
+- O conjunto de um ou mais atributos que nos permite identificar inequivocamente uma tupla é conhecido como `Superchave`
+
+> Duas tuplas não podem ter a mesma superchave
+> A superchave pode conter atributos desnecessários
+
+Por exemplo: A relação Pessoa(CPF, Nome, endereço,....)  pode ter como superchave 
+{CPF}, {CPF, nome}, {CPF, nome, Endereco}, Etc...
+
+`Chaves`
+
+- É a Superchave mínima
+- Pode existir mais de uma chave nesta condição: `Chaves Candidatas`
+são as menores superchaves possíveis (cujos subconjuntos não sejam superchaves)
+
+Por exemplo, na relação 
+Empregado(Mat, CPF, Nome, Ndata, Endereco, Depnum)
+Chaves:  {CPF} ou {Mat}
+
+`Chave primária`
+
+- Chave Candidata escolhida
+- O restante das chaves candidatas são chamadas `chaves únicas`
+- Chave Primária identifica exclusivamente cada registro em uma tabela 
+- É uma chave candidata que é mais apropriada para se tornar chave principal 
+- > Por convenção, ela aparece sublinhada num esquema
+
+`Chave estrageira`
+
+- Uma chave estrangeira é um campo (ou conjunto de campos) em uma tabela que identifica unicamente uma linha de outra tabela ou na mesma
+- Aponta para chave primária de outra relação
+- > Por convenção, ela paarece em itálico
+
+
+
 
