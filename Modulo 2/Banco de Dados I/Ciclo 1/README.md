@@ -238,7 +238,10 @@ Chaves:  {CPF} ou {Mat}
   - Exemplo: 1 aluno pode atender no máximo a 7 cursos por semestre
 
 
+## Abrindo SQL no terminal
 
+1. windows + r
+2. sqlcmd -S 36DE705SP\SQLEXPRESS
 
 
 
