@@ -107,3 +107,5 @@ Java
 `Quick Fiks`
 
 - Correções rápidas, ou seja, o nome da classe tem que ser o mesmo do nome do programa
+
+[Diferenças entre .classe, .java e .jar](https://www.guj.com.br/t/diferenca-dentre-class-jar-java-e-outras/68261)
