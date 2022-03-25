@@ -273,3 +273,7 @@
 - Em UML, os substantivos virarão classes
 - Sempre será no singular
 
+`Por que o status é um int?`
+
+- 
+
