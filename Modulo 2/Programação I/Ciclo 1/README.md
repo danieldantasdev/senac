@@ -116,18 +116,19 @@ Java
 
 `Tipos primitivos de dados em Java`
 
-- Booleano: Aceita apenas valores lógicos.
-- boolean: Aceita apenas true ou false.
-- Caracter: Aceita apenas um caracter.
-- char: ocupa um caracter de 16 bits.
+- > Booleano: Aceita apenas valores lógicos
+- boolean: Aceita apenas true ou false
+
+- > Caracter: Aceita apenas um caracter
+- char: ocupa um caracter de 16 bits
 
 - > Inteiros: Aceita apenas valores inteiros, positivos ou
-negativos.
-- byte: ocupa 1 byte.
-- short: ocupa 2 bytes.
-- int: ocupa 4 bytes.
-- long: ocupa 8 bytes.
+negativos
+- byte: ocupa 1 byte
+- short: ocupa 2 bytes
+- int: ocupa 4 bytes
+- long: ocupa 8 bytes
 
-- > Reais: Aceita valores não inteiros, positivos ou negativos.
-- float: ocupa 4 bytes.
-- double: ocupa 8 bytes.
+- > Reais: Aceita valores não inteiros, positivos ou negativos
+- float: ocupa 4 bytes
+- double: ocupa 8 bytes
