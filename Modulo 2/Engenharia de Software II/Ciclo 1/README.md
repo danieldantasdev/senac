@@ -260,3 +260,16 @@
 
 - Relizamos o aprofudamento do diagrama de atividade designar técnico responável
 
+---
+
+# Engenharia de Software II - 24/03/22
+
+- Estamos continuando a apresentação do diagrama de atividades dos grupos de ontem
+
+`Classe`
+
+- É uma representação abstrata de objetos
+- A classe instancia objetos em algum momento
+- Em UML, os substantivos virarão classes
+- Sempre será no singular
+
