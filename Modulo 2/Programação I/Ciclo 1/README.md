@@ -98,4 +98,9 @@ Java
 
 - É a classe propriamente dita, e essas classe segue todas as regras que regem a orientação a objetos
 
+---
+
+# Programação I - 25/03/22
+
+- Estamos revendo um pouco o conceito da aula passada em relação as classes de execução para execução de um programa
 
