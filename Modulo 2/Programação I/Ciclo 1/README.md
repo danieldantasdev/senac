@@ -109,3 +109,25 @@ Java
 - Correções rápidas, ou seja, o nome da classe tem que ser o mesmo do nome do programa
 
 [Diferenças entre .classe, .java e .jar](https://www.guj.com.br/t/diferenca-dentre-class-jar-java-e-outras/68261)
+
+`Para execução de uma classe`
+
+- Para executar uma classe precisamos de um método no mínimo chamado main
+
+`Tipos primitivos de dados em Java`
+
+- Booleano: Aceita apenas valores lógicos.
+- boolean: Aceita apenas true ou false.
+- Caracter: Aceita apenas um caracter.
+- char: ocupa um caracter de 16 bits.
+
+- > Inteiros: Aceita apenas valores inteiros, positivos ou
+negativos.
+- byte: ocupa 1 byte.
+- short: ocupa 2 bytes.
+- int: ocupa 4 bytes.
+- long: ocupa 8 bytes.
+
+- > Reais: Aceita valores não inteiros, positivos ou negativos.
+- float: ocupa 4 bytes.
+- double: ocupa 8 bytes.
