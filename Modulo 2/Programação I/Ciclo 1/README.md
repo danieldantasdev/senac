@@ -104,3 +104,6 @@ Java
 
 - Estamos revendo um pouco o conceito da aula passada em relação as classes de execução para execução de um programa
 
+`Quick Fiks`
+
+- Correções rápidas, ou seja, o nome da classe tem que ser o mesmo do nome do programa
