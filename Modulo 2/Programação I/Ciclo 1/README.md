@@ -132,3 +132,11 @@ negativos
 - > Reais: Aceita valores não inteiros, positivos ou negativos
 - float: ocupa 4 bytes
 - double: ocupa 8 bytes
+
+`String em Java`
+
+- [String em Java](https://www.devmedia.com.br/string-trabalhando-com-texto-em-java/18447)
+
+`Interpolação de String em Java`
+
+- [Interpolação de String em Java](https://www.delftstack.com/pt/howto/java/java-string-interpolation/#:~:text=classe%20String%20%2C%20etc.-,Interpolação%20de%20Strings%20Java%20Utilizando%20o%20operador%20%2B%20(Concatenação),concatenar%20variáveis%20com%20a%20string.)
