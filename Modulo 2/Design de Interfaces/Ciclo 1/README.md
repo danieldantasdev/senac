@@ -307,5 +307,70 @@
     `Wireframe de alta fidelidade`
     - São basicamente um wireframe mais completo
 
+---
+
+# Design de Interfaces - 28/03/22
+
+`UI`
+
+- User interface pensa toda  parte que perimite a interação entre usuário e sistema/aplicativo
+- Precisamos garantir o interesse e a fácil interação do usuário com o produto que está sendo criado
+- Tudo o que aparece em uma interface deve ser pensado e deve cumprir uma função
+- O desenho da interface deve seguir padrões e práticas utilizadas na web
+- A solução usadapela maioria está relacionada com conceitos da psicologia cognitiva, como a facilidade de memorização e aprendizado 
+- Na dúvida, a preferência é a convenção
+
+1. Visão e atenção
+
+- Totalemente ligado a interface, são os elementos visuais como cores, txturas, contrastes, images, tamanhos, hierarquias, estimulos sonoros
+
+> Questionamentos
+
+- Quais palavras ou objetos os usuários procuram?
+- Qual é o fluxo visual a ser percorrido?
+- Para onde os lolhos vão primeiro na página?
+
+> Padrões na página
+
+- Todas as culturas lêem de cima para baixo e a maioria da esquerda para direita, Duas formas "F" e "Z"
+
+2. Senso de localização (wayfidding)
+
+- Está diretamente ligado a arquitetura da informação e hierarquia
+- É a forma como o usuário consegue chegar do ponto A ao ponto B
+
+> Questionamentos
+
+- Como o usuário espera se movuimentar no meu sistema?
+- Quais as interações que ele espera ter no meio do caminho?
+
+3. Memória e Semântica 
+
+- As pessoas esperam que as coisas aconteçam de forma certa
+
+> Questionamentos
+
+- O que as pessoas pensam sobre determinado assunto?
+- As experiências ativiam padrões familiares no usuário?
+
+4. Emoção
+
+- Os usuários sempre chegarão ao seu produto trazendo bagagens sentimentais
+
+> Questionamentos
+
+- O que irá trazer valor e significado para a experiência?
+- O que irá cativar ou conquistar?
+
+4. Tomada de decisão
+
+- Ao desenhar uma interface, temos a capacidade de tomar decisões
+
+> Questionamentos
+
+- Podemos ajudar o usuário a tomar uma decisão mais rápida?
+- O que o usuário irá precisar depois?
+
+
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
