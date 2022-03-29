@@ -510,3 +510,10 @@ scanf("%d",&matriz [lin] [col])
 - Um algoritmo recursivo deve mudar o seu estado e se aproximar do caso básico
 - Um algoritmo recursivo deve cham,ar a si mesmo, recursivamente
 
+`Voltando ao exemplo do fatorial`
+
+- fatorial (4) = 4 * 3 * 2 * 1
+- fatorial (4) = 4 * fatorial (3)
+- fatorial (3) = 4 * fatorial (2)
+- fatorial (2) = 4 * fatorial (1)
+- fatorial (1) = 4 * fatorial (0)
