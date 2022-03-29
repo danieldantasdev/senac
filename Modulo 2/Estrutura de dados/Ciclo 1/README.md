@@ -517,5 +517,6 @@ scanf("%d",&matriz [lin] [col])
 - fatorial (3) = 4 * fatorial (2)
 - fatorial (2) = 4 * fatorial (1)
 - fatorial (1) = 4 * fatorial (0)
+- fatorial (n) = n* fatorial (n-1)
 
 - n! = n * (n-1)! //É uma fórmula recursiva, porque ela usa ela mesmo para definir
