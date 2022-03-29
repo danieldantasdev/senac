@@ -478,7 +478,13 @@ scanf("%d",&matriz [lin] [col])
 - Com os registros, podemos agrupar logicamente os elementos
 - Conseguimos criar novos registros e associar em algum local
 
-`Funções e procedimentos`
+---
 
-- 
+# Estrutura de dados - Dia 29/03/22
 
+`Função fatorial`
+
+- Construa um programa que, a partir de um número positivo, implemente uma função para calcular e retornar o fatorial desse número
+- O fatorial é a multiplicação sucessiva dos antecessores até chegar no número 1
+- O fatorial de 0 e 1 serão sempre 1
+- n! = n * (n-1)* (n-2)* ... *1
