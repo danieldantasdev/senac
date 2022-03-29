@@ -487,4 +487,26 @@ scanf("%d",&matriz [lin] [col])
 - Construa um programa que, a partir de um número positivo, implemente uma função para calcular e retornar o fatorial desse número
 - O fatorial é a multiplicação sucessiva dos antecessores até chegar no número 1
 - O fatorial de 0 e 1 serão sempre 1
+
+`Fatorial de um número qualquer`
+
 - n! = n * (n-1)* (n-2)* ... *1
+
+`Recursividade`
+
+- Surgiu de uma forma para solucionar o problema de um modo mais simples
+- Se o problema é grande, devemos elaborar uma solução menor do problema, relacionar com o problema maior
+
+- Uma funçãop pode ser implementada de forma `iterativa` e `recursiva`
+- Quase sempre a forma recursiva, apresenta uma codificação mais simples
+- Geralmente não utilizamnos as estruturas de repetiçãp
+
+- É uma técnica com o objetivo de reduzir os problemas
+- Uma função recursiva é toda função que chama ela mesmo
+
+> Características
+
+- Um algoritmo recursivo deve ter um caso básico
+- Um algoritmo recursivo deve mudar o seu estado e se aproximar do caso básico
+- Um algoritmo recursivo deve cham,ar a si mesmo, recursivamente
+
