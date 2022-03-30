@@ -520,3 +520,11 @@ scanf("%d",&matriz [lin] [col])
 - fatorial (n) = n* fatorial (n-1)
 
 - n! = n * (n-1)! //É uma fórmula recursiva, porque ela usa ela mesmo para definir
+
+`Fibonacci`
+
+- Um elemento é sempre a soma dos 2 antecessores
+- Fn = fn-1 + fn-2
+- Onde o problema base é f1 = 1 e f2 =1
+
+
