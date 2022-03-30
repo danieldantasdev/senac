@@ -292,6 +292,15 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 
 - Outros diagramas permitem modelar o corportamento interno dos métodos (Diagram de sequência e diagram de atividades)
 
+`Tipos de visibilidade`
+
+- Pública (+)
+- O atributo ou método pode ser utilizado por qualquer classe
+- Protegida (#)
+- Somente a classe ou sub-classes terão acesso
+- Privada (-)
+- Somente a classe terá acesso
+
 `Relacionamento`
 
 - Classes possuem relaciuonamentos entre elas
@@ -303,6 +312,50 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
     - Agregação/Composição
     - Herança
     - Dependência
+
+`Comunicação entre Objetos (I)`
+
+- Conceitualmente, objetos se comunicam através da troca de mensagens
+
+> Mensagens definem:
+- O nome do serviço requisitado
+- A informação necessária para a execução do serviço
+- O nome do requisitante
+
+`Comunicação entre Objetos (II)`
+
+- Na prática, mensagens são implementadas como chamadas de métodos
+- Nome = o nome do método
+- Informação = a lista de parâmetros
+- Requisitante = o método que realizou a chamada
+
+`Associações`
+
+- Descreve um vínculo entre duas classes
+- Chamado Associação Binária
+- Determina que as instâncias de uma classe estão de alguma forma ligadas às instâncias da outra classe
+
+`Multiplicidade`
+
+> 0..1
+- No máximo um. Indica que os Objetos da classe associada não precisam obrigatoriamente estar relacionados
+
+> 1..1
+- Um e somente um. Indica que apenas um objeto da classe se relaciona com os objetos da outra classe
+
+> 0..* 
+- Muitos. Indica que podem haver muitos objetos da classe envolvidos no relacionamento
+
+> 1..* 
+- Um ou muitos. Indica que há pelo menos um objeto envolvido no relacionamento
+
+> 3..5 
+- Valores específicos
+
+`Diagram de classe`
+
+- Serve para criar estruturas no momento da execução do nosso sistema
+- E se precisarmos de alguma informação além, vamos pegar de banco de dados
 
 `Dado`
 
