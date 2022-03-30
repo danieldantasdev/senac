@@ -352,6 +352,38 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 > 3..5 
 - Valores específicos
 
+`Agregação`
+
+- Tipo especial de associação
+- Demonstra que as informações e um objeto precisam se complementadas por um objeto de outra classe
+- Associação Todo-Parte
+- objeto-todo
+- objeto-parte
+
+`Composição`
+
+- Uma variação do tipo agregação
+- Representa um vínculo mais forte entre objetos-todo e objetos parte
+- Objetos-parte têm que pertencer ao objeto-todo
+- O todo não existe (ou não faz sentido) sem a parte
+
+`Especialização / Generalização`
+
+- Identificar classes-mãe (gerais) e classes-filhas (especializadas)
+- Atributos e métodos definidos na classe-mãe são herdados pelas classes-filhas
+
+`Dependência`
+
+- Tipo menos comum de relacionamento
+- Identifica um baixo grau de dependência de uma classe em relação a outra
+
+`Notas`
+
+- Informativos
+- Algum comentário na classe, método ou atributo
+- Alguma restrição de funcionalidade
+- Objetivo é informa como o objeto se comporta
+
 `Diagram de classe`
 
 - Serve para criar estruturas no momento da execução do nosso sistema
