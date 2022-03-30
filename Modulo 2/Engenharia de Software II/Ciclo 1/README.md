@@ -274,3 +274,40 @@
 - Sempre será no singular
 
 Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meória do computador
+
+---
+
+# Engenharia de Software II - 30/03/22
+
+`Atributos`
+
+- Permite a identificação de cada objeto de uma classe
+- Os valores dos atributos podem variar de instância para instância
+- Atributos podem conter os tipos de dados a ser armazenado (boolean, byte, int, doublr, char, string e etc)
+
+`Métodos`
+
+- São apenas declarados neste diagrama
+- Diagrama de classe não define a implementação
+
+- Outros diagramas permitem modelar o corportamento interno dos métodos (Diagram de sequência e diagram de atividades)
+
+`Relacionamento`
+
+- Classes possuem relaciuonamentos entre elas
+    - Compartilham informações
+    - Coloaboram uma com as outras
+
+- Principais tipos de relacionamentos
+    - Associação
+    - Agregação/Composição
+    - Herança
+    - Dependência
+
+`Dado`
+
+- Um número sozinho sem contexto
+
+`Informação`
+
+- O contexto agregado aquele número
