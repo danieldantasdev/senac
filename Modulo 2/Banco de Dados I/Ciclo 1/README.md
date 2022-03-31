@@ -280,4 +280,14 @@ Chaves:  {CPF} ou {Mat}
 - Modelo cujo qual sé eu entendo produto
 - Abstração de médio nível
 
+`varchar[20]`
+
+- Daniel
+- Vai gravar as 20 posições
+
+`char[20]`
+
+- Daniel
+- Vai gravar 6 posições
+
 
