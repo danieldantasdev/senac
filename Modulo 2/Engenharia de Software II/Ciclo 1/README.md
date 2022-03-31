@@ -403,3 +403,19 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 
 [Evolução das linguagens de programaçãp](https://www.google.com/search?q=esuemaevoluçao+das+linguagens+de+programação&tbm=isch&ved=2ahUKEwjE-prOwPH2AhUyALkGHevDDTsQ2-cCegQIABAA&oq=esuemaevoluçao+das+linguagens+de+programação&gs_lcp=CgNpbWcQA1CXCFj_DmCSE2gAcAB4AIABqAGIAdUIkgEDMC43mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bTlGYoSQHbKA5OUP64e32AM&bih=790&biw=1559&client=opera-gx&hs=RSn#imgrc=MHrZ2dOIvkyFZM)
 
+`Histórias de metodologias de software`
+
+`Início Anos 70 - Programação Estruturada`
+
+- Niklaus Wirth
+- Fim Anos 70 - Projeto Estruturado
+- Constantine, Yourdon
+- Anos 80 - Análise Estruturada
+- Yourdon/DeMarco, James Martim, Chris Gane
+- Anos 90
+- Orientação a Objetos
+- Baseado no paradigma estruturado
+- Qualidade de Software
+- UML
+• Componentização
+
