@@ -407,15 +407,19 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 
 `Início Anos 70 - Programação Estruturada`
 
+> Início Anos 70 - Programação Estruturada
 - Niklaus Wirth
-- Fim Anos 70 - Projeto Estruturado
+
+> Fim Anos 70 - Projeto Estruturado
 - Constantine, Yourdon
-- Anos 80 - Análise Estruturada
+
+> Anos 80 - Análise Estruturada
 - Yourdon/DeMarco, James Martim, Chris Gane
-- Anos 90
+
+> Anos 90
 - Orientação a Objetos
-- Baseado no paradigma estruturado
+    - Baseado no paradigma estruturado
 - Qualidade de Software
 - UML
-• Componentização
+- Componentização
 
