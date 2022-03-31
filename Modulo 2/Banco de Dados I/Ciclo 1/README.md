@@ -243,5 +243,41 @@ Chaves:  {CPF} ou {Mat}
 1. windows + r
 2. sqlcmd -S 36DE705SP\SQLEXPRESS
 
+---
+
+# Banco de Dados I - 31/03/22
+
+`Controle de matrícula`
+
+- O Senac deseja controlar a matrícula de seus alunos nas diversasd UCS's disponíveis para os períodos
+- O sistema será utilizado durante o semestre letivo
+- A secretaria deverá acessar...
+
+> Regras
+
+- Um aluno pode se matricular em várias UC's
+- Cada UC tem seu código, créditos e respectivos nomes
+- As informações de aluno incluem nome, matrícula, semestre matricualdo e grau obtido em cada UC
+
+`Modelagem de dados`
+
+- É o processo de criação de um modelo de dados para o armazenamento em um banco de dados
+- A modelagem de dados é ouvir o usuário e construir uma base de dados
+- Definido como modelo abstrato que organiza a descrição, a semântica e as restrições da consistência de dados
+
+> Modelo conceitual
+
+- Modelo cujo qual tanto o usuário e eu entedemos o produto
+- Abstração de alto nível
+
+> Modelo lógico
+
+- Modelo cujo qual sé eu entendo produto
+- Abstração de médio nível
+
+> Modelo físico
+
+- Modelo cujo qual sé eu entendo produto
+- Abstração de médio nível
 
 
