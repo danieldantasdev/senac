@@ -423,3 +423,37 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 - UML
 - Componentização
 
+**No daigrama de ativiades, sempre que tiver um subustantivo será um objeto**
+
+`Sistema eleitoral`
+
+- Classe seria a célula em branco
+- Objeto seria a célula preenchida com os candidatos
+> Objetos passam por dois estados:
+
+class Usuario {
+  private string nome;
+  private string sobrenome;
+}
+
+void main () {
+    Usuario usuario1; //declaração do objeto (define o espaço na memória)
+    Usuario = new Usuario (); //instância do objeto (cria um ponteiro referente a declaração)
+    
+    Usuario usuario1 = new Usuario(); //declaração e instância do objeto
+}
+
+`Função`
+
+- Retorna um valor
+
+int calcularSoma(){
+return 0;
+}
+
+`Procedimento`
+
+- Não retorna nada
+
+void calcularSoma(){
+}
