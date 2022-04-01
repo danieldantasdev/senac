@@ -457,3 +457,20 @@ return 0;
 
 void calcularSoma(){
 }
+
+`Java`
+
+class Usuario {
+  private string nome;
+  private string sobrenome;
+  
+  void calcularSoma(int quant1){
+    Produto arroz;
+    arroz.descontoStock(quant1);
+  }
+  
+  int calcularSoma(){
+  return 0;
+  }
+
+}
