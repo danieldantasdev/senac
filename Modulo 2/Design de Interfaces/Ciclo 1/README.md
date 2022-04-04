@@ -371,6 +371,12 @@
 - Podemos ajudar o usuário a tomar uma decisão mais rápida?
 - O que o usuário irá precisar depois?
 
+---
+
+# Design de Interfaces - 04/04/22
+
+- Estamos estudando sobre as experiências do usuário 
+
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
