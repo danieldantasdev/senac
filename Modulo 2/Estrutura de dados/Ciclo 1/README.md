@@ -527,4 +527,10 @@ scanf("%d",&matriz [lin] [col])
 - Fn = fn-1 + fn-2
 - Onde o problema base é f1 = 1 e f2 =1
 
+---
 
+# Estrutura de dados - Dia 05/04/22
+
+- Vamos apresentar um seminário nos dias 19/04 e 26/04
+- Com os temas de métodos de busca e orddenação
+- Vamos ser o terceiro grupo a se apresentar
