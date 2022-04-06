@@ -474,3 +474,42 @@ class Usuario {
   }
 
 }
+
+---
+
+# Engenharia de Software II - 06/04/22
+
+`Programação estruturada`
+
+- Antigamente, o código fonte tinha mmiklhares de linhas
+- Estrutura monolítica
+
+`Programação Orientada a objetos`
+
+- Programação modularizada
+- Reutilização de código
+
+`Herança`
+
+- Mecanismop de encontrar a similaridade entre as classes, simplificando 
+- Gatos, Leão, Gato
+
+`Polimorfismo`
+
+- Poli (várias)
+- Morfos (formas)
+
+- Significa que um objeto pode asumir diferentes formas
+- Está associado a Herança
+- É caracterizado como o fato de uma operação poder ser implementada de diferentes maneiras pela mesma Classe na Hierarquia
+> Tomada Universal
+
+- O mesmo método sendo aplicados de diferentes maneiras
+
+`Por que o banco de dados é o espelho do diagrama de classes`
+
+- O diagrama de classes serve com a estrutra de armazenamento organizado enquanto o programa está funcionando 
+- O banco de dados é para `sempre`
+- Os dados seriam o caderno (anotações)
+
+
