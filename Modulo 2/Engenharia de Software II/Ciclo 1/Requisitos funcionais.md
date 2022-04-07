@@ -1,15 +1,16 @@
-# Sistema de biblioteca
+# Sistema de geração automática de portifólio
 
 ## Requisitos funcionais (O que o sistema faz, funcionalidades)
 
 > O sistema deve permitir o cadastramento de usuário via site
-> O sistema deve verificar o tipo de usuário que está enrando no sistema
-> O sistema deve permitir o aluguel de livros por um determinado tempo
-> O sistema deve verificar se o livro foi entregue no tempo certo
-> o sistema deve emitir uma multa para livros não entregues na data prevista
-> O sistema deve informar ao usuário sua data de aluguel e data de entrega por email
-> O sistema deve encaminhar ordem
+> O sistema deve verificar o tipo de usuário que está entrando no sistema (usuário padrão, pro, premium)
+> O sistema deve gerar uma tela de pagamento para usuários pro e premium
+> O sistema deve gerar uma tela de escolha de nível de usuário
+> O sistema deve permitir que o usuário cadastre seus dados pessoais e profissionais
+> O sistema deve gerar um portifólio automático
 
-> O aluno deve se cadastrar no sistema
-> O 
+
+> O usuário deve se cadastrar no sistema
+> O usuário deve escolher seu nível no sistema
+> O usuário Pro e premium deve pagar por assinatura
 
