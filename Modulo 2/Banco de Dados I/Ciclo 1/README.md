@@ -294,4 +294,4 @@ Chaves:  {CPF} ou {Mat}
 
 # Estrutura de dados - Dia 07/04/22
 
-_ Vamos prática SQL
+- Vamos prática SQL em DDL
