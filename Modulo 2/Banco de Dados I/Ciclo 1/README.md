@@ -290,4 +290,8 @@ Chaves:  {CPF} ou {Mat}
 - Daniel
 - Vai gravar 6 posições
 
+---
 
+# Estrutura de dados - Dia 07/04/22
+
+_ Vamos prática SQL
