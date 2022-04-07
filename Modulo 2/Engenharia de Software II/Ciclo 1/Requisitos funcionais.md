@@ -17,3 +17,7 @@
 > O usuário deve escolher seu nível no sistema
 > O usuário Pro e premium deve pagar por assinatura
 
+`Admnistrador`
+
+> O administrador deve
+
