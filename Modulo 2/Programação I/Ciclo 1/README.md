@@ -187,3 +187,13 @@ negativos
 
 **Geralmente os atributos são privados, para o encapsulamento de dados**
 **Não é aplicado em Classes**
+
+`abstract`
+
+- A Classe não poderá ser instanciada, ou seja, não pode ser chamada por seus construtores. São Classesque são utilizadas como SuperClasses
+- Classes abstratas normalmente possuem um ou mais métodos abstratos
+- A Classe deverá ser abstrata se houver pelo menos um método abstrato
+
+`final`
+
+- A Classe não poderá ser estendida
