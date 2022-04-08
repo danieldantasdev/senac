@@ -146,3 +146,44 @@ negativos
 # Programação I - 01/04/22
 
 - Programas com instruturas de reptição
+
+# Programação I - 08/04/22
+
+`Classe`
+
+- Corresponde a objetos que possuem as mesmas características
+- Possui atributos e métodos (serviços)
+
+**Na grande maioria das vezes devemos instanciar as classes**
+
+**classe não é uma ação, portanto colocamos substantivo**
+**os métodos são as ações, portanto colocamos verbos**
+
+`Instância de uma classe`
+
+- A classe é o geral
+- Instanciação de classe seriam os objetos dentro da classe
+
+`Modificadores de acesso`
+
+`public`
+
+- A classe ou seus membros ficarão visíveis em qualquer lugar do projeto
+
+`protected`
+
+- Os membros da Classe ficarão visíveis dentro da própria Classe e nas suas Classes filhas
+
+**Não é aplicado em Classes**
+
+`default`
+
+- A classe ou seus mebros estarão visíveis dentro de qualquer Classe pertencente ao mesmo pacote
+
+`private`
+
+- Os membros da Classe só estarão visíveis na própria Classe
+- Não estarão visíveis nas Classes filhas 
+
+**Geralmente os atributos são privados, para o encapsulamento de dados**
+**Não é aplicado em Classes**
