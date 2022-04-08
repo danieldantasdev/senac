@@ -21,3 +21,4 @@
 
 - > O administrador deve
 
+## Requisitos não funcionais (Como o sistema faz)
