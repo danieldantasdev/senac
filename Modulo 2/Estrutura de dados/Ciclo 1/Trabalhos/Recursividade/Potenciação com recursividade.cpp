@@ -1,3 +1,18 @@
+/*
+
+Recursividade é uma importante técnica de programação e pode ser utilizada em
+diferentes contextos, tornando o código mais enxuto. Utilizando recursividade,
+você deve fazer um programa que leia a base e expoente para calcular a
+potência e implemente uma função recursiva para calcular xn
+, com as seguintes
+características:
+𝑥𝑛= 𝑥 ∗ 𝑥𝑛−1
+Onde:
+x
+0 = 1 e n>=0
+Ao final, você deve imprimir o resultado.
+ */
+
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
