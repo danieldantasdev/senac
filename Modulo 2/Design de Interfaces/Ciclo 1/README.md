@@ -381,6 +381,14 @@
 
 - De origem alemã, a palavra gestalt, por definição, refere-se à forma de algo. Ela sugere que o todo é maior que a soma de suas partes. Há uma ênfase na percepção nesta teoria particular de psicoterapia
 
+---
+
+# Design de Interfaces - 11/04/22
+
+`Site de bolos`
+
+- Fazer moodboard, nuvem de palavras, janboard, slide
+
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
