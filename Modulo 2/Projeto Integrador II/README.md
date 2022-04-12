@@ -72,4 +72,7 @@
     - Barra de bifurcação (fork)
     - Barra de junção (join)
   
+# Projeto Integrador II - 11/04/22
+
+- Estamnos aprimorando o Wireframe de alta fidelidade da tela designar técnico responsável
   
