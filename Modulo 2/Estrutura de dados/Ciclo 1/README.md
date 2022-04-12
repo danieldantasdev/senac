@@ -534,3 +534,8 @@ scanf("%d",&matriz [lin] [col])
 - Vamos apresentar um seminário nos dias 19/04 e 26/04
 - Com os temas de métodos de busca e orddenação
 - Vamos ser o terceiro grupo a se apresentar
+
+# Estrutura de dados - Dia 11/04/22
+
+- Estamos iniciando a montagem da apresnetação por selection sort
+
