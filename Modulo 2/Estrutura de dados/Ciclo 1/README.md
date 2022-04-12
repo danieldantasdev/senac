@@ -539,3 +539,4 @@ scanf("%d",&matriz [lin] [col])
 
 - Estamos iniciando a montagem da apresnetação por selection sort
 
+![Imagem](https://updatedcode.files.wordpress.com/2011/11/selection-sort-animation.gif)
