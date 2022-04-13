@@ -513,3 +513,18 @@ class Usuario {
 - Os dados seriam o caderno (anotações)
 
 
+---
+
+# Engenharia de Software II - 13/04/22
+
+- Estamos modelando o diagrama de estados do processo do projeto integrador II
+
+`Integridade referencial`
+
+- Não deletamos nada do banco de dados, porque podemos acabar afetando no relacionamento das tabelas
+- O que devemos fazer é apagar logicamente, por meio de mudança de status
+
+- -1 (eliminado)
+- 0 (inativo)
+- 1 (cadastrado)
+- 2 (designação do técnico)
