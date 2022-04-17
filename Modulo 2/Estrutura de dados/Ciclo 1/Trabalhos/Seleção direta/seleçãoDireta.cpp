@@ -18,17 +18,20 @@ void selecaoDireta(int *vetor, int posicaoFinal)
 
     for (posicaoInicial1 = 0; posicaoInicial1 < posicaoFinal - 1; posicaoInicial1++)
     {
+        // TODO O menorValor é o primeiro número não ordenado ainda
         menorValor = posicaoInicial1;
 
         // posicaoInicial2 = posicaoInicial1 + 1, porque os valores a esquerda do valor já foram ordenados
         for (posicaoInicial2 = posicaoInicial1 + 1; posicaoInicial2 < posicaoFinal; posicaoInicial2++)
         {
+            // TODO Caso tenha algum numero menor ele faz a troca do menorValor
             if (vetor[menorValor] > vetor[posicaoInicial2])
             {
                 menorValor = posicaoInicial2;
             }
         }
         // Estamos garatindo que não terá troca da mesma posição
+        // TODO Se o menorValor for diferente do primeiro numero não ordenado ele faz a troca para ordena-los
         if (posicaoInicial1 != menorValor)
         {
             trocaValores(vetor, posicaoInicial1, menorValor);
