@@ -389,6 +389,79 @@
 
 - Fazer moodboard, nuvem de palavras, janboard, slide
 
+---
+
+# Design de Interfaces - 18/04/22
+
+`Cores primárias`
+
+> na computação
+
+- Ou geratriz, as cores primárias, são verde, vermelho e azul-violetado (síntese aditiva)
+- Formam o branco
+
+> Química
+
+- Ou geratriz, as cores primárias, são magenta, ciano e amarelo (síntese substrativa)
+- Formam o preto
+
+- RGB, é a formação para web
+- CMYK, é a formação para impressão
+
+`Secundárias`
+
+- Formadas por duas cores primárias
+
+`Terciárias`
+
+- Formadas por intermédio entre secundária e qualquer primária
+
+`Complementares`
+
+- Formadas por quaisquer cores que juntas formam uma cor em específico
+
+`Cores quentes`
+
+- Vermelho e amarelo, e outras que predominam as mesmas
+
+`Cores frias`
+
+- Azul e verde, e outras que predominam as mesmas
+
+`Cores análogas`
+
+- Uma cor ao lado da outra no círculo cromático
+
+`Cores complementares`
+
+- Uma em frente a outra no círculo cromático
+
+`Esquema de triade`
+
+- Formar um triângulo no círculo cromático
+
+`Como definir a cor de um pixel`
+
+- Cada valor pode variar de 0 a 255;
+
+> pixel vermelho
+
+- red - 255
+- green - 0
+- blue - 0
+
+> pixel verde
+
+- red - 0
+- green - 255
+- blue - 0
+
+> pixel azul
+
+- red - 0
+- green - 0
+- blue - 255
+
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
