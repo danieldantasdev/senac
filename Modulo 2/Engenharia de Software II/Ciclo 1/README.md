@@ -528,3 +528,13 @@ class Usuario {
 - 0 (inativo)
 - 1 (cadastrado)
 - 2 (designação do técnico)
+
+---
+
+# Engenharia de Software II - 20/04/22
+
+`Interação de back com front`
+
+- Através do JSON;
+
+[PADRÃO MVC](https://www.devmedia.com.br/padrao-mvc-java-magazine/21995)
