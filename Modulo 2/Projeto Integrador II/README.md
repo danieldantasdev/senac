@@ -75,4 +75,10 @@
 # Projeto Integrador II - 11/04/22
 
 - Estamnos aprimorando o Wireframe de alta fidelidade da tela designar técnico responsável
+
+---
+
+# Projeto Integrador II - 25/04/22
+
+- Hoje serão delegadas as tarefas da sprint 2
   
