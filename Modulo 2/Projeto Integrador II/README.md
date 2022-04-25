@@ -85,4 +85,4 @@
 ## Anotações - sprint 1
 
 - Eu e o daniel bastos fizemos o wireframe de alta qualidade
-- Não tivemos tanta dificuldade em realizar a tarefa que nos foi passada, o maior problema em si foi se encaixar em alguns problemas 
+- Não tivemos tanta dificuldade em realizar a tarefa que nos foi passada, o maior problema em si foi se encaixar em alguns problemas do própria figma e suas funcionalidades específicas
