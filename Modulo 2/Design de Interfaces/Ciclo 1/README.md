@@ -462,6 +462,13 @@
 - green - 0
 - blue - 255
 
+---
+
+# Design de Interfaces - 25/04/22
+
+- Estamos estudando tipografia, já vi muito da aula na Zion, é legal relembrar as sensações que conseguimos passar para nosso usuário somente pela fonte
+
+
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
