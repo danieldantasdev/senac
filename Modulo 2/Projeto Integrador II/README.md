@@ -81,4 +81,8 @@
 # Projeto Integrador II - 25/04/22
 
 - Hoje serão delegadas as tarefas da sprint 2
-  
+
+## Anotações - sprint 1
+
+- Eu e o daniel bastos fizemos o wireframe de alta qualidade
+- Não tivemos tanta dificuldade em realizar a tarefa que nos foi passada, o maior problema em si foi se encaixar em alguns problemas 
