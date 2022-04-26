@@ -3,9 +3,9 @@
 
 void trocaValores(int *vetor, int p1, int p2)
 {
-    int variavelAuxiliar = vetor [p1];
+    int aux = vetor [p1];
     vetor [p1] = vetor[p2];
-    vetor[p2] = variavelAuxiliar;
+    vetor[p2] = aux;
 }
 
 void selecaoDireta(int *vetor, int n)
