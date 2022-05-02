@@ -468,6 +468,12 @@
 
 - Estamos estudando tipografia, já vi muito da aula na Zion, é legal relembrar as sensações que conseguimos passar para nosso usuário somente pela fonte
 
+---
+
+# Design de Interfaces - 02/05/22
+
+- Design System
+- Material IO (google)
 
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
