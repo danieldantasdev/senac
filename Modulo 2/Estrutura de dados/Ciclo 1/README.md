@@ -539,4 +539,7 @@ scanf("%d",&matriz [lin] [col])
 
 - Estamos iniciando a montagem da apresnetação por selection sort
 
+# Estrutura de dados - Dia 03/05/22
+
+`Listas lineares sequenciais (Pilhas)`
 ![Imagem](https://updatedcode.files.wordpress.com/2011/11/selection-sort-animation.gif)
