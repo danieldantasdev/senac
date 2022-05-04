@@ -539,7 +539,17 @@ scanf("%d",&matriz [lin] [col])
 
 - Estamos iniciando a montagem da apresnetação por selection sort
 
+![Imagem](https://updatedcode.files.wordpress.com/2011/11/selection-sort-animation.gif)
+
+
 # Estrutura de dados - Dia 03/05/22
 
 `Listas lineares sequenciais (Pilhas)`
-![Imagem](https://updatedcode.files.wordpress.com/2011/11/selection-sort-animation.gif)
+
+- Listas lineares gerais não tem restrição de inserção e remoção de elementos
+- Listas lineares particulares possuem restrição de inserção e remoção de elementos
+
+`Pilhas`
+
+- Estruturas de dados do tipo LIFO (last-in first-out)
+- O último a entrar será o primeiro a sair
