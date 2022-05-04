@@ -1,3 +1,54 @@
+#include <stdio.h>
+# define max 10
+
+int pilha_vazia(int topo){
+	if(topo == -1){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+int pilha_cheia(int topo){
+	if(topo == max -1){
+		return 1;
+	}
+	else{
+		return 0;
+	}	
+}
+
+void mostra_topo(int topo, int p[]){
+	if(pilha_vazia(topo) == 0){	
+	printf("\nTopo da pilha: %d\n",p[topo]);
+	}
+	else{
+		printf("\nPilha vazia!!!\n,");
+	}
+}
+
+void empilhar( int *topo, int p[], int aux){
+	if(pilha_cheia(*topo) == 0){
+		//empilhar
+		(*topo)++;
+		p[*topo] = aux;
+	}else{
+		printf("\nPilha cheia!!!\n,");
+	}
+}
+
+
+int desempilhar(int *topo, int p[]){
+    if (pilha_vazia(*topo) == 0)
+    {
+        printf("O elemento %d foi removido da pilha!",p[*topo]);
+        (*topo)--;
+    }
+    else
+        printf("Pilha vazia!");
+}
+
 int main(){
 	
 	int pilha[max];// tamanho da pilha
