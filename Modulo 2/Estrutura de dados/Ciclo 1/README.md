@@ -553,3 +553,18 @@ scanf("%d",&matriz [lin] [col])
 
 - Estruturas de dados do tipo LIFO (last-in first-out)
 - O último a entrar será o primeiro a sair
+- O topo vai mudando ao longo so tempo
+
+---
+
+# Estrutura de dados - Dia 10/05/22
+
+`Fila sequencial`
+
+- São listas em que todas inserções ocorrem em uma extremidade e as remopções por outra extremidade
+- Estruturas de dados do tipo FIFO (first-in first-out)
+- O primeiro elemento a ser inserido, será o primeiro a ser removido
+
+
+
+- 
