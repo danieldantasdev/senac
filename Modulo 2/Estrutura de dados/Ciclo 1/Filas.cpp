@@ -1,5 +1,8 @@
 // Filas squenciais
 
+//@author: Daniel Dantas
+//@author: Daniel Bastos
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -66,6 +69,44 @@ void mostrarExtremos(int *i, int *f, int *n, int *fila){
 	}
 }
 
+int exibirFila(int *fila, int *n){
+	int i;
+	for(i = 0; i < *n; i++){
+		printf("%d\n", fila[i]);
+	}
+	return 0;
+}
+
+// int inverteFila(int *fila, int *n){
+// 	int i, aux;
+// 	for(i = 0; i < *n / 2; i++){
+// 		aux = fila[i];
+// 		fila[i] = fila[*n - i - 1];
+// 		fila[*n - i - 1] = aux;
+// 	}
+// 	return 0;
+// }
+
+int inverterFila(int *fila, int *n){
+	if(filaVazia(*n)){
+		printf("Fila vazia\n");
+	}else{ //fila não está vazia
+		inserePilha(fila, *n);
+	}
+}
+
+int inserePilha(int *pilha, int *n, int valor){
+	if(pilhaCheia(*n)){
+		printf("Pilha cheia\n");
+	}else{ //pilha não está cheia
+		*n = *n + 1; //(*n)++;
+		pilha[*n] = valor;
+	}
+	return 0;
+}
+
+int emp
+
 int main(){
 	int fila[MAX];
 	int n = 0;
@@ -77,7 +118,8 @@ int main(){
 		printf("1 - Enfileirar\n");
 		printf("2 - Desenfileirar\n");
 		printf("3 - Imprimir fila\n");
-		printf("4 - Sair\n");
+		printf("4 - Inverter fila\n");
+		printf("5 - Sair\n");
 		printf("Digite sua opcao: ");
 		scanf("%d", &opcao);
 
@@ -92,15 +134,17 @@ int main(){
 				desenfileirar(&i, &f, &n, fila);
 				break;
 			case 3:
-				mostrarExtremos(&i, &f, &n, fila);
+				exibirFila(fila, &n);
 				break;
 			case 4:
+				inverterFila(fila, &n);
+			case 5:
 				printf("Saindo...\n");
 				break;
 			default:
 				printf("Opcao invalida\n");
 		}
-	}while(opcao != 4);
+	}while(opcao != 5);
 
 	return 0;
 }
