@@ -17,10 +17,10 @@ public class AlunoResource {
 
 	@Autowired
 	private AlunoService alunoService;
-	
+
 	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<Aluno>> listarAluno(){
+	public ResponseEntity<List<Aluno>> listarAluno() {
 		List<Aluno> alunos = alunoService.listaTodosAlunos();
-		return ResponseEntity.ok(alunos).body(alunos);
+		return ResponseEntity.ok(alunos);
 	}
 }
