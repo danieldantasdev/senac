@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarEmpresasComponent } from './components/Empresa/listar-empresas/listar-empresas.component';
 import { AdicionarEmpresaComponent } from './components/Empresa/adicionar-empresa/adicionar-empresa.component';
 import { AtualizarEmpresaComponent } from './components/Empresa/atualizar-empresa/atualizar-empresa.component';
 import { ApagarEmpresaComponent } from './components/Empresa/apagar-empresa/apagar-empresa.component';
+import { DesignaTecnicoComponent } from './components/Tecnico/designa-tecnico/designa-tecnico.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +17,11 @@ import { ApagarEmpresaComponent } from './components/Empresa/apagar-empresa/apag
     ListarEmpresasComponent,
     AdicionarEmpresaComponent,
     AtualizarEmpresaComponent,
-    ApagarEmpresaComponent
+    ApagarEmpresaComponent,
+    DesignaTecnicoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
