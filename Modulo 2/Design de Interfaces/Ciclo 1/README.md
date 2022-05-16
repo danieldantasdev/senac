@@ -475,6 +475,13 @@
 - Design System
 - Material IO (google)
 
+# Design de Interfaces - 02/05/22
+
+- Norman e nielsen são pioneiros no UX (User experience)
+- Jeff Johson disserta sobre o que precisamos e o que não na hora de pensar na interface do usuário
+- Nick Babich
+- Ramsay and Nielsen
+- Elimine a desordem, devemos direcionar nosso usuário
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
