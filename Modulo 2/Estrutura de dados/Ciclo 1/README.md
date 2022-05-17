@@ -565,6 +565,18 @@ scanf("%d",&matriz [lin] [col])
 - Estruturas de dados do tipo FIFO (first-in first-out)
 - O primeiro elemento a ser inserido, será o primeiro a ser removido
 
+# Estrutura de dados - Dia 17/05/22
 
+`Ponteiro`
 
-- 
+- Alocar um espaço dinamico na memória
+- Por referência e por valor
+
+int a = 5, *p;
+p = &a;
+printf("a = %d", a);
+
+*p = 10;
+printf("a = %d", a);
+
+- Qualquer variável possui nome, tipo de dado, endereço e valor
