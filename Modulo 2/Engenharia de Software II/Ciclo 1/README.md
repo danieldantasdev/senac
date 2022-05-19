@@ -236,42 +236,42 @@
 
 # Engenharia de Software II - 17/03/22
 
-- Vamos usar o [Draw.io](https://drawio-app.com)
+-   Vamos usar o [Draw.io](https://drawio-app.com)
 
 `Broadcast`
 
-- Em telecomunicações e teoria da informação, broadcasting é um método de transferência de mensagem para todos os receptores simultaneamente
+-   Em telecomunicações e teoria da informação, broadcasting é um método de transferência de mensagem para todos os receptores simultaneamente
 
 `Assíncrona`
 
-- Quando enviamos um pedido, não precisamos esperar a resposta
-- Aula ao vivo, Mensagem do celular
+-   Quando enviamos um pedido, não precisamos esperar a resposta
+-   Aula ao vivo, Mensagem do celular
 
 `Síncrono`
 
-- Envio de sinal com espero de resposta
-- Sinal de rádio
+-   Envio de sinal com espero de resposta
+-   Sinal de rádio
 
-- Começamos a criação do diagrama de atividade designar técnico responável
+-   Começamos a criação do diagrama de atividade designar técnico responável
 
 ---
 
 # Engenharia de Software II - 23/03/22
 
-- Relizamos o aprofudamento do diagrama de atividade designar técnico responável
+-   Relizamos o aprofudamento do diagrama de atividade designar técnico responável
 
 ---
 
 # Engenharia de Software II - 24/03/22
 
-- Estamos continuando a apresentação do diagrama de atividades dos grupos de ontem
+-   Estamos continuando a apresentação do diagrama de atividades dos grupos de ontem
 
 `Classe`
 
-- É uma representação abstrata de objetos
-- A classe instancia objetos em algum momento
-- Em UML, os substantivos virarão classes
-- Sempre será no singular
+-   É uma representação abstrata de objetos
+-   A classe instancia objetos em algum momento
+-   Em UML, os substantivos virarão classes
+-   Sempre será no singular
 
 Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meória do computador
 
@@ -281,121 +281,128 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 
 `Atributos`
 
-- Permite a identificação de cada objeto de uma classe
-- Os valores dos atributos podem variar de instância para instância
-- Atributos podem conter os tipos de dados a ser armazenado (boolean, byte, int, doublr, char, string e etc)
+-   Permite a identificação de cada objeto de uma classe
+-   Os valores dos atributos podem variar de instância para instância
+-   Atributos podem conter os tipos de dados a ser armazenado (boolean, byte, int, doublr, char, string e etc)
 
 `Métodos`
 
-- São apenas declarados neste diagrama
-- Diagrama de classe não define a implementação
+-   São apenas declarados neste diagrama
+-   Diagrama de classe não define a implementação
 
-- Outros diagramas permitem modelar o corportamento interno dos métodos (Diagram de sequência e diagram de atividades)
+-   Outros diagramas permitem modelar o corportamento interno dos métodos (Diagram de sequência e diagram de atividades)
 
 `Tipos de visibilidade`
 
-- Pública (+)
-- O atributo ou método pode ser utilizado por qualquer classe
-- Protegida (#)
-- Somente a classe ou sub-classes terão acesso
-- Privada (-)
-- Somente a classe terá acesso
+-   Pública (+)
+-   O atributo ou método pode ser utilizado por qualquer classe
+-   Protegida (#)
+-   Somente a classe ou sub-classes terão acesso
+-   Privada (-)
+-   Somente a classe terá acesso
 
 `Relacionamento`
 
-- Classes possuem relaciuonamentos entre elas
-    - Compartilham informações
-    - Coloaboram uma com as outras
+-   Classes possuem relaciuonamentos entre elas
 
-- Principais tipos de relacionamentos
-    - Associação
-    - Agregação/Composição
-    - Herança
-    - Dependência
+    -   Compartilham informações
+    -   Coloaboram uma com as outras
+
+-   Principais tipos de relacionamentos
+    -   Associação
+    -   Agregação/Composição
+    -   Herança
+    -   Dependência
 
 `Comunicação entre Objetos (I)`
 
-- Conceitualmente, objetos se comunicam através da troca de mensagens
+-   Conceitualmente, objetos se comunicam através da troca de mensagens
 
 > Mensagens definem:
-- O nome do serviço requisitado
-- A informação necessária para a execução do serviço
-- O nome do requisitante
+
+-   O nome do serviço requisitado
+-   A informação necessária para a execução do serviço
+-   O nome do requisitante
 
 `Comunicação entre Objetos (II)`
 
-- Na prática, mensagens são implementadas como chamadas de métodos
-- Nome = o nome do método
-- Informação = a lista de parâmetros
-- Requisitante = o método que realizou a chamada
+-   Na prática, mensagens são implementadas como chamadas de métodos
+-   Nome = o nome do método
+-   Informação = a lista de parâmetros
+-   Requisitante = o método que realizou a chamada
 
 `Associações`
 
-- Descreve um vínculo entre duas classes
-- Chamado Associação Binária
-- Determina que as instâncias de uma classe estão de alguma forma ligadas às instâncias da outra classe
+-   Descreve um vínculo entre duas classes
+-   Chamado Associação Binária
+-   Determina que as instâncias de uma classe estão de alguma forma ligadas às instâncias da outra classe
 
 `Multiplicidade`
 
 > 0..1
-- No máximo um. Indica que os Objetos da classe associada não precisam obrigatoriamente estar relacionados
+
+-   No máximo um. Indica que os Objetos da classe associada não precisam obrigatoriamente estar relacionados
 
 > 1..1
-- Um e somente um. Indica que apenas um objeto da classe se relaciona com os objetos da outra classe
 
-> 0..* 
-- Muitos. Indica que podem haver muitos objetos da classe envolvidos no relacionamento
+-   Um e somente um. Indica que apenas um objeto da classe se relaciona com os objetos da outra classe
 
-> 1..* 
-- Um ou muitos. Indica que há pelo menos um objeto envolvido no relacionamento
+> 0..\*
 
-> 3..5 
-- Valores específicos
+-   Muitos. Indica que podem haver muitos objetos da classe envolvidos no relacionamento
+
+> 1..\*
+
+-   Um ou muitos. Indica que há pelo menos um objeto envolvido no relacionamento
+
+> 3..5
+
+-   Valores específicos
 
 `Agregação`
 
-- Tipo especial de associação
-- Demonstra que as informações e um objeto precisam se complementadas por um objeto de outra classe
-- Associação Todo-Parte
-- objeto-todo
-- objeto-parte
+-   Tipo especial de associação
+-   Demonstra que as informações e um objeto precisam se complementadas por um objeto de outra classe
+-   Associação Todo-Parte
+-   objeto-todo
+-   objeto-parte
 
 `Composição`
 
-- Uma variação do tipo agregação
-- Representa um vínculo mais forte entre objetos-todo e objetos parte
-- Objetos-parte têm que pertencer ao objeto-todo
-- O todo não existe (ou não faz sentido) sem a parte
+-   Uma variação do tipo agregação
+-   Representa um vínculo mais forte entre objetos-todo e objetos parte
+-   Objetos-parte têm que pertencer ao objeto-todo
+-   O todo não existe (ou não faz sentido) sem a parte
 
 `Especialização / Generalização`
 
-- Identificar classes-mãe (gerais) e classes-filhas (especializadas)
-- Atributos e métodos definidos na classe-mãe são herdados pelas classes-filhas
+-   Identificar classes-mãe (gerais) e classes-filhas (especializadas)
+-   Atributos e métodos definidos na classe-mãe são herdados pelas classes-filhas
 
 `Dependência`
 
-- Tipo menos comum de relacionamento
-- Identifica um baixo grau de dependência de uma classe em relação a outra
+-   Tipo menos comum de relacionamento
+-   Identifica um baixo grau de dependência de uma classe em relação a outra
 
 `Notas`
 
-- Informativos
-- Algum comentário na classe, método ou atributo
-- Alguma restrição de funcionalidade
-- Objetivo é informa como o objeto se comporta
+-   Informativos
+-   Algum comentário na classe, método ou atributo
+-   Alguma restrição de funcionalidade
+-   Objetivo é informa como o objeto se comporta
 
 `Diagram de classe`
 
-- Serve para criar estruturas no momento da execução do nosso sistema
-- E se precisarmos de alguma informação além, vamos pegar de banco de dados
+-   Serve para criar estruturas no momento da execução do nosso sistema
+-   E se precisarmos de alguma informação além, vamos pegar de banco de dados
 
 `Dado`
 
-- Um número sozinho sem contexto
+-   Um número sozinho sem contexto
 
 `Informação`
 
-- O contexto agregado aquele número
+-   O contexto agregado aquele número
 
 ---
 
@@ -408,44 +415,49 @@ Dois objetos não são iguais, porque os mesmos ocupam lugar diferente na meóri
 `Início Anos 70 - Programação Estruturada`
 
 > Início Anos 70 - Programação Estruturada
-- Niklaus Wirth
+
+-   Niklaus Wirth
 
 > Fim Anos 70 - Projeto Estruturado
-- Constantine, Yourdon
+
+-   Constantine, Yourdon
 
 > Anos 80 - Análise Estruturada
-- Yourdon/DeMarco, James Martim, Chris Gane
+
+-   Yourdon/DeMarco, James Martim, Chris Gane
 
 > Anos 90
-- Orientação a Objetos
-    - Baseado no paradigma estruturado
-- Qualidade de Software
-- UML
-- Componentização
+
+-   Orientação a Objetos
+    -   Baseado no paradigma estruturado
+-   Qualidade de Software
+-   UML
+-   Componentização
 
 **No daigrama de ativiades, sempre que tiver um subustantivo será um objeto**
 
 `Sistema eleitoral`
 
-- Classe seria a célula em branco
-- Objeto seria a célula preenchida com os candidatos
-> Objetos passam por dois estados:
+-   Classe seria a célula em branco
+-   Objeto seria a célula preenchida com os candidatos
+    > Objetos passam por dois estados:
 
 class Usuario {
-  private string nome;
-  private string sobrenome;
+private string nome;
+private string sobrenome;
 }
 
 void main () {
-    Usuario usuario1; //declaração do objeto (define o espaço na memória)
-    Usuario = new Usuario (); //instância do objeto (cria um ponteiro referente a declaração)
-    
+Usuario usuario1; //declaração do objeto (define o espaço na memória)
+Usuario = new Usuario (); //instância do objeto (cria um ponteiro referente a declaração)
+
     Usuario usuario1 = new Usuario(); //declaração e instância do objeto
+
 }
 
 `Função`
 
-- Retorna um valor
+-   Retorna um valor
 
 int calcularSoma(){
 return 0;
@@ -453,7 +465,7 @@ return 0;
 
 `Procedimento`
 
-- Não retorna nada
+-   Não retorna nada
 
 void calcularSoma(){
 }
@@ -461,17 +473,17 @@ void calcularSoma(){
 `Java`
 
 class Usuario {
-  private string nome;
-  private string sobrenome;
-  
-  void calcularSoma(int quant1){
-    Produto arroz;
-    arroz.descontoStock(quant1);
-  }
-  
-  int calcularSoma(){
-  return 0;
-  }
+private string nome;
+private string sobrenome;
+
+void calcularSoma(int quant1){
+Produto arroz;
+arroz.descontoStock(quant1);
+}
+
+int calcularSoma(){
+return 0;
+}
 
 }
 
@@ -481,53 +493,53 @@ class Usuario {
 
 `Programação estruturada`
 
-- Antigamente, o código fonte tinha mmiklhares de linhas
-- Estrutura monolítica
+-   Antigamente, o código fonte tinha mmiklhares de linhas
+-   Estrutura monolítica
 
 `Programação Orientada a objetos`
 
-- Programação modularizada
-- Reutilização de código
+-   Programação modularizada
+-   Reutilização de código
 
 `Herança`
 
-- Mecanismop de encontrar a similaridade entre as classes, simplificando 
-- Gatos, Leão, Gato
+-   Mecanismop de encontrar a similaridade entre as classes, simplificando
+-   Gatos, Leão, Gato
 
 `Polimorfismo`
 
-- Poli (várias)
-- Morfos (formas)
+-   Poli (várias)
+-   Morfos (formas)
 
-- Significa que um objeto pode asumir diferentes formas
-- Está associado a Herança
-- É caracterizado como o fato de uma operação poder ser implementada de diferentes maneiras pela mesma Classe na Hierarquia
-> Tomada Universal
+-   Significa que um objeto pode asumir diferentes formas
+-   Está associado a Herança
+-   É caracterizado como o fato de uma operação poder ser implementada de diferentes maneiras pela mesma Classe na Hierarquia
 
-- O mesmo método sendo aplicados de diferentes maneiras
+    > Tomada Universal
+
+-   O mesmo método sendo aplicados de diferentes maneiras
 
 `Por que o banco de dados é o espelho do diagrama de classes`
 
-- O diagrama de classes serve com a estrutra de armazenamento organizado enquanto o programa está funcionando 
-- O banco de dados é para `sempre`
-- Os dados seriam o caderno (anotações)
-
+-   O diagrama de classes serve com a estrutra de armazenamento organizado enquanto o programa está funcionando
+-   O banco de dados é para `sempre`
+-   Os dados seriam o caderno (anotações)
 
 ---
 
 # Engenharia de Software II - 13/04/22
 
-- Estamos modelando o diagrama de estados do processo do projeto integrador II
+-   Estamos modelando o diagrama de estados do processo do projeto integrador II
 
 `Integridade referencial`
 
-- Não deletamos nada do banco de dados, porque podemos acabar afetando no relacionamento das tabelas
-- O que devemos fazer é apagar logicamente, por meio de mudança de status
+-   Não deletamos nada do banco de dados, porque podemos acabar afetando no relacionamento das tabelas
+-   O que devemos fazer é apagar logicamente, por meio de mudança de status
 
-- -1 (eliminado)
-- 0 (inativo)
-- 1 (cadastrado)
-- 2 (designação do técnico)
+-   -1 (eliminado)
+-   0 (inativo)
+-   1 (cadastrado)
+-   2 (designação do técnico)
 
 ---
 
@@ -535,6 +547,27 @@ class Usuario {
 
 `Interação de back com front`
 
-- Através do JSON;
+-   Através do JSON;
 
 [PADRÃO MVC](https://www.devmedia.com.br/padrao-mvc-java-magazine/21995)
+
+# Engenharia de Software II - 18/05/22
+
+`Comunicação entre front e back`
+
+-   O front é o cliente
+-   O back é o servidor
+
+-   O HTML vai se comunicar pelo JAVA através do JSON
+-   As requisições são feitas pelo JAVA, que estão hospedados no App server (Tomcat)
+
+> Se tivessemos um milhão de requisições?
+
+-   Não, pois o servidor é muito lento
+-   Não adianta aumentar a memória RAM do servidor
+-   Precisamos focar na cloud computing elastich
+-   Precismaos criar uma máquina virtual dentro da nuvem, e verficamos a quantidade de requisições que entram através do Gateway
+
+`Dao (Data Access Object)`
+
+-   É um objeto que representa a conexão com o banco de dados

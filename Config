@@ -1,0 +1,42 @@
+# MySql
+
+wget -c https://repo.mysql.com//mysql-apt-config_0.8.22-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+
+
+# Configurando STS
+
+- Instalar o STS
+- cd Downloads/
+- sudo mv spring-tool-suite-4-4.14.1.RELEASE-e4.23.0-linux.gtk.x86_64.tar.gz /opt
+- cd /opt/
+- ls
+- sudo tar zxvf spring-tool-suite-4-4.14.1.RELEASE-e4.23.0-linux.gtk.x86_64.tar.gz
+- ls
+- cd sts-4.14.1.RELEASE/
+- ls
+- sudo ./SpringToolSuite4 
+- sudo vi /usr/share/applications/stsLauncher.desktop
+
+
+[Desktop Entry]
+Name=Spring Tool Suite
+Comment=Spring Tool Suite 4.14.1
+Exec=/opt/sts-4.14.1.RELEASE/SpringToolSuite4
+Icon=/opt/sts-4.14.1.RELEASE/icon.xpm
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Development;IDE;Java;
+
+
+
+# Variável ambiente JAVA
+
+export JAVA_HOME=/usr/lib/jvm/default-java
+export M3_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
+
