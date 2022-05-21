@@ -33,6 +33,7 @@ $ javac -version
 $ printenv | less
 $ echo $USER
 $ date
+
 $ ssh-keygen -t ed25519 -C "contatolobinhodev@gmail.com"
 $ eval "$(ssh-agent -s)"
 $ sudo -s -h
