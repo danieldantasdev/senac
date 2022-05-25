@@ -455,28 +455,30 @@ scanf("%d",&matriz [lin] [col])
 
 `Tipos de dados`
 
-   >`Primnitivos`
-   - A partir dos quais podemos definir os demais
-   - inteiro, real, lógico, carácter
+> `Primnitivos`
 
-   >`Estrutura de dados`
-   - Constituido de dados primitivos e ou estruturas
-   - Conjunto de informações agrupadas de uma forma coerente (com alguma relação entre eles)
-   - Exemplo: Lista de chamada de turma
+-   A partir dos quais podemos definir os demais
+-   inteiro, real, lógico, carácter
+
+> `Estrutura de dados`
+
+-   Constituido de dados primitivos e ou estruturas
+-   Conjunto de informações agrupadas de uma forma coerente (com alguma relação entre eles)
+-   Exemplo: Lista de chamada de turma
 
 `Matriz`
 
-- Estrutura bidimensional
+-   Estrutura bidimensional
 
 `Tipos de dados estruturados homôgeneos - vetor e matriz`
 
-- Estruturas que permitem armazenar diversos elementos, mas apenas elementos do mesmo tipo de dado
-- Estrutura de dados que permite agrupar variáveios de tipos de dados diferentes
+-   Estruturas que permitem armazenar diversos elementos, mas apenas elementos do mesmo tipo de dado
+-   Estrutura de dados que permite agrupar variáveios de tipos de dados diferentes
 
 `Registros`
 
-- Com os registros, podemos agrupar logicamente os elementos
-- Conseguimos criar novos registros e associar em algum local
+-   Com os registros, podemos agrupar logicamente os elementos
+-   Conseguimos criar novos registros e associar em algum local
 
 ---
 
@@ -484,76 +486,75 @@ scanf("%d",&matriz [lin] [col])
 
 `Função fatorial`
 
-- Construa um programa que, a partir de um número positivo, implemente uma função para calcular e retornar o fatorial desse número
-- O fatorial é a multiplicação sucessiva dos antecessores até chegar no número 1
-- O fatorial de 0 e 1 serão sempre 1
+-   Construa um programa que, a partir de um número positivo, implemente uma função para calcular e retornar o fatorial desse número
+-   O fatorial é a multiplicação sucessiva dos antecessores até chegar no número 1
+-   O fatorial de 0 e 1 serão sempre 1
 
 `Fatorial de um número qualquer`
 
-- n! = n * (n-1)* (n-2)* ... *1
+-   n! = n _ (n-1)_ (n-2)* ... *1
 
 `Recursividade`
 
-- Surgiu de uma forma para solucionar o problema de um modo mais simples
-- Se o problema é grande, devemos elaborar uma solução menor do problema, relacionar com o problema maior
+-   Surgiu de uma forma para solucionar o problema de um modo mais simples
+-   Se o problema é grande, devemos elaborar uma solução menor do problema, relacionar com o problema maior
 
-- Uma funçãop pode ser implementada de forma `iterativa` e `recursiva`
-- Quase sempre a forma recursiva, apresenta uma codificação mais simples
-- Geralmente não utilizamnos as estruturas de repetiçãp
+-   Uma funçãop pode ser implementada de forma `iterativa` e `recursiva`
+-   Quase sempre a forma recursiva, apresenta uma codificação mais simples
+-   Geralmente não utilizamnos as estruturas de repetiçãp
 
-- É uma técnica com o objetivo de reduzir os problemas
-- Uma função recursiva é toda função que chama ela mesmo
+-   É uma técnica com o objetivo de reduzir os problemas
+-   Uma função recursiva é toda função que chama ela mesmo
 
 > Características
 
-- Um algoritmo recursivo deve ter um caso básico
-- Um algoritmo recursivo deve mudar o seu estado e se aproximar do caso básico
-- Um algoritmo recursivo deve cham,ar a si mesmo, recursivamente
+-   Um algoritmo recursivo deve ter um caso básico
+-   Um algoritmo recursivo deve mudar o seu estado e se aproximar do caso básico
+-   Um algoritmo recursivo deve cham,ar a si mesmo, recursivamente
 
 `Voltando ao exemplo do fatorial`
 
-- fatorial (4) = 4 * 3 * 2 * 1
-- fatorial (4) = 4 * fatorial (3)
-- fatorial (3) = 4 * fatorial (2)
-- fatorial (2) = 4 * fatorial (1)
-- fatorial (1) = 4 * fatorial (0)
-- fatorial (n) = n* fatorial (n-1)
+-   fatorial (4) = 4 _ 3 _ 2 \* 1
+-   fatorial (4) = 4 \* fatorial (3)
+-   fatorial (3) = 4 \* fatorial (2)
+-   fatorial (2) = 4 \* fatorial (1)
+-   fatorial (1) = 4 \* fatorial (0)
+-   fatorial (n) = n\* fatorial (n-1)
 
-- n! = n * (n-1)! //É uma fórmula recursiva, porque ela usa ela mesmo para definir
+-   n! = n \* (n-1)! //É uma fórmula recursiva, porque ela usa ela mesmo para definir
 
 `Fibonacci`
 
-- Um elemento é sempre a soma dos 2 antecessores
-- Fn = fn-1 + fn-2
-- Onde o problema base é f1 = 1 e f2 =1
+-   Um elemento é sempre a soma dos 2 antecessores
+-   Fn = fn-1 + fn-2
+-   Onde o problema base é f1 = 1 e f2 =1
 
 ---
 
 # Estrutura de dados - Dia 05/04/22
 
-- Vamos apresentar um seminário nos dias 19/04 e 26/04
-- Com os temas de métodos de busca e orddenação
-- Vamos ser o terceiro grupo a se apresentar
+-   Vamos apresentar um seminário nos dias 19/04 e 26/04
+-   Com os temas de métodos de busca e orddenação
+-   Vamos ser o terceiro grupo a se apresentar
 
 # Estrutura de dados - Dia 11/04/22
 
-- Estamos iniciando a montagem da apresnetação por selection sort
+-   Estamos iniciando a montagem da apresnetação por selection sort
 
 ![Imagem](https://updatedcode.files.wordpress.com/2011/11/selection-sort-animation.gif)
-
 
 # Estrutura de dados - Dia 03/05/22
 
 `Listas lineares sequenciais (Pilhas)`
 
-- Listas lineares gerais não tem restrição de inserção e remoção de elementos
-- Listas lineares particulares possuem restrição de inserção e remoção de elementos
+-   Listas lineares gerais não tem restrição de inserção e remoção de elementos
+-   Listas lineares particulares possuem restrição de inserção e remoção de elementos
 
 `Pilhas`
 
-- Estruturas de dados do tipo LIFO (last-in first-out)
-- O último a entrar será o primeiro a sair
-- O topo vai mudando ao longo so tempo
+-   Estruturas de dados do tipo LIFO (last-in first-out)
+-   O último a entrar será o primeiro a sair
+-   O topo vai mudando ao longo so tempo
 
 ---
 
@@ -561,22 +562,34 @@ scanf("%d",&matriz [lin] [col])
 
 `Fila sequencial`
 
-- São listas em que todas inserções ocorrem em uma extremidade e as remopções por outra extremidade
-- Estruturas de dados do tipo FIFO (first-in first-out)
-- O primeiro elemento a ser inserido, será o primeiro a ser removido
+-   São listas em que todas inserções ocorrem em uma extremidade e as remopções por outra extremidade
+-   Estruturas de dados do tipo FIFO (first-in first-out)
+-   O primeiro elemento a ser inserido, será o primeiro a ser removido
 
 # Estrutura de dados - Dia 17/05/22
 
 `Ponteiro`
 
-- Alocar um espaço dinamico na memória
-- Por referência e por valor
+-   Alocar um espaço dinamico na memória
+-   Por referência e por valor
 
-int a = 5, *p;
+int a = 5, \*p;
 p = &a;
 printf("a = %d", a);
 
-*p = 10;
+\*p = 10;
 printf("a = %d", a);
 
-- Qualquer variável possui nome, tipo de dado, endereço e valor
+-   Qualquer variável possui nome, tipo de dado, endereço e valor
+
+# Estrutura de dados - Dia 24/05/22
+
+`Alocação estática`
+
+-   Feita no momento da compilação do código
+-   Quando compilo e executo, o espaço de memória já foi reservado para aquela variável
+
+`Alocação dinâmica`
+
+-   Feita em tempo de execução
+
