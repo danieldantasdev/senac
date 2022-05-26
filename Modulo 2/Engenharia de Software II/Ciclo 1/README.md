@@ -571,3 +571,23 @@ return 0;
 `Dao (Data Access Object)`
 
 -   É um objeto que representa a conexão com o banco de dados
+
+# Engenharia de Software II - 25/05/22
+
+`Objetos persistentes`
+
+-   Tem uma existencia que perdura durante várias execuções de sistema
+-   Precisam ser armazenados e recuperados
+-   Tipicamente objetos de entidade
+
+`Objetos transientes`
+
+-   Existem somente na memória principal
+-   Objetos de controle e objetos de fronteira
+-   Criptografia
+
+`Thread`
+
+-   Toda vez que um usuáro se conecta ao banco de dados, criamos uma execução paralela no processador que é feita de forma individual
+-   Criar um espaço de memória para executar ações individuais
+

@@ -76,6 +76,26 @@ const conversaoReal = () => {
     )
 }
 
+var elemento0 = documet.getElementsByTagName('li')[0]
+elemento0.style.color = 'red'
+
+var elemento1 = documet.getElementsByTagName('li')[1]
+elemento1.style.color = 'blue'
+
+var elemento2 = documet.getElementsByTagName('li')[2]
+elemento2.innerText = 'SpringBoot'
+
+var elementoDiv = documet.getElementById('conteudo')
+elementoDiv.innerHTML = '<h1>Olá mundo</h1>'
+
+var lista = document.querySelectorAll('.estilo')
+
+for (var i = 0; i < lista.length; i++) {
+    lista[i].style.backgroundColor = 'blue'
+    lista[i].style.color = 'white'
+    lista[i].innerText = lista[i].innerText.toUpperCase()
+}
+
 // console.log(nome)
 
 // function button() {
@@ -108,3 +128,4 @@ const conversaoReal = () => {
 //             senha,
 //     )
 // }
+
