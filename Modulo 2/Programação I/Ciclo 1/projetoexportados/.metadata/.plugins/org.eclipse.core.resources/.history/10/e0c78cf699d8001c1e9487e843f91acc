@@ -1,0 +1,22 @@
+package br.com.recuperacao;
+
+public class Estoque {
+	private int codLivro;
+	private String descLivro;
+	private int qtdeDisponivel;
+
+	public void entrarMaterial(int qtdeEntrada) {
+		this.qtdeEstoque = this.qtdeEstoque + qtdeEntrada;
+	}
+
+	public boolean sairMaterial(int qtdeSaida) {
+		int novoEstoque;
+		novoEstoque = this.qtdeEstoque - qtdeSaida;
+		if (novoEstoque < 0) {
+			System.out.println("N�o h� estoque suficiente!");
+			return false;
+		}
+		this.qtdeEstoque = novoEstoque;
+		return true;
+	}
+}

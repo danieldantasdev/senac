@@ -1,0 +1,15 @@
+package br.senac.rj.teste;
+
+public class TesteArray1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] meuArray1 = new int[4];
+		meuArray1[0] = 10;
+		meuArray1[1] = 20;
+		meuArray1[3] = 30;
+		meuArray1[4] = 40;
+	}
+
+}

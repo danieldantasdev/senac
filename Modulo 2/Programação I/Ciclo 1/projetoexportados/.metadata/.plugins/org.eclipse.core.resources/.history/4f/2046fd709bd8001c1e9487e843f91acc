@@ -1,0 +1,46 @@
+package br.com.recuperacao;
+
+public class Estoque {
+	private int codLivro;
+	private String descLivro;
+	private int qtdeDisponivel;
+
+	public int getCodLivro() {
+		return codLivro;
+	}
+
+	public void setCodLivro(int codLivro) {
+		this.codLivro = codLivro;
+	}
+
+	public String getDescLivro() {
+		return descLivro;
+	}
+
+	public void setDescLivro(String descLivro) {
+		this.descLivro = descLivro;
+	}
+
+	public int getQtdeDisponivel() {
+		return qtdeDisponivel;
+	}
+
+	public void setQtdeDisponivel(int qtdeDisponivel) {
+		this.qtdeDisponivel = qtdeDisponivel;
+	}
+
+	public void reservarLivro(int qtdeReserva) {
+		this.qtdeReserva = this.qtdeReserva + qtdeReserva;
+	}
+
+	public boolean devolverLivro(int qtdeDevolucao) {
+		int novoEstoque;
+		novoEstoque = this.qtdeReserva - qtdeDevolucao;
+		if (novoEstoque < 0) {
+			System.out.println("N�o h� reserva suficiente!");
+			return false;
+		}
+		this.qtdeReserva = novoEstoque;
+		return true;
+	}
+}
