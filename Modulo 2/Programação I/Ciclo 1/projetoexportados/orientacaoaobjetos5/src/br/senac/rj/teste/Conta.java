@@ -1,17 +1,22 @@
 package br.senac.rj.teste;
 
 public class Conta {
+	private String titular;
 	private int agencia;
 	private int numero;
-	private double saldo;
-	private String titular;
+	protected double saldo;
 
-	public Conta(int agencia, int numero, double saldo, String titular) {
-		super();
+	public Conta() {
+		this.titular = "";
+	}
+
+	public Conta(int agencia, int numero, double saldo) {
+		// super();
+		this();
 		this.agencia = agencia;
 		this.numero = numero;
 		this.saldo = saldo;
-		this.titular = titular;
+		// this.titular = titular;
 	}
 
 	public int getAgencia() {
