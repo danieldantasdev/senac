@@ -86,3 +86,9 @@
 
 - Eu e o daniel bastos fizemos o wireframe de alta qualidade
 - Não tivemos tanta dificuldade em realizar a tarefa que nos foi passada, o maior problema em si foi se encaixar em alguns problemas do própria figma e suas funcionalidades específicas
+
+## Anotações - sprint 2
+
+- Eu o Daniel Bastos, ficamos responsáveis por programar as telas com HTML e CSS avançado
+- Não tivemos muitas dificuldades também, começamos a implementar em Angular as telas
+
