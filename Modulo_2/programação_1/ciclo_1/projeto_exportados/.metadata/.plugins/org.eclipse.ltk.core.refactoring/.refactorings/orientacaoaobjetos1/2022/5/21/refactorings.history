@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;Conta.java&apos; to &apos;orientacaoaobjetos5/src/br.senac.rj.teste&apos;&#x0A;- Original project: &apos;orientacaoaobjetos1&apos;&#x0A;- Destination element: &apos;orientacaoaobjetos5/src/br.senac.rj.teste&apos;&#x0A;- Original element: &apos;br.senac.rj.banco.modelo.Conta.java&apos;" description="Copy compilation unit" destination="=orientacaoaobjetos5/src&lt;br.senac.rj.teste" element1="/src&lt;br.senac.rj.banco.modelo{Conta.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1653088744888" units="1" version="1.0"/>
-</session>
