@@ -593,3 +593,10 @@ printf("a = %d", a);
 
 -   Feita em tempo de execução
 
+# Estrutura de dados - Dia 31/05/22
+
+`Lista simplismente encadeada`
+
+-   Cada elemento da lista é um nó
+-   Cada nó possui um ponteiro para o próximo nó e um valor
+

@@ -3,7 +3,7 @@
 
 typedef struct No
 {
-    int valor;
+    int info;
     struct No *proximo;
 } No;
 
@@ -38,22 +38,29 @@ typedef struct
 //     }
 // }
 
-No *cria_no(int valor)
+// No *cria_no(int valor)
+// {
+//     No *novo = (No *)malloc(sizeof(No));
+//     if (novo != NULL)
+//     {
+//         novo->valor = valor;
+//         novo->proximo = NULL;
+//     }
+//     return novo;
+// }
+
+void lista_vazia(Lista *lista)
 {
-    No *novo = (No *)malloc(sizeof(No));
-    if (novo != NULL)
-    {
-        novo->valor = valor;
-        novo->proximo = NULL;
-    }
-    return novo;
+    lista->inicio = NULL;
+    lista->fim = NULL;
+    lista->tam = 0;
 }
 
 // inserção no início da lista
 void inserirInicio(Lista *lista, int valor)
 {
     No *novo = (No *)malloc(sizeof(No)); // cria um novo nó
-    novo->valor = valor;                 // (*novo).valor = valor
+    novo->info = valor;                  // (*novo).valor = valor
 
     if (lista->inicio == NULL)
     { // a lista está vazia
@@ -73,7 +80,7 @@ void inserirInicio(Lista *lista, int valor)
 void inserirFim(Lista *lista, int valor)
 {
     No *novo = (No *)malloc(sizeof(No)); // cria um novo nó
-    novo->valor = valor;
+    novo->info = valor;
     novo->proximo = NULL;
 
     if (lista->inicio == NULL)
@@ -96,7 +103,7 @@ void imprimir(Lista *lista)
     printf("Tamanho da lista: %d\n", lista->tam);
     while (inicio != NULL)
     {
-        printf("%d ", inicio->valor);
+        printf("%d ", inicio->info);
         inicio = inicio->proximo;
     }
     printf("\n\n");
@@ -108,7 +115,7 @@ void remover(Lista *lista, int valor)
     No *inicio = lista->inicio; // ponteiro para o início da lista
     No *noARemover = NULL;      // ponteiro para o nó a ser removido
 
-    if (inicio != NULL && lista->inicio->valor == valor)
+    if (inicio != NULL && lista->inicio->info == valor)
     { // remover 1º elemento
         noARemover = lista->inicio;
         lista->inicio = noARemover->proximo;
@@ -117,7 +124,7 @@ void remover(Lista *lista, int valor)
     }
     else
     { // remoção no meio ou no final
-        while (inicio != NULL && inicio->proximo != NULL && inicio->proximo->valor != valor)
+        while (inicio != NULL && inicio->proximo != NULL && inicio->proximo->info != valor)
         {
             inicio = inicio->proximo;
         }
@@ -159,13 +166,13 @@ void dividirLista(Lista *lista, Lista *listaI, Lista *listaP)
     while (lista->inicio != NULL)
     {
         removido = removerPrimeiroNO(lista);
-        inserirFim(listaI, removido->valor);
+        inserirFim(listaI, removido->info);
         free(removido);
 
         removido = removerPrimeiroNO(lista);
         if (removido != NULL)
         {
-            inserirFim(listaP, removido->valor);
+            inserirFim(listaP, removido->info);
             free(removido);
         }
     }
