@@ -591,3 +591,9 @@ return 0;
 -   Toda vez que um usuáro se conecta ao banco de dados, criamos uma execução paralela no processador que é feita de forma individual
 -   Criar um espaço de memória para executar ações individuais
 
+# Engenharia de Software II - 01/06/22
+
+-   Em banco de dados, quando temos uma relação de muitos para muitos, precisamos criar uma nova tabela intermediando as duas tabelas
+
+-   Muitos para muitos, sempre criamos uma tabela intermediária com relação de um para muitos
+
