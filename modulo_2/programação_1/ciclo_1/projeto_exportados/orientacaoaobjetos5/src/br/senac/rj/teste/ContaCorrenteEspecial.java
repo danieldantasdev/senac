@@ -10,11 +10,16 @@ public class ContaCorrenteEspecial extends Conta {
 
     public void setLimite(double limite) {
         this.limite = limite;
+
     }
 
     public ContaCorrenteEspecial(int agencia, int numero, double saldo, double limite) {
         super(agencia, numero, saldo);
         this.limite = limite;
+    }
+
+    public ContaCorrenteEspecial(int numAgencia, int numConta) {
+        super(numAgencia, numConta);
     }
 
     @Override
@@ -31,11 +36,26 @@ public class ContaCorrenteEspecial extends Conta {
 
         // 0 - 1000 = -1000
         // 1000 - 0 = 1000
+        // limite não pode ser negativo, logo precisamos comprar com o negativo
         if (novoSaldo < (this.limite * -1)) {
             System.out.println("Saldo insuficiente!");
             return false;
         } else {
             this.saldo = novoSaldo;
+            return true;
+        }
+    }
+
+    @Overwrite // especialização
+    public boolean saca(double valor, double imposto) {
+        double novoValorSaque = valor + (valor * imposto / 100);
+
+        System.out.println("Imposto: " + imposto + "%");
+        System.out.println("Valor do imposto: " + novoValorSaque + " reais");
+
+        if (!this.saca(novoValorSaque)) {
+            return false;
+        } else {
             return true;
         }
     }
