@@ -1,63 +1,63 @@
 --CRIAR BANCO
-CREATE DATABASE bdhospital;
-USE bdhospital;
+CREATE DATABASE dbhospital;
+USE dbhospital;
 
 -- CRIA TABELAS
-Create table Funcionarios
+CREATE TABLE Funcionario
 (
-	codf int PRIMARY KEY,  
-	CPF char(11), 
-	nome varchar(40) Not Null, 
-	idade int Not Null, 
-	cidade varchar(20) NOT NULL, 
-	salario int CHECK (salario>0)
+	codigo_funcionario INT PRIMARY KEY,  
+	cpf CHAR(11), 
+	nome VARCHAR(40) NOT NULL, 
+	idade INT NOT NULL, 
+	cidade VARCHAR(20) NOT NULL, 
+	salario INT CHECK (salario>0)
 );
 
-Create table Ambulatorio
+CREATE TABLE Ambulatorio
 (
-	nroa int PRIMARY KEY, 
-	andar char(2) not null, 
-	capacidade int not null 
+	codigo_ambulatorio INT PRIMARY KEY, 
+	andar CHAR(2) NOT NULL, 
+	capacidade INT NOT NULL 
 );
 
-Create table  Medicos
+CREATE TABLE  Medicos
 (
-	codm int PRIMARY KEY,
-	CPF char(11), 
-	nome varchar(40) Not null, 
-	idade int Not null, 
-	cidade varchar(15) Not null, 
-	especialidade char(30) Not null, 
-	nroa int,
-	CONSTRAINT FK_nroa FOREIGN KEY (nroa) REFERENCES Ambulatorio(nroa)
+	codigo_medico INT PRIMARY KEY,
+	cpf CHAR(11), 
+	nome VARCHAR(40) NOT NULL, 
+	idade INT NOT NULL, 
+	cidade VARCHAR(15) NOT NULL, 
+	especialidade CHAR(30) NOT NULL, 
+	codigo_ambulatorio INT,
+	CONSTRAINT fk_codigo_ambulatorio FOREIGN KEY (codigo_ambulatorio) REFERENCES Ambulatorio(codigo_ambulatorio)
 );
 
-Create table Pacientes
+CREATE TABLE Pacientes
 (
-	codp int PRIMARY KEY, 
-	CPF char(11) UNIQUE, 
-	nome varchar(40) Not Null, 
-	sexo char(1) not Null,
-	idade int Not Null, 
-	cidade varchar(20) NOT NULL, 
+	codigo_paciente INT PRIMARY KEY, 
+	cpf CHAR(11) UNIQUE, 
+	nome VARCHAR(40) NOT NULL, 
+	sexo CHAR(1) NOT NULL,
+	idade INT NOT NULL, 
+	cidade VARCHAR(20) NOT NULL, 
 	doenca CHAR(30) NOT NULL
 );
 
-Create table Consultas
+CREATE TABLE Consultas
 (
-	codm int,
-	CONSTRAINT fk_codm FOREIGN KEY (codm) references Medicos(codm), 
-	codp int,
-	CONSTRAINT fk_codp FOREIGN KEY (codp) references Pacientes(codp), 
-	data date,  
-	hora time
+	codigo_medico INT,
+	CONSTRAINT fk_codigo_medico FOREIGN KEY (codigo_medico) references Medicos(codigo_medico), 
+	codigo_paciente INT,
+	CONSTRAINT fk_codigo_paciente FOREIGN KEY (codigo_paciente) references Pacientes(codigo_paciente), 
+	data_atendimento DATE,  
+	hora TIME
 );
 
-Create table Horario
+CREATE TABLE Horario
 (
-	codm int,
-	CONSTRAINT fk_Ccodm FOREIGN KEY (codm)references Medicos(codm), 
-	DiaSemana int Check (Diasemana < 8 and Diasemana > 0)
+	codigo_medico INT,
+	CONSTRAINT fk2_codigo_medico FOREIGN KEY (codigo_medico) references Medicos(codigo_medico), 
+	dia_semana INT CHECK (dia_semana < 8 AND dia_semana > 0)
 );
 -- POPULA AS BASES
 
@@ -218,33 +218,33 @@ INSERT INTO Pacientes VALUES (1890,'10230591901','Rita Neves', 'F', '34', 'Niter
 INSERT INTO Pacientes VALUES (1900,'00230591901','Rita'		, 'F', '34', 'Niteroi'	, 'Infarto');
 
 
-INSERT INTO Funcionarios VALUES (2000,'11234567891','Norma'	, 	'21', 'Petr�polis', 1000);
-INSERT INTO Funcionarios VALUES (2010,'11233367891','Sandra', 	'54', 'Niteroi', 5000);
-INSERT INTO Funcionarios VALUES (2020,'11445467891','Simone', 	'54', 'Niteroi', 4000);
-INSERT INTO Funcionarios VALUES (2030,'04234567890','Alves'	, 	'44', 'Niteroi',1500 );
-INSERT INTO Funcionarios VALUES (2040,'05234567890','Alvarenga', '67', 'Rio de Janeiro',1200);
-INSERT INTO Funcionarios VALUES (2050,'06234567890','Claudia',  '83', 'Niteroi', 1000);
-INSERT INTO Funcionarios VALUES (2060,'07234567890','Adriana',  '90', 'Petr�polis', 2000);
-INSERT INTO Funcionarios VALUES (2070,'17234567890','Julio'	, 	'29', 'Rio de Janeiro', 5000);
-INSERT INTO Funcionarios VALUES (2080,'27234567890','Chico'	, 	'23', 'Rio de Janeiro', 5500);
-INSERT INTO Funcionarios VALUES (2090,'37234567890','Leandro',	'30', 'Rio de Janeiro', 5000);
-INSERT INTO Funcionarios VALUES (2100,'47234567890','Abel'	, 	'40', 'Rio de Janeiro', 4500);
-INSERT INTO Funcionarios VALUES (2110,'57234567135','Edilon', 	'33', 'Niteroi', 14500);
-INSERT INTO Funcionarios VALUES (2120,'67234567444','Wilmar', 	'22', 'Petropolis', 3500);
-INSERT INTO Funcionarios VALUES (2130,'77234567867','Zenaide', 	'44', 'Teresopolis', 3000);
-INSERT INTO Funcionarios VALUES (2140,'87234567843','Flavio', 	'32', 'Petropolis', 2500);
-INSERT INTO Funcionarios VALUES (2150,'97234563390','Ronaldo', 	'54', 'Teresopolis', 1000);
+INSERT INTO Funcionario VALUES (2000,'11234567891','Norma'	, 	'21', 'Petr�polis', 1000);
+INSERT INTO Funcionario VALUES (2010,'11233367891','Sandra', 	'54', 'Niteroi', 5000);
+INSERT INTO Funcionario VALUES (2020,'11445467891','Simone', 	'54', 'Niteroi', 4000);
+INSERT INTO Funcionario VALUES (2030,'04234567890','Alves'	, 	'44', 'Niteroi',1500 );
+INSERT INTO Funcionario VALUES (2040,'05234567890','Alvarenga', '67', 'Rio de Janeiro',1200);
+INSERT INTO Funcionario VALUES (2050,'06234567890','Claudia',  '83', 'Niteroi', 1000);
+INSERT INTO Funcionario VALUES (2060,'07234567890','Adriana',  '90', 'Petr�polis', 2000);
+INSERT INTO Funcionario VALUES (2070,'17234567890','Julio'	, 	'29', 'Rio de Janeiro', 5000);
+INSERT INTO Funcionario VALUES (2080,'27234567890','Chico'	, 	'23', 'Rio de Janeiro', 5500);
+INSERT INTO Funcionario VALUES (2090,'37234567890','Leandro',	'30', 'Rio de Janeiro', 5000);
+INSERT INTO Funcionario VALUES (2100,'47234567890','Abel'	, 	'40', 'Rio de Janeiro', 4500);
+INSERT INTO Funcionario VALUES (2110,'57234567135','Edilon', 	'33', 'Niteroi', 14500);
+INSERT INTO Funcionario VALUES (2120,'67234567444','Wilmar', 	'22', 'Petropolis', 3500);
+INSERT INTO Funcionario VALUES (2130,'77234567867','Zenaide', 	'44', 'Teresopolis', 3000);
+INSERT INTO Funcionario VALUES (2140,'87234567843','Flavio', 	'32', 'Petropolis', 2500);
+INSERT INTO Funcionario VALUES (2150,'97234563390','Ronaldo', 	'54', 'Teresopolis', 1000);
 
-INSERT INTO Consultas VALUES (51,1011, 10/09/2015,'07:30');
-INSERT INTO Consultas VALUES (79,1130, 10/09/2015,'08:00');
-INSERT INTO Consultas VALUES (79,1170, 10/09/2015,'08:30');
-INSERT INTO Consultas VALUES (79,1110, 10/09/2015,'09:00');
-INSERT INTO Consultas VALUES (79,1011, 10/09/2015,'09:30');
-INSERT INTO Consultas VALUES (46,1010, 26/09/2015,'14:30');
-INSERT INTO Consultas VALUES (46,1040, 26/09/2015,'15:30');
-INSERT INTO Consultas VALUES (46,1060, 26/09/2015,'16:30');
-INSERT INTO Consultas VALUES (46,1050, 26/09/2015,'07:30');
-INSERT INTO Consultas VALUES (77,1011, 26/09/2015,'07:30');
+INSERT INTO Consultas VALUES (51,1011, '2015/05/10','07:30');
+INSERT INTO Consultas VALUES (79,1130, '2015/05/10','08:00');
+INSERT INTO Consultas VALUES (79,1170, '2015/05/10','08:30');
+INSERT INTO Consultas VALUES (79,1110, '2015/05/10','09:00');
+INSERT INTO Consultas VALUES (79,1011, '2015/05/10','09:30');
+INSERT INTO Consultas VALUES (46,1010, '2015/05/10','14:30');
+INSERT INTO Consultas VALUES (46,1040, '2015/05/10','15:30');
+INSERT INTO Consultas VALUES (46,1060, '2015/05/10','16:30');
+INSERT INTO Consultas VALUES (46,1050, '2015/05/10','07:30');
+INSERT INTO Consultas VALUES (77,1011, '2022/02/22','07:30');
 
 INSERT INTO Consultas VALUES (45,1011, 26/09/2015,'07:30');
 INSERT INTO Consultas VALUES (45,1030, 26/09/2015,'08:00');
@@ -1847,3 +1847,29 @@ INSERT INTO Horario VALUES (99,3);
 INSERT INTO Horario VALUES (99,4);
 INSERT INTO Horario VALUES (99,5);
 INSERT INTO Horario VALUES (99,6);
+
+
+--select
+
+SELECT nome, especialidade FROM Medicos m WHERE NOT EXISTS (SELECT * FROM Consultas c WHERE m.codigo_medico = c.codigo_medico AND c.data_atendimento = '2018-02-10' AND c.hora = '08:00');
+
+--Quais medicos tem a mesma especialidade que o medico daniel
+
+SELECT nome, especialidade FROM Medicos m WHERE m.especialidade = (SELECT especialidade FROM Medicos WHERE nome = 'Daniel');
+
+--qual nome do ortopedista mais novo
+
+SELECT nome FROM Medicos WHERE idade = (SELECT MAX(idade) FROM Medicos WHERE especialidade = 'Ortopedia');
+
+--quantos cardiologistas existem no hospital
+
+SELECT COUNT(*) FROM Medicos WHERE especialidade = 'Cardiologia';
+
+--qual a capacidade de leitos no quinto andar
+
+SELECT capacidade FROM Ambulatorio WHERE andar = 5;
+
+--quais ambulatorios nao tem medicos associados
+
+SELECT codigo_ambulatorio FROM Ambulatorio WHERE NOT EXISTS (SELECT * FROM Medicos WHERE codigo_ambulatorio = Ambulatorio.codigo_ambulatorio);
+
