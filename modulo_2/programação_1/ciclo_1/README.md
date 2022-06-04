@@ -214,3 +214,5 @@
 -   Tudo o que estiver como `protected`, defautl ou public `será herdado por classes filhas`
 -   Tudo o que estiver como ` private`` não será herdado por classes filhas `
 
+> Métodos estáticos são referenciados pelo nome da classe
+
