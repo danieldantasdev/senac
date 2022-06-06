@@ -266,46 +266,49 @@
 
 ## Design de Interfaces - 21/03/22
 
-- Ainda vamos ver como coletar referências, guias para craiação de interfaces mobile e web, princípios básicos de design, tipografia e cores
+-   Ainda vamos ver como coletar referências, guias para craiação de interfaces mobile e web, princípios básicos de design, tipografia e cores
 
 `SiteMap ou Mapa de Navegação`
 
-- É ele que vai dizer como vai ser o fluxo de navegação do usuário, basicamente são os caminhos pelo os quais o usuário vai percorrer em uma detreminada aplicação
-- A ideia é pegar as diferentes páginas da aplicação e separar em camadas diferentes
-- Página principal -> Home -> Login -> Página de roteiros
-- Auxilia para vermos quantas páginas serão desenhadas e juntas para serem programadas
-- Mostra quantas páginas preciso desenhar e programar
-- Nos mostra as páginas similares
-- Podemos planejar os lementos repetidos, denominados de componentes
-- Lista todas as URL's do seu site
-- Sitemap XML
+-   É ele que vai dizer como vai ser o fluxo de navegação do usuário, basicamente são os caminhos pelo os quais o usuário vai percorrer em uma detreminada aplicação
+-   A ideia é pegar as diferentes páginas da aplicação e separar em camadas diferentes
+-   Página principal -> Home -> Login -> Página de roteiros
+-   Auxilia para vermos quantas páginas serão desenhadas e juntas para serem programadas
+-   Mostra quantas páginas preciso desenhar e programar
+-   Nos mostra as páginas similares
+-   Podemos planejar os lementos repetidos, denominados de componentes
+-   Lista todas as URL's do seu site
+-   Sitemap XML
 
 [XML GENERATOR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjJqKKUldj2AhUFI7kGHW7zBusQFnoECAcQAQ&url=https%3A%2F%2Fwww.xml-sitemaps.com%2F&usg=AOvVaw3Ppea8bdM1-NjZwJDs8qWQ)
 
 `Grid`
 
-- Estrutura invisível que reúne todos os elementos de uma página
-- Determina as dimensões desses elementos inseridos no design como: largura de texto e coluna, espaçamento das palavras, altura de linha e etc
-- Seu principal objetivo é criar uma boa usabilidade e organização
-- Vai depender da resolução que estamos trabalhamos
+-   Estrutura invisível que reúne todos os elementos de uma página
+-   Determina as dimensões desses elementos inseridos no design como: largura de texto e coluna, espaçamento das palavras, altura de linha e etc
+-   Seu principal objetivo é criar uma boa usabilidade e organização
+-   Vai depender da resolução que estamos trabalhamos
 
 [GRID CALCULATOR](http://gridcalculator.dk)
 **Depois do SiteMap precisamos fazer os Wireframes**
 
 `Wireframes`
 
-- É uma representação de baixa fidelidade, deve mostrar claramente:
+-   É uma representação de baixa fidelidade, deve mostrar claramente:
+
 1. Principais grupos de conteúdo (o que)
 2. A estrutura da informação (onde fica cada coisa)
 3. Uma descrição e visualização básica da interface da interação do usuário (como)
 
-- Os wireframes precisam ter informação suficiente para refletir o que precisa ser programado
+-   Os wireframes precisam ter informação suficiente para refletir o que precisa ser programado
 
     `Wireframe de baixa fidelidade`
-    - São basicamente linhas sobre o fundo liso com laguns rótulos, o famoso "rabiscoframe"
+
+    -   São basicamente linhas sobre o fundo liso com laguns rótulos, o famoso "rabiscoframe"
 
     `Wireframe de alta fidelidade`
-    - São basicamente um wireframe mais completo
+
+    -   São basicamente um wireframe mais completo
 
 ---
 
@@ -313,73 +316,73 @@
 
 `UI`
 
-- User interface pensa toda  parte que perimite a interação entre usuário e sistema/aplicativo
-- Precisamos garantir o interesse e a fácil interação do usuário com o produto que está sendo criado
-- Tudo o que aparece em uma interface deve ser pensado e deve cumprir uma função
-- O desenho da interface deve seguir padrões e práticas utilizadas na web
-- A solução usadapela maioria está relacionada com conceitos da psicologia cognitiva, como a facilidade de memorização e aprendizado 
-- Na dúvida, a preferência é a convenção
+-   User interface pensa toda parte que perimite a interação entre usuário e sistema/aplicativo
+-   Precisamos garantir o interesse e a fácil interação do usuário com o produto que está sendo criado
+-   Tudo o que aparece em uma interface deve ser pensado e deve cumprir uma função
+-   O desenho da interface deve seguir padrões e práticas utilizadas na web
+-   A solução usadapela maioria está relacionada com conceitos da psicologia cognitiva, como a facilidade de memorização e aprendizado
+-   Na dúvida, a preferência é a convenção
 
 1. Visão e atenção
 
-- Totalemente ligado a interface, são os elementos visuais como cores, txturas, contrastes, images, tamanhos, hierarquias, estimulos sonoros
+-   Totalemente ligado a interface, são os elementos visuais como cores, txturas, contrastes, images, tamanhos, hierarquias, estimulos sonoros
 
 > Questionamentos
 
-- Quais palavras ou objetos os usuários procuram?
-- Qual é o fluxo visual a ser percorrido?
-- Para onde os lolhos vão primeiro na página?
+-   Quais palavras ou objetos os usuários procuram?
+-   Qual é o fluxo visual a ser percorrido?
+-   Para onde os lolhos vão primeiro na página?
 
 > Padrões na página
 
-- Todas as culturas lêem de cima para baixo e a maioria da esquerda para direita, Duas formas "F" e "Z"
+-   Todas as culturas lêem de cima para baixo e a maioria da esquerda para direita, Duas formas "F" e "Z"
 
 2. Senso de localização (wayfidding)
 
-- Está diretamente ligado a arquitetura da informação e hierarquia
-- É a forma como o usuário consegue chegar do ponto A ao ponto B
+-   Está diretamente ligado a arquitetura da informação e hierarquia
+-   É a forma como o usuário consegue chegar do ponto A ao ponto B
 
 > Questionamentos
 
-- Como o usuário espera se movuimentar no meu sistema?
-- Quais as interações que ele espera ter no meio do caminho?
+-   Como o usuário espera se movuimentar no meu sistema?
+-   Quais as interações que ele espera ter no meio do caminho?
 
-3. Memória e Semântica 
+3. Memória e Semântica
 
-- As pessoas esperam que as coisas aconteçam de forma certa
+-   As pessoas esperam que as coisas aconteçam de forma certa
 
 > Questionamentos
 
-- O que as pessoas pensam sobre determinado assunto?
-- As experiências ativiam padrões familiares no usuário?
+-   O que as pessoas pensam sobre determinado assunto?
+-   As experiências ativiam padrões familiares no usuário?
 
 4. Emoção
 
-- Os usuários sempre chegarão ao seu produto trazendo bagagens sentimentais
+-   Os usuários sempre chegarão ao seu produto trazendo bagagens sentimentais
 
 > Questionamentos
 
-- O que irá trazer valor e significado para a experiência?
-- O que irá cativar ou conquistar?
+-   O que irá trazer valor e significado para a experiência?
+-   O que irá cativar ou conquistar?
 
 4. Tomada de decisão
 
-- Ao desenhar uma interface, temos a capacidade de tomar decisões
+-   Ao desenhar uma interface, temos a capacidade de tomar decisões
 
 > Questionamentos
 
-- Podemos ajudar o usuário a tomar uma decisão mais rápida?
-- O que o usuário irá precisar depois?
+-   Podemos ajudar o usuário a tomar uma decisão mais rápida?
+-   O que o usuário irá precisar depois?
 
 ---
 
 # Design de Interfaces - 04/04/22
 
-- Estamos estudando sobre as experiências do usuário 
+-   Estamos estudando sobre as experiências do usuário
 
 `Gestalt`
 
-- De origem alemã, a palavra gestalt, por definição, refere-se à forma de algo. Ela sugere que o todo é maior que a soma de suas partes. Há uma ênfase na percepção nesta teoria particular de psicoterapia
+-   De origem alemã, a palavra gestalt, por definição, refere-se à forma de algo. Ela sugere que o todo é maior que a soma de suas partes. Há uma ênfase na percepção nesta teoria particular de psicoterapia
 
 ---
 
@@ -387,7 +390,7 @@
 
 `Site de bolos`
 
-- Fazer moodboard, nuvem de palavras, janboard, slide
+-   Fazer moodboard, nuvem de palavras, janboard, slide
 
 ---
 
@@ -397,91 +400,99 @@
 
 > na computação
 
-- Ou geratriz, as cores primárias, são verde, vermelho e azul-violetado (síntese aditiva)
-- Formam o branco
+-   Ou geratriz, as cores primárias, são verde, vermelho e azul-violetado (síntese aditiva)
+-   Formam o branco
 
 > Química
 
-- Ou geratriz, as cores primárias, são magenta, ciano e amarelo (síntese substrativa)
-- Formam o preto
+-   Ou geratriz, as cores primárias, são magenta, ciano e amarelo (síntese substrativa)
+-   Formam o preto
 
-- RGB, é a formação para web
-- CMYK, é a formação para impressão
+-   RGB, é a formação para web
+-   CMYK, é a formação para impressão
 
 `Secundárias`
 
-- Formadas por duas cores primárias
+-   Formadas por duas cores primárias
 
 `Terciárias`
 
-- Formadas por intermédio entre secundária e qualquer primária
+-   Formadas por intermédio entre secundária e qualquer primária
 
 `Complementares`
 
-- Formadas por quaisquer cores que juntas formam uma cor em específico
+-   Formadas por quaisquer cores que juntas formam uma cor em específico
 
 `Cores quentes`
 
-- Vermelho e amarelo, e outras que predominam as mesmas
+-   Vermelho e amarelo, e outras que predominam as mesmas
 
 `Cores frias`
 
-- Azul e verde, e outras que predominam as mesmas
+-   Azul e verde, e outras que predominam as mesmas
 
 `Cores análogas`
 
-- Uma cor ao lado da outra no círculo cromático
+-   Uma cor ao lado da outra no círculo cromático
 
 `Cores complementares`
 
-- Uma em frente a outra no círculo cromático
+-   Uma em frente a outra no círculo cromático
 
 `Esquema de triade`
 
-- Formar um triângulo no círculo cromático
+-   Formar um triângulo no círculo cromático
 
 `Como definir a cor de um pixel`
 
-- Cada valor pode variar de 0 a 255;
+-   Cada valor pode variar de 0 a 255;
 
 > pixel vermelho
 
-- red - 255
-- green - 0
-- blue - 0
+-   red - 255
+-   green - 0
+-   blue - 0
 
 > pixel verde
 
-- red - 0
-- green - 255
-- blue - 0
+-   red - 0
+-   green - 255
+-   blue - 0
 
 > pixel azul
 
-- red - 0
-- green - 0
-- blue - 255
+-   red - 0
+-   green - 0
+-   blue - 255
 
 ---
 
 # Design de Interfaces - 25/04/22
 
-- Estamos estudando tipografia, já vi muito da aula na Zion, é legal relembrar as sensações que conseguimos passar para nosso usuário somente pela fonte
+-   Estamos estudando tipografia, já vi muito da aula na Zion, é legal relembrar as sensações que conseguimos passar para nosso usuário somente pela fonte
 
 ---
 
 # Design de Interfaces - 02/05/22
 
-- Design System
-- Material IO (google)
+-   Design System
+-   Material IO (google)
 
 # Design de Interfaces - 02/05/22
 
-- Norman e nielsen são pioneiros no UX (User experience)
-- Jeff Johson disserta sobre o que precisamos e o que não na hora de pensar na interface do usuário
-- Nick Babich
-- Ramsay and Nielsen
-- Elimine a desordem, devemos direcionar nosso usuário
+-   Norman e nielsen são pioneiros no UX (User experience)
+-   Jeff Johson disserta sobre o que precisamos e o que não na hora de pensar na interface do usuário
+-   Nick Babich
+-   Ramsay and Nielsen
+-   Elimine a desordem, devemos direcionar nosso usuário
+
+# Design de Interfaces - 06/06/22
+
+`Mapa de navegação hierárquico`
+
+-   O mapa de navegação hierárquico é uma ferramenta que permite ao usuário navegar entre os níveis de hierarquia da página
+-   O mapa de navegação hierárquico é um mapa que mostra a hierarquia de níveis de página
 
     <span style="font-family:Papyrus; font-size:4em;">Design de Interfaces I</span>
     <span style="color:red">Gabriela Silveira</span>
+
