@@ -597,3 +597,62 @@ return 0;
 
 -   Muitos para muitos, sempre criamos uma tabela intermediária com relação de um para muitos
 
+# Engenharia de Software II - 08/06/22
+
+`jdbc`
+
+-   Interface de acesso ao banco de dados
+-   baixa granularidade
+
+`Hibernate`
+
+-   É um framework de banco de dados para aplicações Java
+-   É um ORM (Object Relational Mapping)
+-   alta granularidade
+
+`Framework`
+
+-   É um conjunto de bibliotecas que facilita a criação de aplicações web
+
+`Angular`
+
+-   É um framework de aplicações web
+
+`cdn`
+
+-   É um serviço que hospeda os arquivos de uma aplicação
+
+`firewall`
+
+-   É um serviço que protege a aplicação, revisando quais portas estão abertas
+-   Para que a aplicação não seja acessada por outros usuários
+
+`mvc`
+
+-   É um padrão de arquitetura de aplicações web
+
+    > Model View Controller
+
+    > Model: representa o modelo do sistema
+    > View: representa a interface do usuário
+    > Controller: representa a lógica de negócio
+    > Service: conexão backend com o frontend
+    > Repository: representa a lógica de persistência
+
+`ejb (Enterprise Java Bean)`
+
+-   É um padrão de arquitetura de aplicações Java
+-   Modelo transparente de aplicação Java para acessar diversas classes do sistema original
+
+`implantacao`
+
+-   É a instalação de um sistema
+
+    > Instalação de um sistema
+    > Instalação de um serviço
+    > Instalação de um aplicativo
+
+`deployment`
+
+-   É o processo de instalação de um sistema
+
