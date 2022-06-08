@@ -150,6 +150,34 @@ void remover_final()
     }
 }
 
+void maiorMenorElemento()
+{
+    if (lista_vazia())
+    {
+        printf("Lista vazia\n");
+    }
+    else
+    {
+        No *aux = inicioL;
+
+        int maior = aux->info;
+        int menor = aux->info;
+
+        while (aux->proximo != NULL)
+        {
+            if (aux->info > maior)
+            {
+                maior = aux->info;
+            }
+            if (aux->info < menor)
+            {
+                menor = aux->info;
+            }
+            aux = aux->proximo;
+        }
+    }
+}
+
 int main()
 {
     int valor, opcao;
@@ -161,7 +189,8 @@ int main()
         printf("3 - Remover elemento\n");
         printf("4 - Remover primeiro elemento\n");
         printf("5 - Remover último elemento\n");
-        printf("6 - Exibir lista\n");
+        printf("6 - Maior e menor elemento\n");
+        printf("7 - Exibir lista\n");
         printf("0 - Sair\n");
         printf("Digite a opcao desejada: ");
         scanf("%d", &opcao);
@@ -190,6 +219,9 @@ int main()
             remover_final();
             break;
         case 6:
+            maiorMenorElemento();
+            break;
+        case 7:
             exibir_lista();
             break;
         }

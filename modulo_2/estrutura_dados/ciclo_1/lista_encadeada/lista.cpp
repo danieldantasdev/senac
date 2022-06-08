@@ -143,6 +143,38 @@ void remover(Lista *lista, int valor)
     }
 }
 
+void removerInicio(Lista *lista)
+{
+    No *noARemover = lista->inicio;
+    if (noARemover != NULL)
+    {
+        lista->inicio = noARemover->proximo;
+        if (lista->inicio == NULL)
+            lista->fim = NULL;
+        free(noARemover);
+        lista->tam--;
+    }
+}
+
+void removerMeio(Lista *lista, int valor)
+{
+    No *inicio = lista->inicio;
+    No *noARemover = NULL;
+    while (inicio != NULL && inicio->proximo != NULL && inicio->proximo->info != valor)
+    {
+        inicio = inicio->proximo;
+    }
+    if (inicio != NULL && inicio->proximo != NULL)
+    {
+        noARemover = inicio->proximo;
+        inicio->proximo = noARemover->proximo;
+        if (inicio->proximo == NULL)
+            lista->fim = inicio;
+        free(noARemover);
+        lista->tam--;
+    }
+}
+
 // função que remove e retorna o primeiro nó
 No *removerPrimeiroNO(Lista *lista)
 {
