@@ -341,22 +341,22 @@ z = `A resposta é ${resp}`
     6. < - true caso os operando da esquerda seja menor que o da direita
     7. >= - true caso os operando da esquerda seja maior ou igual que o da direita
     8. <= - true caso os operando da esquerda seja menor ou igual que o da direita
-    
+
 ---
 
 # Tecnologia Web II - 23/03/22
 
 `Node JS`
 
-- Node -v = retorna a versão do Node
+-   Node -v = retorna a versão do Node
 
 `Array`
 
-- O objeto Array do JavaScript é um objeto global usado na construção de 'arrays': objetos de alto nível semelhantes a listas
-- Lista de opbjetos
-- Objetos que contem múltiplos valores armazenados em uma lista
-- Um objeto array pode ser armazenado em variáveis e ser tratado de forma muito similar a qualquer outro tipo de valor
-- JavaScrpit não possui um tipo de dados especifico do array
+-   O objeto Array do JavaScript é um objeto global usado na construção de 'arrays': objetos de alto nível semelhantes a listas
+-   Lista de opbjetos
+-   Objetos que contem múltiplos valores armazenados em uma lista
+-   Um objeto array pode ser armazenado em variáveis e ser tratado de forma muito similar a qualquer outro tipo de valor
+-   JavaScrpit não possui um tipo de dados especifico do array
 
 `Criando Array`
 
@@ -379,4 +379,14 @@ arr.lentgh = (e1, e2, e3)
 var arr = [42]
 
 [Array](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_Collections)
+
+# Tecnologia Web II - 08/06/22
+
+`Funções`
+
+    1. Funções são blocos de código que podem ser executados de forma isolada e reutilizável
+    2. Funções podem ser criadas de forma dinâmica
+    3. Funções podem ser criadas de forma estática
+
+-   Para usar uma função, você deve defini-la em algum lugar no escopo do qual você quiser chamá-la
 
