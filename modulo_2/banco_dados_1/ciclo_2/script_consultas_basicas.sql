@@ -1902,5 +1902,4 @@ SELECT * FROM Ambulatorio WHERE andar % 2 = 0;
 
 --apresentar lista de funcionários e novo salário, considerando um aumento de dez por cento
 SELECT nome, salario FROM Funcionario WHERE salario = salario * 1.1;
-
 SELECT nome, salario + (salario * 0.1) FROM Funcionario;
