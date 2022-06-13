@@ -1910,4 +1910,10 @@ SELECT nome, salario + (salario * 0.1) FROM Funcionario;
 SELECT m.nome AS Medicos, p.nome AS Pacientes, c.hora AS Consultas FROM Medicos m INNER JOIN Consultas c ON m.codigo_medico = c.codigo_medico INNER JOIN Pacientes p ON p.codigo_paciente = c.codigo_paciente ORDER BY p.nome;
 
 --listando medicos que atndem em todos andares
-SELECT m.nome AS Medicos 
+SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar;
+
+--listando medicos que atendem em andares pares
+SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar %2 = 0;
+
+--listando medicos que atendem em andare impares
+SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar %2 = 1;
