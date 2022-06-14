@@ -61,7 +61,7 @@ void desempilhar(){
     }else{
         printf("\nPilha vazia!\n");
     }
-}
+} 
 
 void exibirPilha(){
     no* aux;
