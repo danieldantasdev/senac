@@ -48,7 +48,6 @@ void empilhar(int valor){
 //definir fun��o remover/desempilhar
 
 
-
 int main() {
   int num;
   inicializa_pilha();
