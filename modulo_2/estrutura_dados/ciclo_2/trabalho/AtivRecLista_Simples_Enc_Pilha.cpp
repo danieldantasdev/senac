@@ -39,13 +39,42 @@ void exibirTopo() {
 } 
 
 //definir inserir/empilhar
-void empilhar(int valor){
-	no* aux;
-	aux = cria_no(valor);
-	aux -> prox = pilha;
-	pilha = aux;
+void empilhar (int valor){
+    no* aux;
+    if(pilha_vazia()){
+        pilha = cria_no(valor);
+    }else{
+        aux = pilha;
+        while(aux->prox != NULL){
+            aux = aux->prox;
+        }
+        aux->prox = cria_no(valor);
+    }
 }
 //definir fun��o remover/desempilhar
+void desempilhar(){
+    no* aux;
+    if(!pilha_vazia()){
+        aux = pilha;
+        pilha = pilha->prox;
+        free(aux);
+    }else{
+        printf("\nPilha vazia!\n");
+    }
+}
+
+void exibirPilha(){
+    no* aux;
+    if(!pilha_vazia()){
+        aux = pilha;
+        while(aux != NULL){
+            printf("%d\n",aux->info);
+            aux = aux->prox;
+        }
+    }else{
+        printf("\nPilha vazia!\n");
+    }
+}
 
 
 int main() {
@@ -56,14 +85,15 @@ int main() {
   	   printf("\n1- Inserir na pilha");
   	   printf("\n2- Exibir topo");
   	   printf("\n3- Remover");
-  	   printf("\n4- Sair");
+       printf("\n4- Exibir pilha");
+  	   printf("\n5- Sair");
        printf("\nInforme sua op��o:");
        scanf("%d",&op);
        switch(op){
        		case 1:{
 				printf("\nInforme o valor que deseja inserir: ");
 				scanf("%d",&num);
-				//Chamar a fun��o de inserir
+                empilhar(num);
 				break;
 			}
 			case 2:{
@@ -71,10 +101,14 @@ int main() {
 				break;
 			}
 			case 3:{
-				//Chamar a fun��o de remover
+                desempilhar();
 				break;
 			}
-			case 4:{
+            case 4:{
+                exibirPilha();
+                break;
+            }
+			case 5:{
 				printf("\nSaindo...\n");
 				break;
 			}
@@ -87,4 +121,3 @@ int main() {
 	system("cls"); 
   }while(op!=4);
 }
-
