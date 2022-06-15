@@ -1910,6 +1910,9 @@ SELECT nome, salario + (salario * 0.1) FROM Funcionario;
 SELECT m.nome AS Medicos, p.nome AS Pacientes, c.hora AS Consultas FROM Medicos m INNER JOIN Consultas c ON m.codigo_medico = c.codigo_medico INNER JOIN Pacientes p ON p.codigo_paciente = c.codigo_paciente ORDER BY p.nome;
 
 --listando medicos que atndem em todos andares
+SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar;
+
+--listando medicos que atendem no primeiro andar
 SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar = 1;
 
 --listando medicos que atendem em andares pares
@@ -1917,3 +1920,36 @@ SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambul
 
 --listando medicos que atendem em andare impares
 SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar %2 = 1;
+
+--São penas duas tabelas, uma listando os bares e as marcas de cerveja que ali são vendidas, e outra relacionando as cervejas e pessoas que gostam dela
+
+CREATE DATABASE dbbar;
+USE dbbar;
+
+CREATE TABLE Cerveja (
+	id_cerveja INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	marca VARCHAR(15),
+	nome VARCHAR(15),
+	codigo_gostam INT,
+	CONSTRAINT fk_codigo_gostam FOREIGN KEY (codigo_gostam) REFERENCES Gostam (id_gostam)
+);
+
+CREATE TABLE Gostam (
+	id_gostam INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(15),
+	cerveja_gosta VARCHAR(15)
+    codigo_cerveja INT,
+    CONSTRAINT fk_codigo_cerveja FOREIGN KEY (codigo_cerveja) REFERENCES Cerveja (id_cerveja)
+);
+
+--listar todas pessoas que gostam das cervejas vendidas no bar "Boteco"
+SELECT g.nome FROM Gostam g INNER JOIN Cerveja c ON c.codigo_gostam = g.id_gostam WHERE c.marca = 'Boteco';
+
+--listar todas pessoas que gostam apenas das cervejas vendidas no bar "Boteco"
+SELECT g.nome FROM Gostam g INNER JOIN Cerveja c ON c.codigo_gostam = g.id_gostam WHERE c.marca = 'Boteco' AND c.codigo_gostam = g.codigo_gostam;
+
+--listar todas as pessoas que gostam apenas das cervejas vendidas no bar "Boteco"
+SELECT g.nome FROM Gostam g LEFT JOIN Cerveja c ON c.codigo_gostam = g.id_gostam WHERE c.marca = 'Boteco' AND c.codigo_gostam = g.codigo_gostam;
+
+--listar todas as pessoas que gostam das cervejas vendidas no bar "Boteco" e que também gostam das cervejas vendidas no bar "Boteco"
+SELECT g.nome FROM Gostam g INNER JOIN Cerveja c ON c.codigo_gostam = g.id_gostam WHERE c.marca = 'Boteco' AND c.codigo_gostam = g.codigo_gostam;
