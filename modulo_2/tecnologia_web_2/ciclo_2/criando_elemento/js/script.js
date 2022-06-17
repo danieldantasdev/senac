@@ -8,8 +8,11 @@ const inserirItem = () => {
     const numeroIncrementado = parseInt(lista.childElementCount) + 1
 
     var item = document.createElement('li')
+
     item.innerHTML = `item ${numeroIncrementado}`
     lista.appendChild(item)
+
+    item.style.border = '2px solid blue'
 }
 
 const removerItem = () => {
