@@ -4,9 +4,72 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Manipualndo o DOM</title>
+        <title>Manipulando o Dom</title>
     </head>
     <body>
-        ul
+        <ul id="lista" class="lista">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <button onclick="inserirItem()" onmouseover=" mouseOver()" onmouseout="mouseOut()">Inserindo item</button>
+
+        <button onclick="removerItem()" onmouseover=" mouseOver()" onmouseout="mouseOut()">Removendo item</button>
+
+        <!-- <ul id="time">
+        <li>jogador 1</li>
+        <li>jogador 2</li>
+        <li>jogador 3</li>
+    </ul> -->
+
+        <script>
+            var lista = document.getElementById('lista')
+
+            var item = document.querySelector('#lista li')
+
+            item.style.border = '2px solid blue'
+
+            const inserirItem = () => {
+                const numeroIncrementado = parseInt(lista.childElementCount) + 1
+
+                var item = document.createElement('li')
+                item.innerHTML = `item ${numeroIncrementado}`
+                lista.appendChild(item)
+            }
+
+            const removerItem = () => {
+                lista.removeChild(lista.lastChild)
+            }
+
+            const mouseOver = () => {
+                item.style.backgroundColor = 'red'
+            }
+
+            const mouseOut = () => {
+                item.style.backgroundColor = 'white'
+            }
+
+            //         times = ['São Paulo', 'Palmeiras', 'Corinthians'];
+
+            // var time = document.querySelector('#time ul li');
+
+            // times.forEach(function(time){
+            //     var item = document.createElement('li');
+            //     item.innerHTML = time;
+            //     lista.appendChild(item);
+            // });
+
+            // for (var i = 0; i < times.length; i++) {
+            //     var time = times[i];
+            //     var item = document.createElement('li');
+
+            //     item.innerText = time;
+            //     item.style.border = '2px solid red';
+
+            //     lista.appendChild(item);
+            // }
+        </script>
     </body>
 </html>
+
