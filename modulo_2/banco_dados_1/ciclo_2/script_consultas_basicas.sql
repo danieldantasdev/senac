@@ -1921,6 +1921,27 @@ SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambul
 --listando medicos que atendem em andare impares
 SELECT m.nome AS Medicos, a.andar AS Ambulatorio FROM Medicos m INNER JOIN Ambulatorio a ON a.codigo_ambulatorio = m.codigo_ambulatorio WHERE andar %2 = 1;
 
+--Buscar os dados dos pacientes, que estão com sarampo, ordenados por idade
+SELECT nome, idade, sexo, cidade FROM Pacientes WHERE doenca = 'Sarampo' ORDER BY idade DESC;
+
+SELECT nome, idade, sexo, cidade FROM Pacientes WHERE doenca = 'Sarampo' ORDER BY idade ASC;
+
+--Buscar a quantidade de médicos por especialidade, ordenados por especialidade
+SELECT especialidade, COUNT(*) FROM Medicos GROUP BY especialidade ORDER BY especialidade;
+
+--No exercício 2, buscar apenas aquelas especialidades com mais de 1 médico atendente
+SELECT especialidade, COUNT(*) FROM Medicos GROUP BY especialidade HAVING COUNT(*) > 1;
+
+--Buscar a idade do paciente mais velho e do mais novo
+SELECT MAX(idade),MIN(idade) FROM Pacientes;
+
+--Buscar as idades dos pacientes mais velhos de cada doença
+SELECT doenca, MAX(idade) FROM Pacientes GROUP BY doenca ORDER BY MAX(idade);
+
+--No exercício anterior, apresentar somente o resultado com pessoas mais velhas que 60 anos de idade
+SELECT doenca, MAX(idade) FROM Pacientes WHERE idade > 60 GROUP BY doenca ORDER BY MAX(idade);
+
+
 --São penas duas tabelas, uma listando os bares e as marcas de cerveja que ali são vendidas, e outra relacionando as cervejas e pessoas que gostam dela
 
 CREATE DATABASE dbbar;
