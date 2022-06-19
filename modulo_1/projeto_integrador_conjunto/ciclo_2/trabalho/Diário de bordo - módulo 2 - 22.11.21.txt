@@ -1,5 +1,0 @@
-Reunião dia 22/11/21
-
-Vitor vai criar o documento de especificação de caso de uso da tela de vizualização de recursos, de acordo com o template disponível. Vitor também ficou responsável por avaliar se o projetp está de acordo com as alterações da guia de estilos.
-
-João ficou responável por reunir em um único arquivo Word, todos arquivos construídos no projeto.
