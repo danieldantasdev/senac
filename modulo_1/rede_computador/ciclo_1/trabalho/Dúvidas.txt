@@ -1,0 +1,15 @@
+Fiquei com algumas dúvidas...
+
+O IPV4 é base decimal e o IPV6 é base hexadecimal, como foi feita essa mudança de um para o outro?
+
+Dei uma pesquisada sobre o NAT, o NAT pega um único endereço IPV4 válido e transforma para endereços privados.
+
+IPV6 é único para cada aparelho.
+
+tenho algumas perguntas que comecei a me fazer depois de assistir os vídeos...
+
+Como usar o Wi-Fi de forma segura?
+
+Qual a melhor encriptação para usar no roteador?
+
+Como saber se tem alguém usando o seu Wi-Fi?

@@ -1,0 +1,32 @@
+:root {
+    --light-blue: hsl(185, 84%, 70%);
+    --header-height: 4.5rem; /* 72px / 16px = 4.5rem; */
+    /* colors */
+    --hue: 185;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 100% 87%);
+    --base-color-second: hsl(var(--hue) 84% 70%);
+    --base-color-third: hsl(var(--hue) 10% 87% 90%);
+    --base-color-alt: hsl(var(--hue) 84% 70%);
+    --title-color: hsl(var(--hue) 33% 15%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+    --card-color: hsl(100 100% 100%);
+
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+}
+
+.container {
+    background-color: var(--base-color);
+
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: var(--base-color-second);
+
+    text-align: center;
+}

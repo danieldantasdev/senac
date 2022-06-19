@@ -1,0 +1,197 @@
+1) Na visão funcional, quais são as principais funções encontradas no computador?
+
+As funções básicas de um computador são a entrada, o controle dessa entrada, o
+armazenamento desses dados, o processamento desses dados e a saída de
+informações.
+
+
+2) Podemos dividir os computadores modernos em três classes: computadores
+pessoais, servidores e dispositivos embarcados. Que tipo de aplicação você pode
+encontrar em cada classe citada acima?
+
+Computadores Pessoais = Windows, Linux Ubunto, MAC
+Servidores: Windows server, OpenBSD, Debian
+Dispositivos Moveis = Android, IOS, Windows Phone
+
+
+3) Lista e descreva os principais componentes de um processador.
+
+O processador é composto por alguns componentes, cada um tendo uma função
+específica no processamento dos programas.
+• Unidade lógica e aritmética.
+• Unidade de controle.
+• Registradores.
+• Unidade de Gerenciamento de Memória.
+• Unidade de ponto flutuante.
+
+
+4) Na área de arquitetura de computadores, o espaço de endereçamento determina a
+capacidade de um processador acessar um número máximo de células da
+memória, então um processador que manipula endereços de E bits é capaz de
+acessar, no máximo, E² células de memória.
+( ) Certo
+( ) Errado
+
+
+Errado
+
+
+5) O conjunto de trilhas que conduzem sinais elétricos e que interligam diversos
+componentes do computador é conhecido como barramento do sistema,
+tipicamente dividido em barramento de dados, barramento de ______________e
+barramento de_____________. Os registradores chamados de registrador de
+______________ e registrador de __________ possuem ligação direta com este
+barramento.
+Assinale a alternativa que completa corretamente as lacunas.
+a) memória - controle - endereços - controle
+b) E/S - memória - barramento de E/S - barramento de memória
+c) E/S - controle - dados - controle
+d) endereços - E/S - endereços de memória - E/S
+e) endereços - controle - dados - endereços
+
+
+Letra "e" é a opção correta
+
+
+6) Segue-se o trecho final de uma memória principal, onde
+o endereço FFF representa a maior posição endereçável.
+Todos os números são apresentados em hexadecimal.
+Qual é o número máximo de células que essa memória pode conter?
+
+Sabendo-se que:
+F   =  15
+FF =  255
+
+Adiciono +1 porque precisamos contar o ZERO, pois a questão pede o número máximo de células da memória.
+O sistema hexadecimal é um sistema de numeração posicional que representa os números em base 16, portanto empregando 16 símbolos.
+
+Agora é só multiplicar 256 * 16 = 4096.
+
+E Assim por diante: 4096 * 16 = 65536  - 1 = FFFF
+
+RESPOSTA = 4096
+
+
+
+7) Sobre memória cache, analise as assertivas e assinale a alternativa que aponta
+a(s) correta(s):
+
+I. A ideia básica de uma memória cache simples é: as palavras na memória
+principal usadas com maior frequência são mantidas na cache.
+II. A localização lógica da cache é entre a CPU e a memória principal.
+III. O uso de cache é uma questão de importância cada vez maior para CPUs
+de alto desempenho. Embora quanto maior a cache, maior o custo.
+
+a) Apenas I.
+b) I, II e III.
+c) Apenas I, II.
+d) Apenas III.
+
+Todas questões estão certas, letra "b".
+
+
+8) (MOVENS 2010 – IMEP) A respeito do hardware de um computador pessoal,
+assim como seus componentes, interfaces e funcionamento, assinale a opção
+INCORRETA:
+
+a) A diferença entre memória ROM e RAM é que a memória RAM só permite a
+leitura dos dados, enquanto a ROM permite a leitura e a escrita.
+b) USB é um padrão para interconexão de periféricos externos. Ele permite a
+conexão de periférico sem a necessidade de reiniciar o computador.
+c) Disco rígido é um dispositivo que armazena informações de forma não volátil.
+d) CDROM é um tipo de mídia de armazenamento óptico, não volátil e de apenas
+leitura.
+
+RESPOSTA INCORRETA LETRA "A"
+
+EXPLICAÇÂO: 
+
+Está ao contrário, a memória RAM permite escrita e leitura, já que os dados transitam por ela o tempo todo. A memória ROM permite apenas leitura, já que o fabricante que escreve os dados e o mesmo não pode ser modificado.
+
+
+9) O computador é uma máquina capaz de realizar rapidamente o processamento de
+grandes quantidades de dados. Esse processamento consiste em operações
+lógicas e aritméticas sobre dados. Além dessa função, existe a função de entrada
+e saída de dados, cujos principais dispositivos são respectivamente:
+
+a) Monitor e impressora.
+b) Mouse e teclado.
+c) Mouse e caixa de som.
+d) Teclado e monitor.
+e) Teclado e microfone.
+
+
+RESPOSTA CORRETA LETRA "D"
+
+
+EXPLICAÇÂO: 
+
+Os dispositivos de entrada e saída são dispositivos eletrônicos conectados ao computador através de seus portos de entrada ou saída. São os meios pelos quais o usuário se comunica com o sistema de processamento de informações, alguns exemplos de dispositivos de entrada são: o teclado, o mouse, o scanner.
+
+Os periféricos de entrada e saída se conectam aos sistemas de processamento de informações através de slots de expansão ou conectores de entrada e saída integrados à sua placa-mãe, como slots ou portas USB, conector LAN, conector VGA ou conector de áudio.
+
+
+
+10) (CESPE PC RR 2003) Considere a seguinte situação: um usuário observou que
+determinado computador com 64 MB de memória RAM leva mais tempo que
+outros computadores para executar alguns aplicativos. Verificou também que o
+computador acessa o disco rígido com mais frequência que os outros. Nesta
+situação é possível que a instalação de mais memória RAM melhore o
+desempenho desse computador?
+
+
+Sim, como o computador do usuário conta com pouca memória RAM, o sistema operacional se vê obrigado a usar a memória virtual, que é o ato de o processador utilizar uma parte do disco rígido para gravar seus dados quando a RAM esgota sua capacidade. Como a gravação no disco rígido é bem lenta em relação à mesma operação na memória RAM, uma perde de desempenho ocorrerá nesse caso. O aumento de memória RAM, diminuirá a necessidade de uso da memória virtual e com isso, aumentará o desempenho do processamento.
+
+
+11) A expansão da memória ROM, que armazena os programas em execução
+temporariamente, permite aumentar a velocidade de processamento?
+
+
+Em vias normais, nada aumenta a velocidade do processador, e se você estiver se referindo a memória RAM, a expansão dela, vai permitir que você abra mais aplicativos ao mesmo tempo sem causar lentidão.
+
+Explicação:
+
+Por exemplo, se atualmente você tem 4Gb de RAM, você consegue abrir umas 5 abas do Google Chrome e depois disso, sente a máquina com mais dificuldade para operar, se expandir para 8Gb poderá ter mais abas abertas sem sentir essa lentidão.
+
+
+
+12) (FUNRIO 2009 MJ) Quais elementos são integrantes de uma Unidade Central de
+Processamento?
+
+a) Unidade de Controle, ULA e HD.
+b) Unidade de Controle, ULA e Registradores.
+c) Unidade de Controle, ULA e memória RAM.
+d) Processador, ULA, HD e CD.
+e) ULA, Registradores e memória RAM.
+
+RESPOSTA CORRETA LETRA "B"
+
+
+
+13) (CESPE 2006 EGPA) As memórias do tipo cache são mais lentas que as
+memórias RAM de alta capacidade de armazenamento, usualmente utilizadas em
+computadores do tipo PC?
+
+Errado, as memórias caches não são mais lentas que memórias RAM de açta capacidade.
+
+
+14) (ESAF 2002 SERPRO) Analise as seguintes afirmações relativas a conceitos
+básicos de informática:
+
+I. Um byte pode ter 8, 16, 32 ou mais bits, dependendo do modelo e
+características do processador utilizado.
+II. A ligação entre os vários componentes, na placa-mãe, é feita por meio de
+conjunto de trilhas paralelas. Esse conjunto recebe o nome de barramento.
+III. RAM é uma memória de acesso randômico onde são guardados
+temporariamente dados e instruções que a CPU esteja usando num
+determinado momento. Ao se desligar o computador, o conteúdo da memória
+RAM é perdido.
+Indique a opção que contenha todas as afirmações verdadeiras:
+
+a) I, II e III
+b) I e III
+c) II, III
+d) III
+
+
+RESPOSTA CORRETA LETRA "C"

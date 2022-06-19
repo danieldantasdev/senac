@@ -1,0 +1,51 @@
+html {
+    --red: #fc8484;
+    --white: #f0f8ff;
+    --blue: #3434ff;
+    --green: #3d923a;
+    --pink: #c255cc;
+    --gray: #26268f;
+    --orange: #ec7321;
+    --black: #070707;
+}
+
+body {
+    background-color: var(--red);
+}
+
+h1 {
+    color: var(--white);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    body {
+        background-color: var(--green);
+    }
+
+    h1 {
+        color: var(--blue);
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 960px) {
+    body {
+        background-color: var(--pink);
+    }
+
+    h1 {
+        color: var(--gray);
+    }
+}
+
+/* WIDESCREEN */
+@media (min-width: 1200px) {
+    body {
+        background-color: var(--orange);
+    }
+
+    h1 {
+        color: var(--black);
+    }
+}
