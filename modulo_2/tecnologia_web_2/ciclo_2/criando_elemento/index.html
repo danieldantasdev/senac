@@ -14,9 +14,68 @@
         <button onclick="inserirItem()" onmouseover=" mouseOver()" onmouseout="mouseOut()">Inserindo item</button>
 
         <button onclick="removerItem()" onmouseover=" mouseOver()" onmouseout="mouseOut()">Removendo item</button>
+        <br />
+        <br />
+        <br />
 
+        <hr />
         <!-- <ul id="time" style="margin-top: 20rem"></ul> -->
+        <br />
+        <br />
+        <br />
 
+        <form action="" onsubmit="validarFormulario()" method="post" name="formCadastro">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Coloque seu email" />
+            </div>
+
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Coloque seu nome" />
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="itens" size="6" class="form-control">
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar" />
+            </div>
+        </form>
+
+        <br />
+
+        <button type="submit" class="btn btn-primary" onclick="novoItem()">Cadastrar</button>
+
+        <div class="container col-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <table class="table table-stripped" id="tabela">
+                        <tr>
+                            <th>Email:</th>
+                            <th>Nome:</th>
+                            <th>Enviar:</th>
+                            <th>Sexo:</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <hr />
+
+        <br />
+        <br />
+        <br />
         <script>
             // times = ['São Paulo', 'Palmeiras', 'Corinthians']
 
