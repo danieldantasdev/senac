@@ -12,7 +12,7 @@ public class TestaJdbc1 {
 
 	public static void main(String[] args) {
 		try {
-			String url = "jdbc:mysql://localhost/dbhospital&ssl=false"; // URL do banco de dados
+			String url = "jdbc:mysql://localhost/dbtestejdbc"; // URL do banco de dados
 			String user = "root"; //nome do usuário do banco
 			String password = "010394"; //senha do usuário no banco
 			Connection conn = DriverManager.getConnection(url, user, password);

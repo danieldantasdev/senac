@@ -1,4 +1,4 @@
-package jdbc1;
+package br.senac.rj.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class Conexao {
 		Connection conexao = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost/dbhospital"; // URL do banco de dados
+			String url = "jdbc:mysql://localhost/dbtestejdbc"; // URL do banco de dados
 			String user = "root"; // nome do usuário do banco
 			String password = "010394"; // senha do banco
 			conexao = DriverManager.getConnection(url, user, password);
