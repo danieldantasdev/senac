@@ -1,4 +1,4 @@
-package br.som.jdbc.controller;
+package br.com.jdbc.controller;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
