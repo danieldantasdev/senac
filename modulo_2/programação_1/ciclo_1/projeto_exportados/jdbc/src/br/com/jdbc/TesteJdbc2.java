@@ -1,6 +1,8 @@
-package jdbc;
+package br.com.jdbc;
 
 import java.util.Scanner;
+
+import br.com.jdbc.repository.ContaCorrenteNormal;
 
 public class TesteJdbc2 {
 

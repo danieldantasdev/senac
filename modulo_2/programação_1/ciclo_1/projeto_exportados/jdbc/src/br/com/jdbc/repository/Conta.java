@@ -1,9 +1,11 @@
-package jdbc;
+package br.com.jdbc.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import br.som.jdbc.controller.Conexao;
 
 public abstract class Conta {
 	private int agencia;
@@ -12,7 +14,7 @@ public abstract class Conta {
 	protected double saldo;
 	public static int totalContas;
 
-	Conta() {
+	public Conta() {
 		this.titular = "";
 		Conta.totalContas++;
 	}
@@ -129,12 +131,14 @@ public abstract class Conta {
 				// Define a conexão
 				conexao = Conexao.conectaBanco();
 				// Define a consulta
-				String sql = "update conta set titular=?, saldo=?";
+				String sql = "update conta set titular=?, saldo=? WHERE agencia = ? AND numero = ?";
 				// Prepara a consulta
 				PreparedStatement ps = conexao.prepareStatement(sql);
 				// Define os parâmetros da atualização
 				ps.setString(1, titular);
 				ps.setDouble(2, saldo);
+				ps.setInt(3, numAgencia);
+				ps.setInt(4, numConta);
 				int totalRegistrosAfetados = ps.executeUpdate();
 				if (totalRegistrosAfetados == 0)
 					System.out.println("Não foi feita a atualização!");
