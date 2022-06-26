@@ -53,7 +53,7 @@ public class DAApp implements ActionListener {
         // cria painel
         JPanel painel = new JPanel();
         painel.setLayout(new FlowLayout());
-        painel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        painel.setBorder(BorderFactory.creat~eEmptyBorder(20, 20, 20, 20));
         painel.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
         // Cria titulo
         ltitulo = new JLabel("Database - Fields -Sem conexão");
