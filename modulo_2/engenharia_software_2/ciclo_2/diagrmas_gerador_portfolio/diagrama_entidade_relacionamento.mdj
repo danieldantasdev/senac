@@ -409,9 +409,9 @@
 									"font": "Arial;13;1",
 									"left": 416,
 									"top": 277,
-									"width": 139.79541015625,
+									"width": 238.05712890625,
 									"height": 13,
-									"text": "Pagamento"
+									"text": "movimentacao_pagamento"
 								},
 								{
 									"_type": "ERDColumnCompartmentView",
@@ -435,7 +435,7 @@
 											"font": "Arial;13;0",
 											"left": 421,
 											"top": 300,
-											"width": 129.79541015625,
+											"width": 228.05712890625,
 											"height": 13
 										},
 										{
@@ -451,7 +451,7 @@
 											"font": "Arial;13;0",
 											"left": 421,
 											"top": 459,
-											"width": 174.578125,
+											"width": 228.05712890625,
 											"height": 13
 										},
 										{
@@ -466,21 +466,21 @@
 											"font": "Arial;13;0",
 											"left": 421,
 											"top": 315,
-											"width": 129.79541015625,
+											"width": 228.05712890625,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 416,
 									"top": 295,
-									"width": 139.79541015625,
+									"width": 238.05712890625,
 									"height": 38
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 416,
 							"top": 272,
-							"width": 139.79541015625,
+							"width": 238.05712890625,
 							"height": 61,
 							"nameLabel": {
 								"$ref": "AAAAAAGBrMiGuQf7qWQ="
@@ -775,7 +775,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGBrMMNFAdQ/wA="
 					},
-					"name": "Pagamento",
+					"name": "movimentacao_pagamento",
 					"columns": [
 						{
 							"_type": "ERDColumn",
@@ -783,7 +783,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGBrMiGuQf43yw="
 							},
-							"name": "id_pagamento PK",
+							"name": "id_movimentacao_pagamento PK",
 							"length": 0
 						},
 						{
