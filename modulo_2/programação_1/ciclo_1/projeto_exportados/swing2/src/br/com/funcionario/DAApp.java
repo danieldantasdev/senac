@@ -1,3 +1,8 @@
+/**
+ * @author Daniel Dantas
+ * @see java.lang.String
+ */
+
 package br.com.funcionario;
 
 import java.awt.ComponentOrientation;
@@ -23,6 +28,9 @@ import br.com.funcionario.controller.FuncionarioDAO;
 import br.com.funcionario.model.Funcionario;
  
 public class DAApp implements ActionListener {
+	/**
+	 * @param args Argumentos a serem passados na linha de comando
+	 */
     // Declara componentes
     private JLabel ltitulo;
     private JLabel lid;
