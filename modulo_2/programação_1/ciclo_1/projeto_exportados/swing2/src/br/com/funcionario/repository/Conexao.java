@@ -13,6 +13,15 @@ public class Conexao {
     // voc� pode alimentar o nome do servidor, porta e banco de dados
     // de alguma configura��o global ou como achar melhor.
 
+    /**
+     * 
+     * @param fabrica
+     * @param usuario
+     * @param senha
+     * @return
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     public static Connection getConexao(int fabrica, String usuario,
             String senha) throws ClassNotFoundException, SQLException {
 

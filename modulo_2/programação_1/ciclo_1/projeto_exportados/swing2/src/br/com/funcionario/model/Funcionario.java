@@ -14,6 +14,14 @@ public class Funcionario {
     }
  
     // M�todo construtor Overload
+    /**
+     * 
+     * @param id
+     * @param nome
+     * @param sobrenome
+     * @param cargo
+     * @param salario
+     */
     public Funcionario(long id, String nome, String sobrenome, String cargo,
             double salario) {
         this.Id = id;
