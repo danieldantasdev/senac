@@ -5,4 +5,3 @@
 CREATE VIEW `view_nome` AS SELECT * FROM `tabela_nome`;
 
 DROP VIEW `view_nome`;
-
