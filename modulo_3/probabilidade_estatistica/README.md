@@ -61,3 +61,82 @@ sigma, onde i = 1, n = x;
 `Estatística`
 
 -   Medida que descreve uma característica da amostra de uma população
+
+`Variável`
+
+-   Qualquer característica de um indivíduo ou coisa
+
+    -   Nome
+    -   Idade
+
+    `Variável qualitativa`
+
+    -   Característica não númerica
+    -   Atributos
+    -   Exemplo: Cor, Sexo, Estado Civil, Etc.
+
+    `Variável quantitativa`
+
+    -   Característica númerica
+    -   Valores
+    -   Exemplo: Altura, Peso, Idade, etc.
+
+        `Variável quantitativa discreta`
+
+        -   Valores inteiros
+        -   Exemplo: 1, 2, 3, 4, 5, etc.
+        -   Contagem
+
+        `Variável quantitativa contínua`
+
+        -   Valores reais
+        -   Exemplo: 1.50, 2.00, 3.00, 4.00, 5.00, etc.
+        -   Intervalos
+        -   Medição
+
+`Exemplo`
+
+1. Em 5 testes realizados em sequencia com computador com processador Intel, foram obtidos os seguintes tempos de resposta, medidos em segundos, para inicialização de um mesmo programa: 46-61-74-79-88. Quais conclusões abaixo podem ser tiradas por métodos descritivos e quais requerem generalizações?
+
+    a) apenas dois tempos excederam 75 segundos;
+
+    **Variável quantitativa descritiva, porque temos os dados na mão, estou vendo e descrevendo diretamente**
+
+    b) se fosse feito o sexto testes, o tempo de resposta seria superior a 88 segundos
+
+    **Variável quantitativa contínua, porque não temos todos os dados na mão, precisamos pensar mais além do problema**
+
+2. Determine se o dado corresponde a uma estatística ou a um parâmetro e identifique o tipo de variável descrita:
+
+    a) A turma do 3º período de Estatística é formada por 20 alunos composta por
+    16 homens e 4 mulheres
+
+    **Parâmetro quantitativo discreto**
+
+    b) Um engenheiro realizou um teste de resistência à tração em 5 corpos de
+    prova referentes a produção de 500 peças fabricadas em ferro fundido e
+    obteve a resistência à tração média de 493,4MPa
+
+    **Estatísica variável quantitativa contínua**
+
+3. Classifique os dados abaixo:
+
+    a) Foram fabricados aparelhos de GPS que foram identificados com aprovados e reprovados;
+
+    **Variável quantitativa discreta**
+
+    b) O número de conectores defeituosos identificado no teste chegou a 32
+
+    **Variável quantitativa discreta**
+
+    c) O tempo de manutenção das peças no forno de tratamento térmico uma temperatura de 900ºC foi de 1 hora
+
+    **Variável quantitativa contínua**
+
+`Regra de arrendondamento`
+
+1. 12,47 = 12,5
+2. 12,47 = 12,4
+3. 12,3500 = 12,4
+4. 12,4500 = 12,4
+5. 12,4503 = 12,5
