@@ -61,3 +61,8 @@
 `JCR`
 
 -   Java Content Repository
+
+`Métodos`
+
+-   Funções que podem ser executadas por um objeto
+-   Composto por assinatura e corpo
