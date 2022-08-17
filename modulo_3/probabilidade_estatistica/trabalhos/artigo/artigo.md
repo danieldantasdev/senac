@@ -8,7 +8,11 @@
 
 `parâmetro`
 
+76% responderam todas as perguntas
+
 `estatística`
+
+não achei estatística no artigo
 
 `dados`
 
