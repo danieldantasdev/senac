@@ -1,3 +1,10 @@
+# Alunos
+
+@Daniel Dantas
+@Felipe Varella
+@Diogo Di Blasi
+@Gabriel Santos
+
 1.  Qual o perfil da empresa estudada? Se não houve uma empresa estudada,
     qual foi a base do estudo?
 
@@ -42,3 +49,10 @@
     A métrica PCU, assim como outros tipos de métricas, abordam as estimativas teóricas de
     tempo, e tem a finalidade de direcionar, viabilizar e ajudar controlar as fases do desenvolvimento
     de software.Com esta informação o desenvolvedor poderá requerer mais recursos bem como dimensionar o valor pecuniário de seu trabalho além de estimar com mais precisão o tempo necessário para o desenvolvimento de suas tarefas. Para o empresário, este terá uma base de informações imprescindível para estimar seus custos e apreçar seus produtos, bem como estabelecer cronogramas com promessas de entrega de produtos em prazos possíveis de serem alcançados.
+
+    O sucesso de um `programa de métricas` depende de uma série de fatores que variam desde a conscientização dos profissionais envolvidos até a existência de recursos técnicos e humanos necessários para a manutenção e monitoramento do programa. Um programa de medição traz benefícios para o programador a medida em que possibilita dimensionar melhor a carga de trabalho de forma a garantir a qualidade.
+
+    Em `projetos orientados` a objetos para que a estimativa de tamanho seja realizada com maior
+    precisão desde o início do projeto pode-se utilizar as métricas Análises de Pontos de Função e
+    Análise de Casos de Uso de forma combinada no momento em que elas são melhores aplicadas no
+    processo de desenvolvimento
