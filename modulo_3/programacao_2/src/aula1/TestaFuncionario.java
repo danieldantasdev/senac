@@ -9,7 +9,7 @@ public class TestaFuncionario {
 		funcionario1.status = "ATIVO";
 		
 		System.out.println("Salário do Daniel: " + funcionario1.salario);
-		funcionario1.bonificacao(100);
+//		funcionario1.bonificacao(100);
 		System.out.println("Salario com bonus: " + funcionario1.salario);
 	}
 }

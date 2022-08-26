@@ -14,6 +14,6 @@ public class Gerente extends Funcionario{
 	}
 	
 	double getBonus() {
-		return this.salario * 0.15;
+		return super.getBonus() + 5000;
 	}
 }
