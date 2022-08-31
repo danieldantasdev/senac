@@ -8,6 +8,13 @@ import { LoginComponent } from '../../pages/login/login.component';
 })
 export class TopbarComponent implements OnInit {
   @Input() mostrarMenu: boolean = true;
+  showFiller = false;
+  events: string[] = [];
+  opened: boolean = true;
+
+  shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(
+    window.location.host
+  );
 
   constructor() {}
 

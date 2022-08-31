@@ -5,9 +5,9 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { PagenotfoundComponent } from './components/pages/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   { path: '**', component: PagenotfoundComponent },
 ];
 
