@@ -50,6 +50,46 @@ SELECT pow(2, 3);
 
 -- Crie uma função que calcule a raiz de uma equação do primeiro grau do tipo Ax+B=0, dados os coeficientes A e B (dica x=-B/A)
 
+DELIMITER $$
+CREATE PROCEDURE raizes(IN a FLOAT, IN b FLOAT, IN c FLOAT)
+BEGIN
+SELECT a, b, c;
+SELECT (b * b) - (4 * a * c);
+SELECT (-b + sqrt((b * b) - (4 * a * c))) / (2 * a);
+SELECT (-b - sqrt((b * b) - (4 * a * c))) / (2 * a);
+END $$
+DELIMITER ;
+
+CALL raizes(3, -7, 4);
+CALL raizes(9, -12, 4);
+CALL raizes(5, 3, 5);
+
 --Crie uma função chamada ConsultasApos que retorne as consultas com data posterior a um parâmetro passado (teste com ‘01/10/2020’)
 
+DELIMITER $$ 
+CREATE FUNCTION ConsultasApos(data2 DATE) RETURNS FLOAT
+DETERMINISTIC
+BEGIN
+RETURN SELECT * FROM Consultas WHERE date2 > 01-10-2020;
+END $$
+DELIMITER ;
+
+SELECT meConsultasAposdia();
+
 --Criar uma trigger que se cadastrar um novo paciente verifique se o mesmo é do grupo de risco (‘Diabetes’, ‘Hipertensão’, Zica’) e caso seja, o registre na tabela GrpRisco (dica: utilize a função do SQL GETDATE() para obter a data/hora do registro para o campo ‘data’)
+CREATE TRIGGER cadastrarPaciente
+ON VENDAS
+FOR INSERT
+AS
+BEGIN
+    DECLARE
+    @DOENCA  VARCHAR(45),
+    @DATA   DATETIME
+
+    INSERT INTO Pacientes VALUES (@DOENCA, @DATA)
+
+    IF( @DOENCA = 'Diabetes' OR @DOENCA = 'Hipertensão' OR @DOENCA = 'Zica') THEN 
+    INSERT INTO Pacientes
+    VALUES (CONVERT(DATETIME, CONVERT(VARCHAR, GETDATE(), 103)), 1, 10)
+END
+GO
