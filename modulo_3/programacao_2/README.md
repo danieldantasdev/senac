@@ -66,3 +66,33 @@
 
 -   Funções que podem ser executadas por um objeto
 -   Composto por assinatura e corpo
+
+`Por que Java surgiu?`
+
+-   Reutilização de códigos
+-   Manutenabilidade
+
+`Full qualifited Name`
+
+-   Nome completo do pacote
+
+> Níveis de acesso
+
+`public`
+
+-   todo mundo tem acesso
+
+`private`
+
+-   somente na classe
+
+`protected`
+
+-   na linha de herança
+-   pacote, subpacote
+
+`default`
+
+-   diretório
+
+[Java doc da Api do Java](https://docs.oracle.com/javase/8/docs/api/)

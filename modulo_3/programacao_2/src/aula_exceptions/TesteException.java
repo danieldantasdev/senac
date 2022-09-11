@@ -22,10 +22,10 @@ public class TesteException {
 				array[i] = i;
 				System.out.println(i);
 			}
-		}catch (Exception e) {
+		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Erro de estouro de Array: " + e);
 		}
-		
+
 		System.out.println("Inicio do metodo 2");
 
 	}
