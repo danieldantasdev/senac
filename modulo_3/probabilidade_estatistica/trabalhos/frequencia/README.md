@@ -100,7 +100,7 @@ Colocar os valores na tabela padrão abaixo:
 
 > %fr
 
-38,7096
+40
 
 > fac
 
@@ -108,11 +108,11 @@ Colocar os valores na tabela padrão abaixo:
 
 > %frc
 
-38,7096
+40
 
 > fad
 
-62
+60
 
 > %frd
 
@@ -134,7 +134,7 @@ Colocar os valores na tabela padrão abaixo:
 
 > %fr
 
-25,80
+26,66 - 27
 
 > fac
 
@@ -142,15 +142,15 @@ Colocar os valores na tabela padrão abaixo:
 
 > %frc
 
-64,5096
+66,66 - 67
 
 > fad
 
-38
+36
 
 > %frd
 
-61
+60
 
 `Classe 3`
 
@@ -168,7 +168,7 @@ Colocar os valores na tabela padrão abaixo:
 
 > %fr
 
-11,29
+11,66 - 12
 
 > fac
 
@@ -176,15 +176,15 @@ Colocar os valores na tabela padrão abaixo:
 
 > %frc
 
-75,7996
+78,33 - 78
 
 > fad
 
--2
+20
 
 > %frd
 
--3,2
+33,33- 34
 
 `Classe 4`
 
@@ -202,7 +202,7 @@ Colocar os valores na tabela padrão abaixo:
 
 > %fr
 
-12,90
+13,33 - 13
 
 > fac
 
@@ -210,15 +210,15 @@ Colocar os valores na tabela padrão abaixo:
 
 > %frc
 
-88,6996
+91,66 - 92
 
 > fad
 
--49
+13
 
 > %frd
 
--79,03
+21,66 - 22
 
 `Classe 5`
 
@@ -232,27 +232,27 @@ Colocar os valores na tabela padrão abaixo:
 
 > fi
 
-4
+3
 
 > %fr
 
-6,45
+5
 
 > fac
 
-59
+58
 
 > %frc
 
-95,1496
+96,66 - 97
 
 > fad
 
--104
+5
 
 > %frd
 
--167
+8,33 - 9
 
 `Classe 6`
 
@@ -266,27 +266,27 @@ Colocar os valores na tabela padrão abaixo:
 
 > fi
 
-2
+1
 
 > %fr
 
-3,22
+1,66 - 2
 
 > fac
 
-61
+59
 
 > %frc
 
-98,3696
+98,33 - 99
 
 > fad
 
--163
+2
 
 > %frd
 
--262
+3,33 - 4
 
 `Classe 7`
 
@@ -304,45 +304,49 @@ Colocar os valores na tabela padrão abaixo:
 
 > %fr
 
-1,61
+1,66 - 2
 
 > fac
 
-62
+60
 
 > %frc
 
-99,9796
+100
 
 > fad
 
--224
+1
 
 > %frd
 
--361
+1,66 - 2
 
 `Total de Fi das classes`
 
 > Fi
 
-62
+60
 
 c) Após a análise dos resultados, calcular o percentual do tempo de pintura do
 componente com duração inferior a 10 min;
 
 -   Vimos que 40 dos componentes com duração inferior a 10 min
--   64,5096 dos componentes tem duração inferior a 10 min
+-   67% dos componentes tem duração inferior a 10 min
+-   7 - 10 é o intervalo
 
 d) Calcular o percentual do tempo de pintura do componente com duração
 superior a 12 min;
 
 ```
-13 - 10 / 13 - 12 = -79 -3 / -79 - %frd
+10 12 13
+34 x 22
 
-3 / 1 = -82 / -79 - %frd
+13 - 10 / 13 - 12 = 22 - 34 / 22 - x
 
-frd = 2
+3 / 1 = -12 / 22 - %frd
+
+frd = 26
 
 ```
 
@@ -355,3 +359,6 @@ pode ser feito a mão livre com régua);
 g) Considerando que a especificação de tempo de pintura do componente seja
 menor ou igual a 10min, trace comentários e análises sobre o processo de
 pintura apresentado.
+
+-   Conclui-se que 24 dos 60 componentes têm tempo de pinturas inferiores a 7min, ou seja 14,4%.
+-   Conclui-se pela linha fad1 que 24 de 60 componentes têm tempo de pinturas inferiores a 7min, ou seja, 85,6% dos componentes estariam reprovados.
