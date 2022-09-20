@@ -21,7 +21,7 @@ terceira para ser dispensado da recuperação?
 
 n₃ = 23,7 / 3
 
-n₃ = 7,9
+> n₃ = 7,9
 
 2 - Quais são os tipos de amostragem utilizados em cada situação apresentada abaixo:
 
@@ -51,7 +51,7 @@ selecionados ao acaso 50% dos domicílios de cada rua.
 3 - Imagine que você tem 500 cadastros arquivados em sua empresa e você quer uma amostra
 de 2% desses cadastros. Como você obteria uma amostra sistemática?
 
-Para obter a amostra, você pode dividir 500 por 10, obtendo assim 50. Sorteie então um número entre 1 e 50, inclusive. Esse será o número do primeiro cadastro da amostra. Depois, a partir desse número, conte 50 cadastros e retire o 14 último para constituir a amostra.
+`Para obter a amostra, você pode dividir 500 por 10, obtendo assim 50. Sorteie então um número entre 1 e 50, inclusive. Esse será o número do primeiro cadastro da amostra. Depois, a partir desse número, conte 50 cadastros e retire o 14 último para constituir a amostra.`
 
 Proceda dessa forma sucessivamente, até completar a amostra. Se o número sorteado para iniciar a amostra for 2, então a amostra será constituída pelos seguintes elementos:
 
@@ -65,7 +65,7 @@ d.2, 42, 102, 152, 202, 252, 312, 352, 402, 452.
 
 e.2, 52, 102, 152, 202, 252, 352, 362, 402, 452.
 
-Se o número sorteado para iniciar a amostra for 2, então a amostra será constituída pelos seguintes elementos: 2, 52, 102, 152, 202, 252, 302, 352, 402, 452.
+`Se o número sorteado para iniciar a amostra for 2, então a amostra será constituída pelos seguintes elementos: 2, 52, 102, 152, 202, 252, 302, 352, 402, 452.`
 
 4 - Uma federação encomendou uma pesquisa na cidade de “Limas” sobre a formação escolar
 e técnica dos trabalhadores da indústria. A cidade tem cerca de 25000 pessoas
@@ -117,7 +117,7 @@ B)
 
     480 + 458 + 436 + 420 = 1794;
     475 + 456 + 430 + 420 = 1781;
-    (1794 - 1781)/179 = 0,0072 x 100 = 0,72%.
+    `(1794 - 1781)/179 = 0,0072 x 100 = 0,72%`
 
 6 - Medidas as estaturas de 1.017 indivíduos, obtivemos X = 162,2 cm e s = 8,01 cm. O peso
 médio desses mesmos indivíduos é 52 kg, com um desvio padrão de 2,3 kg. Esses indivíduos
@@ -206,6 +206,24 @@ c) Considerando todas as medidas, calcule a média e desvio padrão de cada atle
 conjunto de todos os atletas e compare através do cálculo do coeficiente de variação,
 comentando os resultados.
 
+Atleta I
+
+CV = DP / M _ 100
+CV = 0,27 / 16,2 _ 100
+CV = 1,666666667
+
+Atleta II
+
+CV = DP / M _ 100
+CV = 1,28 / 15,7 _ 100
+CV = 8,152866242
+
+Atleta III
+
+CV = DP / M _ 100
+CV = 0,57 / 16,4 _ 100
+CV = 3,475609756
+
 8 - Num laboratório de pesquisa foram medidos os pesos de 16 frutos que fazem parte de
 um estudo para aumento de produção. Os resultados em gramas foram apresentados na
 tabela abaixo:
@@ -220,7 +238,8 @@ Determine, com uma casa decimal:
 a) Média
 
 (648 + 680) / 2
-664
+
+> 664
 
 b) Mediana
 
@@ -229,22 +248,75 @@ b) Mediana
 580 585 595 640 648 668 672 675 680 680 680 700 700 705 708 710
 
 média = 675 + 680 / 2
-média = 1015
+
+> média = 1015
 
 c) Moda
 
 `Valor que mais aparece`
-680
+
+> 680
 
 d) Separatriz (Q1, Q3, D6)
 
+n = 16 posições
+
+Q1 = (n + 1) / 4
+Q1 = (16 + 1) / 4
+Q1 = 4,25 ou 4
+Q1 = 640
+
+Q1 = 640 + 0.5 \* (648 - 640)
+Q1 = 644
+
+Q3 = (n + 1) / 2
+Q3 = (16 + 1) / 2
+Q3 = 8,5 ou 9
+Q3 = 675
+
+Q3 = 675 + 0.5 \* (680 - 675)
+Q3 = 677,5
+
+Q6 = [3*(n + 1)] / 4
+Q6 = [3*(16 + 1)] / 4
+Q6 = 12,75
+Q6 = 700
+
+Q6 = 700 + 0.5 \* (700 - 700)
+Q6 = 700,5
+
 e) Amplitude
+
+amplitude = maior elemento - menor elemento
+
+> amplitude = 130
 
 f) Variância
 
+> desvio_padrão = 2772371
+
 g) Desvio-padrão
 
+desvio_padrão = raiz_quadrada((x - média)2 + (y - média)2 / n - 1)
+desvio_padrão = raiz_quadrada((580 - 1015)2 + (585 - 1015) + (595 - 1015) + (640 - 1015) + (648 - 1015) + (668 - 1015) + (672 - 1015) + (675 - 1015) + (680 - 1015) + (680 - 1015) + (680 - 1015) + (700 - 1015) + (700 - 1015) + (705 - 1015) + (708 - 1015) + (710 - 1015))
+desvio_padrão = raiz_quadrada((−340)2 + (−430)2 + (−420)2 + (−375)2 + (−367)2 + (−347)2 + (−343)2 + (−340)2 + (−335)2 + (−335)2 + (−335)2 + (−315)2 + (−315)2 + (−310)2 + (−307)2 + (−305)2)
+desvio_padrão = raiz_quadrada((155.600) + (182.900) + (176.400) + (140.625) + (134.689) + (120.409) + (117.649) + (115.600) + (112.225) + (112.225) + (112.225) + (99.225) + (99.225) + (906.100) + (94.249) + (93.025))
+desvio_padrão = raiz_quadrada(2772371)
+
+> desvio_padrão = 1665,043843267
+
 h) Coeficiente de variação
+
+`CV = s/x \* 100`
+
+Onde,
+s → é o desvio padrão
+X ? → é a média dos dados
+CV → é o coeficiente de variação
+
+CV = 1665,043843267 / 1015 \* 100
+
+> CV = 164,043728
 
 i) Faça a representação gráfica das medidas estatísticas (Box-Plot)
 
