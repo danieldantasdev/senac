@@ -1,0 +1,24 @@
+<h1>Olá, {{ nome }}</h1>
+<div>
+  <!-- <p *ngIf="isMasculino === true ? 'isso mesmo' : 'nao'">{{ isMasculino }}</p> -->
+  <p>Nome: {{ nome }}</p>
+  <p>Idade: {{ idade }}</p>
+  <p>Sexo: {{ isMasculino }}</p>
+  <p>Nome Funcionario: {{ nomeFuncionario }}</p>
+</div>
+
+<div *ngIf="isMasculino === true; else feminino">Masculino</div>
+
+<ng-template #feminino> Feminino </ng-template>
+
+<div *ngIf="isMasculino === false && idade === 30">Experiente</div>
+
+<ng-template [ngIf]="isLogado" [ngIfElse]="userLoggedOut">
+  Bem-vindo! Você está logado
+</ng-template>
+
+<ng-template #userLoggedOut> Please, faça o seu login </ng-template>
+
+<div [hidden]="isLogado">Bem-vindo! Você está logado</div>
+
+<div [hidden]="!isLogado">Please, faça o seu login</div>

@@ -321,3 +321,24 @@ CV = 1665,043843267 / 1015 \* 100
 i) Faça a representação gráfica das medidas estatísticas (Box-Plot)
 
 j) Analise os resultados e registre suas conclusões.
+
+Notei que, a partir do retângulo, para cima, segue uma linha até o ponto mais remoto que não exceda o
+limite superior LS = q3 + (1,5)(q3-q1).
+
+`Limite superior`
+LS = q3 + (1,5)(q3-q1)
+LS = 700,5 + (1,5)(700,5 - 644)
+LS = 792, 75
+
+O ponto mais remoto < LS = 792, 75
+
+De modo similar, da parte inferior do retângulo, para baixo, segue uma linha até o ponto mais remoto que
+não seja menor do que o limite inferior LI = q1 – (1,5)(q3-q1).
+
+`Limite inferior`
+
+LI = q1 – (1,5)(q3-q1)
+LI = 644 - (1,5)(700,5 - 644)
+LI = -559,25
+
+O ponto mais remoto > LI = -559,25 (min. 0%)
