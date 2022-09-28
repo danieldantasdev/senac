@@ -53,6 +53,13 @@ de 2% desses cadastros. Como você obteria uma amostra sistemática?
 
 `Para obter a amostra, você pode dividir 500 por 10, obtendo assim 50. Sorteie então um número entre 1 e 50, inclusive. Esse será o número do primeiro cadastro da amostra. Depois, a partir desse número, conte 50 cadastros e retire o 14 último para constituir a amostra.`
 
+`Amostra sistemática`
+
+-   Por período
+-   K = N / n
+-   K = 500 / 10
+-   K = 50
+
 Proceda dessa forma sucessivamente, até completar a amostra. Se o número sorteado para iniciar a amostra for 2, então a amostra será constituída pelos seguintes elementos:
 
 a.2, 52, 102, 152, 202, 252, 302, 352, 402, 452.
@@ -313,7 +320,7 @@ Onde,
 s → é o desvio padrão
 X ? → é a média dos dados
 CV → é o coeficiente de variação
-
+,
 CV = 1665,043843267 / 1015 \* 100
 
 > CV = 164,043728
