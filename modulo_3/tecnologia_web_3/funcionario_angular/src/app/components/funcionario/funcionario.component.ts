@@ -10,6 +10,7 @@ export class FuncionarioComponent implements OnInit {
   // isMasculino: boolean = true;
 
   @Input() nome!: string;
+  @Input() sobreNome!: string;
   @Input() nomeComInput!: string;
   @Input() idade!: number;
   @Input() isMasculino!: boolean;
@@ -17,6 +18,12 @@ export class FuncionarioComponent implements OnInit {
   @Output() nomeFuncionario!: string;
 
   isLogado: boolean = true;
+  estados: string[] = ['Rio de Janeiro', 'São Paulo', 'Minas Gerais'];
+  tiposPessoa = [
+    { id: 1, descricao: 'carioca' },
+    { id: 2, descricao: 'Paulista' },
+  ];
+  @Input() comboBox!: string;
 
   constructor() {}
 

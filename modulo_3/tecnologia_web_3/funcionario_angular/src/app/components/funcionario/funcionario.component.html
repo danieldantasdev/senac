@@ -22,3 +22,45 @@
 <div [hidden]="isLogado">Bem-vindo! Você está logado</div>
 
 <div [hidden]="!isLogado">Please, faça o seu login</div>
+
+<div>
+  Digite se nome:
+  <input type="text" [(ngModel)]="sobreNome" />
+</div>
+
+<div>Seu sobrenome é: {{ sobreNome }}</div>
+
+<ul class="mt-2" *ngFor="let estado of estados">
+  <li>
+    <h1>ESTADOS:</h1>
+    {{ estado }}
+  </li>
+</ul>
+
+<ul class="mt-2" *ngFor="let tipo of tiposPessoa">
+  <li>{{ tipo.id }}</li>
+  <li>{{ tipo.descricao }}</li>
+</ul>
+
+<legend>ESTADOS:</legend>
+<fieldset *ngFor="let estado of estados" class="mt-2">
+  <div>
+    <input type="checkbox" id="scales" name="scales" checked />
+    <label for="scales">{{ estado }}</label>
+  </div>
+</fieldset>
+
+<div class="flex mt">
+  <select name="" id="" [(ngModel)]="comboBox">
+    <option *ngFor="let estado of estados" [value]="estado">
+      {{ estado }}
+    </option>
+  </select>
+
+  <div [ngSwitch]="comboBox" class="estilo">
+    <h3 *ngSwitchCase="'Rio de Janeiro'">Carioca</h3>
+    <h3 *ngSwitchCase="'São Paulo'">Paulista</h3>
+    <h3 *ngSwitchCase="'Minas Gerais'">Mineiro</h3>
+    <h3 *ngSwitchDefault>Escolha seu estado</h3>
+  </div>
+</div>
