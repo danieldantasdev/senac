@@ -1,9 +1,4 @@
-1 - Numa escola é adotado o seguinte critério: a nota da primeira prova é multiplicada por 1, a
-nota da segunda prova é multiplicada por 2 e a nota da última prova é multiplicada por 3.
-Os resultados, após somados, são divididos por 6. Se a média obtida por esse critério for
-maior ou igual a 6,5, o aluno é dispensado das atividades de recuperação. Suponha que
-um aluno tenha tirado 6,3 na primeira prova e 4,5 na segunda. Quanto precisará tirar na
-terceira para ser dispensado da recuperação?
+**_1 - Numa escola é adotado o seguinte critério: a nota da primeira prova é multiplicada por 1, a nota da segunda prova é multiplicada por 2 e a nota da última prova é multiplicada por 3. Os resultados, após somados, são divididos por 6. Se a média obtida por esse critério for maior ou igual a 6,5, o aluno é dispensado das atividades de recuperação. Suponha que um aluno tenha tirado 6,3 na primeira prova e 4,5 na segunda. Quanto precisará tirar na terceira para ser dispensado da recuperação?_**
 
 `6,5 = ((n1 * 1) + (n2 * 2) + (n3 * 3)) / 6`
 
@@ -23,33 +18,25 @@ n₃ = 23,7 / 3
 
 > n₃ = 7,9
 
-2 - Quais são os tipos de amostragem utilizados em cada situação apresentada abaixo:
+**_2 - Quais são os tipos de amostragem utilizados em cada situação apresentada abaixo:_**
 
-a) Ao escalar uma comissão para atuar em determinado projeto, uma empresa decidiu
-selecionar aleatoriamente 4 pessoas brancas, 3 pardas e 4 negras.
+**a) Ao escalar uma comissão para atuar em determinado projeto, uma empresa decidiu selecionar aleatoriamente 4 pessoas brancas, 3 pardas e 4 negras.**
 
 `Amostragem estratificada`
 
-b) Uma professora escreve o nome de todos os seus alunos em pedaços de papel e coloca
-em uma caixa. Depois de misturá-los, sorteia 10 nomes.
+**b) Uma professora escreve o nome de todos os seus alunos em pedaços de papel e coloca em uma caixa. Depois de misturá-los, sorteia 10 nomes.**
 
 `Amostragem simples ao acaso`
 
-c) Um administrador de uma sala de cinema faz uma pesquisa com as pessoas que estão
-na fila de espera para comprar ingresso, entrevistando uma pessoa a cada 10 presentes na
-fila.
+**c) Um administrador de uma sala de cinema faz uma pesquisa com as pessoas que estão na fila de espera para comprar ingresso, entrevistando uma pessoa a cada 10 presentes na fila.**
 
 `Amostragem sistemática`
 
-d) Deseja-se selecionar uma amostra de domicílios da cidade de São Paulo. As ruas estão
-identificadas pelas letras de A a F. As casas de cada rua estão identificadas pelo nome da
-rua, seguido por um número. Primeiro foram sorteadas duas ruas (B e F) e depois, foram
-selecionados ao acaso 50% dos domicílios de cada rua.
+**d) Deseja-se selecionar uma amostra de domicílios da cidade de São Paulo. As ruas estão identificadas pelas letras de A a F. As casas de cada rua estão identificadas pelo nome da rua, seguido por um número. Primeiro foram sorteadas duas ruas (B e F) e depois, foram selecionados ao acaso 50% dos domicílios de cada rua.**
 
 `Inicialmente, amostragem por conglomerados e depois amostragem simples por acaso`
 
-3 - Imagine que você tem 500 cadastros arquivados em sua empresa e você quer uma amostra
-de 2% desses cadastros. Como você obteria uma amostra sistemática?
+**_3 - Imagine que você tem 500 cadastros arquivados em sua empresa e você quer uma amostra de 2% desses cadastros. Como você obteria uma amostra sistemática?_**
 
 `Para obter a amostra, você pode dividir 500 por 10, obtendo assim 50. Sorteie então um número entre 1 e 50, inclusive. Esse será o número do primeiro cadastro da amostra. Depois, a partir desse número, conte 50 cadastros e retire o 14 último para constituir a amostra.`
 
@@ -74,10 +61,7 @@ e.2, 52, 102, 152, 202, 252, 352, 362, 402, 452.
 
 `Se o número sorteado para iniciar a amostra for 2, então a amostra será constituída pelos seguintes elementos: 2, 52, 102, 152, 202, 252, 302, 352, 402, 452.`
 
-4 - Uma federação encomendou uma pesquisa na cidade de “Limas” sobre a formação escolar
-e técnica dos trabalhadores da indústria. A cidade tem cerca de 25000 pessoas
-trabalhando em 160 indústrias. As indústrias foram classificadas de acordo com o número
-de trabalhadores e mostrados na tabela abaixo:
+**_4 - Uma federação encomendou uma pesquisa na cidade de “Limas” sobre a formação escolar e técnica dos trabalhadores da indústria. A cidade tem cerca de 25000 pessoas trabalhando em 160 indústrias. As indústrias foram classificadas de acordo com o número de trabalhadores e mostrados na tabela abaixo:_**
 
 Nº Trabalhadores Porte da indústria Nº de indústrias
 1 a 50 pequena 100
@@ -93,13 +77,13 @@ Qual técnica e amostragem deve ser utilizada?
 Descreva suscintamente o passo a passo para obter a amostragem correta, apresentando
 o seu resultado. (quais empresas deveriam ser selecionadas)?
 
-5 - Uma faculdade apresentava, no final do ano, o seguinte quadro:
+**_5 - Uma faculdade apresentava, no final do ano, o seguinte quadro:_**
 
-a. Calcule a taxa de evasão por período.
+**a. Calcule a taxa de evasão por período.**
 
 1 série = 1,041%, 2 série = 0,43%, 3 série = 1,37%, 4 série = 0%
 
-b. Calcule a taxa de evasão da faculdade.
+**b. Calcule a taxa de evasão da faculdade.**
 
 taxa de evasão total da escola = 0,72%
 
@@ -154,11 +138,9 @@ Desvio padrão da estatura: 2,3 kg
 
 Sendo a primeira porcentagem maior, temos que há maior variabilidade nas amostras de altura.
 
-7 - Numa competição de salto triplo, três atletas disputavam apenas uma vaga para uma
-olimpíada entre faculdades de uma cidade. Para ser aprovado deveria descartar o pior
-resultado e obter a melhor média. Cada atleta fez 4 tentativas obtendo os seguintes resultados:
+**_7 - Numa competição de salto triplo, três atletas disputavam apenas uma vaga para uma olimpíada entre faculdades de uma cidade. Para ser aprovado deveria descartar o pior resultado e obter a melhor média. Cada atleta fez 4 tentativas obtendo os seguintes resultados:_**
 
-a) Qual deles foi aprovado?
+**a) Qual deles foi aprovado?**
 
 Vamos calcular a média de cada atleta:
 
@@ -182,7 +164,7 @@ media = 16,4
 
 Logo, a melhor média foi a do Atleta III
 
-b) Qual deles foi o mais regular nessas quatro tentativas?
+**b) Qual deles foi o mais regular nessas quatro tentativas?**
 
 Agora, vamos calcular o desvio padrão dos atletas:
 
@@ -231,9 +213,7 @@ CV = DP / M _ 100
 CV = 0,57 / 16,4 _ 100
 CV = 3,475609756
 
-8 - Num laboratório de pesquisa foram medidos os pesos de 16 frutos que fazem parte de
-um estudo para aumento de produção. Os resultados em gramas foram apresentados na
-tabela abaixo:
+**_8 - Num laboratório de pesquisa foram medidos os pesos de 16 frutos que fazem parte de um estudo para aumento de produção. Os resultados em gramas foram apresentados na tabela abaixo:_**
 
 Colheita Frutos – peso em g
 1 2 3 4 5 6 7 8
@@ -242,13 +222,13 @@ Segunda 680 640 700 710 708 680 705 700
 
 Determine, com uma casa decimal:
 
-a) Média
+**a) Média**
 
 (648 + 680) / 2
 
 > 664
 
-b) Mediana
+**b) Mediana**
 
 `se a amostra de dados for par, devemos calcular a média dos dois elementos centrais`
 
@@ -258,13 +238,13 @@ média = 675 + 680 / 2
 
 > média = 1015
 
-c) Moda
+**c) Moda**
 
 `Valor que mais aparece`
 
 > 680
 
-d) Separatriz (Q1, Q3, D6)
+**d) Separatriz (Q1, Q3, D6)**
 
 n = 16 posições
 
@@ -292,17 +272,17 @@ Q6 = 700
 Q6 = 700 + 0.5 \* (700 - 700)
 Q6 = 700,5
 
-e) Amplitude
+**e) Amplitude**
 
 amplitude = maior elemento - menor elemento
 
 > amplitude = 130
 
-f) Variância
+**f) Variância**
 
 > desvio_padrão = 2772371
 
-g) Desvio-padrão
+**g) Desvio-padrão**
 
 desvio_padrão = raiz_quadrada((x - média)2 + (y - média)2 / n - 1)
 desvio_padrão = raiz_quadrada((580 - 1015)2 + (585 - 1015) + (595 - 1015) + (640 - 1015) + (648 - 1015) + (668 - 1015) + (672 - 1015) + (675 - 1015) + (680 - 1015) + (680 - 1015) + (680 - 1015) + (700 - 1015) + (700 - 1015) + (705 - 1015) + (708 - 1015) + (710 - 1015))
@@ -312,7 +292,7 @@ desvio_padrão = raiz_quadrada(2772371)
 
 > desvio_padrão = 1665,043843267
 
-h) Coeficiente de variação
+**h) Coeficiente de variação**
 
 `CV = s/x \* 100`
 
@@ -325,9 +305,9 @@ CV = 1665,043843267 / 1015 \* 100
 
 > CV = 164,043728
 
-i) Faça a representação gráfica das medidas estatísticas (Box-Plot)
+**i) Faça a representação gráfica das medidas estatísticas (Box-Plot)**
 
-j) Analise os resultados e registre suas conclusões.
+**j) Analise os resultados e registre suas conclusões.**
 
 Notei que, a partir do retângulo, para cima, segue uma linha até o ponto mais remoto que não exceda o
 limite superior LS = q3 + (1,5)(q3-q1).
