@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'senac-funcionario',
@@ -14,6 +14,7 @@ export class FuncionarioComponent implements OnInit {
   @Input() nomeComInput!: string;
   @Input() idade!: number;
   @Input() isMasculino!: boolean;
+  @Input() comboBox!: string;
 
   @Output() nomeFuncionario!: string;
 
@@ -22,10 +23,8 @@ export class FuncionarioComponent implements OnInit {
   tiposPessoa = [
     { id: 1, descricao: 'carioca' },
     { id: 2, descricao: 'Paulista' },
-  ];
-  @Input() comboBox!: string;
+  ]
 
   constructor() {}
-
   ngOnInit(): void {}
 }
