@@ -1,0 +1,18 @@
+BEGIN TRY
+
+BEGIN TRANSACTION T1
+UPDATE Medicos set idade = 50 WHERE codm = 30
+UPDATE Medicos set nome = 'XXXXXX' WHERE codm = 44
+PRINT 'Transação efetivada'
+COMMIT TRANSACTION T1
+
+END TRY
+
+BEGIN CATCH
+
+ROLLBACK TRANSACTION
+PRINT 'Transação Desfeita'
+
+END CATCH
+
+SELECT * FROM Medicos;
