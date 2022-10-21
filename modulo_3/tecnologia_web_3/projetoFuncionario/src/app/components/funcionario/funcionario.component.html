@@ -1,0 +1,42 @@
+<p>funcionario works!</p>
+
+<main class="l-main">
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>IsMasculino</th>
+        <th>Idade</th>
+        <th>Excluir</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let funcionario of funcionarios">
+      <tr class="impar">
+        <td>{{ funcionario.nome }}</td>
+        <td>{{ funcionario.isMasculino }}</td>
+        <td>{{ funcionario.idade }}</td>
+        <td><button id="button" (click)="excluir()">Excluir</button></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+<!-- Passando dado por referência de input -->
+<div>
+  {{ funcionario | json }}
+  {{ funcionario.nome }}
+  {{ funcionario.isMasculino }}
+  {{ funcionario.idade }}
+</div>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+  <input type="text" name="nome" ngModel required #first="ngModel" />
+  <input type="text" name="isMasculino" ngModel />
+  <input type="text" name="idade" ngModel />
+  <button>Submit</button>
+</form>
+
+<p>First name value: {{ first.value }}</p>
+<p>First name valid: {{ first.valid }}</p>
+<p>Form value: {{ form.value | json }}</p>
+<p>Form valid: {{ form.valid }}</p>

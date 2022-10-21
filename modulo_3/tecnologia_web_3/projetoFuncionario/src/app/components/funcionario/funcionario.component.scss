@@ -1,0 +1,44 @@
+td{
+	padding: 5px;
+}
+table{
+	text-align: center;
+	width: 50%;
+	border-collapse: collapse;
+	margin: auto;
+	min-width: 300px;
+	// margin-top: 50px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.l-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.impar{
+	background-color: rgb(240,248,255);
+}
+
+.impar:hover{
+	background-color: rgb(73, 135, 189);
+  transition: 0.5s all linear;
+}
+
+.nome{
+	text-align: left;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.form > input {
+  
+}
