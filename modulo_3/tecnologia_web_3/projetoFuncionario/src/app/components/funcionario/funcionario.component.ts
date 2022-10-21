@@ -21,7 +21,10 @@ export class FuncionarioComponent implements OnInit {
     this.funcionarios.pop();
   };
 
-  onSubmit = (form: NgForm) => {};
+  onSubmit = (form: NgForm) => {
+    console.log(form.value);
+    this.funcionarios.push(form.value);
+  };
 
   funcionarios: Funcionario[] = [
     { nome: 'Daniel', isMasculino: true, idade: 21 },

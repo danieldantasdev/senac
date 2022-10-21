@@ -22,17 +22,26 @@
 </main>
 
 <!-- Passando dado por referência de input -->
+<hr />
 <div>
   {{ funcionario | json }}
   {{ funcionario.nome }}
   {{ funcionario.isMasculino }}
   {{ funcionario.idade }}
 </div>
+<hr />
 
 <form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
   <input type="text" name="nome" ngModel required #first="ngModel" />
-  <input type="text" name="isMasculino" ngModel />
-  <input type="text" name="idade" ngModel />
+  <input
+    id="checkbox"
+    class="checkbox"
+    type="checkbox"
+    name="isMasculino"
+    ngModel
+    value="false"
+  />
+  <input type="number" name="idade" ngModel />
   <button>Submit</button>
 </form>
 
