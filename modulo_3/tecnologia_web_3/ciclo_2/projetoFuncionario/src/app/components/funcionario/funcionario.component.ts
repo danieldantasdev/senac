@@ -1,7 +1,13 @@
 import { Funcionario } from './../../model/funcionario';
 import { Component, Input, OnInit } from '@angular/core';
 import { formatDate } from '@angular/common';
-import { NgForm } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  NgForm,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'senac-funcionario',
@@ -9,9 +15,23 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./funcionario.component.scss'],
 })
 export class FuncionarioComponent implements OnInit {
-  constructor() {}
+  form!: FormGroup;
 
-  ngOnInit(): void {}
+  constructor(private formBuilder: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      nome: ['', Validators.required],
+      isMasculino: ['', Validators.required],
+      idade: ['', Validators.required],
+    });
+
+    sessionStorage.setItem('KEY', JSON.stringify(this.funcionarios));
+  }
+
+  get formControls() {
+    return this.form.controls;
+  }
 
   excluir = () => {
     let botao = document.getElementById('button') as HTMLButtonElement;
@@ -21,9 +41,24 @@ export class FuncionarioComponent implements OnInit {
     this.funcionarios.pop();
   };
 
-  onSubmit = (form: NgForm) => {
-    console.log(form.value);
-    this.funcionarios.push(form.value);
+  onSubmit = () => {
+    // console.log(form.value);
+    // if (form.value) {
+    // }
+    this.funcionarios.push(this.form.value);
+    console.log(this.form.value);
+  };
+
+  onChange = () => {
+    let inputNome = document.getElementById('nome') as HTMLInputElement;
+
+    inputNome.addEventListener('keyup', () => {
+      if (inputNome.checked) {
+        inputNome.classList.add('sucess');
+      } else {
+        inputNome.classList.remove('error');
+      }
+    });
   };
 
   funcionarios: Funcionario[] = [

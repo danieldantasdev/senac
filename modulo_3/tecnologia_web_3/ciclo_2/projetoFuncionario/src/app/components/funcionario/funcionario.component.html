@@ -1,51 +1,105 @@
 <p>funcionario works!</p>
 
 <main class="l-main">
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>IsMasculino</th>
-        <th>Idade</th>
-        <th>Excluir</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let funcionario of funcionarios">
-      <tr class="impar">
-        <td>{{ funcionario.nome }}</td>
-        <td>{{ funcionario.isMasculino }}</td>
-        <td>{{ funcionario.idade }}</td>
-        <td><button id="button" (click)="excluir()">Excluir</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <section class="l-section">
+    <h1 class="l-section__title">Tabela</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>IsMasculino</th>
+          <th>Idade</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let funcionario of funcionarios">
+        <tr class="impar">
+          <td>{{ funcionario.nome }}</td>
+          <td>{{ funcionario.isMasculino }}</td>
+          <td>{{ funcionario.idade }}</td>
+          <td><button id="button" (click)="excluir()">Excluir</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Passando dado por referência de input -->
+  <hr />
+  <section class="l-section">
+    <h1 class="l-section__title">Objeto</h1>
+    <div>
+      {{ funcionario | json }}
+      {{ funcionario.nome }}
+      {{ funcionario.isMasculino }}
+      {{ funcionario.idade }}
+    </div>
+  </section>
+  <hr />
+  <section class="l-section">
+    <h1 class="l-section__title">Form</h1>
+    <!-- 1 form -->
+    <!-- <form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        ngModel
+        required
+        #first="ngModel"
+        (change)="onChange()"
+      />
+      <input
+        id="checkbox"
+        class="checkbox"
+        type="checkbox"
+        name="isMasculino"
+        ngModel
+        value="false"
+      />
+      <input type="number" name="idade" id="idade" ngModel />
+      <button>Submit</button>
+    </form> -->
+
+    <!-- 2 form -->
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        required
+        formControlName="nome"
+        [ngClass]="{
+          'has-error': formControls['nome'].hasError
+        }"
+      />
+      <label *ngIf="formControls['nome'].hasError('required')">
+        name is <strong>required</strong>
+      </label>
+
+      <input
+        id="checkbox"
+        class="checkbox"
+        type="checkbox"
+        name="isMasculino"
+        formControlName="isMasculino"
+      />
+      <label *ngIf="formControls['isMasculino'].hasError('required')">
+        checkbox is <strong>required</strong>
+      </label>
+
+      <input type="number" name="idade" id="idade" formControlName="idade" />
+      <label *ngIf="formControls['idade'].hasError('required')">
+        idade is <strong>required</strong>
+      </label>
+
+      <button [disabled]="!form.valid" type="submit">Submit</button>
+    </form>
+  </section>
+  <section class="l-section">
+    <!-- <p>First name value: {{ first.value }}</p> -->
+    <!-- <p>First name valid: {{ first.valid }}</p> -->
+    <p>Form value: {{ form.value | json }}</p>
+    <p>Form valid: {{ form.valid }}</p>
+  </section>
+  <hr />
 </main>
-
-<!-- Passando dado por referência de input -->
-<hr />
-<div>
-  {{ funcionario | json }}
-  {{ funcionario.nome }}
-  {{ funcionario.isMasculino }}
-  {{ funcionario.idade }}
-</div>
-<hr />
-
-<form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
-  <input type="text" name="nome" ngModel required #first="ngModel" />
-  <input
-    id="checkbox"
-    class="checkbox"
-    type="checkbox"
-    name="isMasculino"
-    ngModel
-    value="false"
-  />
-  <input type="number" name="idade" ngModel />
-  <button>Submit</button>
-</form>
-
-<p>First name value: {{ first.value }}</p>
-<p>First name valid: {{ first.valid }}</p>
-<p>Form value: {{ form.value | json }}</p>
-<p>Form valid: {{ form.valid }}</p>
