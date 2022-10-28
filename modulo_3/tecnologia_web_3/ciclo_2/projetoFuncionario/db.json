@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "daniel",
+      "login": "administrador@gmail.com",
+      "senha": "12345",
+      "perfil": "ADMINISTRADOR",
+      "status": 1
+    }
+  ]
+}

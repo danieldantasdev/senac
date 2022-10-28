@@ -10,4 +10,10 @@ export class AppComponent {
   title = 'projetoFuncionario';
 
   funcionario1: Funcionario = { nome: 'Lucas', isMasculino: true, idade: 56 };
+
+  usu!: Funcionario;
+
+  informandoUsuario = (usuario: Funcionario) => {
+    this.usu = usuario;
+  };
 }

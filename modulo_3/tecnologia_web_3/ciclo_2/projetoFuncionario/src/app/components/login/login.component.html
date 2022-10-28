@@ -1,0 +1,11 @@
+<p>login works!</p>
+<ul *ngFor="let user of users">
+  <li>{{ user.id }}</li>
+  <li>{{ user.nome }}</li>
+  <li>{{ user.login }}</li>
+  <li>{{ user.senha }}</li>
+  <li>{{ user.perfil }}</li>
+  <li *ngIf="user.perfil === '1' ? 'ola' : 'opa'">
+    {{ user.status }}
+  </li> 
+</ul>
