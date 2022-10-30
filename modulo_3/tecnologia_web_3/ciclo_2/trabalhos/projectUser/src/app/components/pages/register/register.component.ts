@@ -11,7 +11,7 @@ import { User } from 'src/app/model/user';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  
+
   constructor(
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
@@ -43,7 +43,7 @@ export class RegisterComponent implements OnInit {
     this.isLoading = true;
 
     if (this.form.valid) {
-      const myTimeout = setTimeout(this.loader, 5000);
+      const myTimeout = setTimeout(this.loader, 2000);
 
       this._snackBar.openFromComponent(SnackBarSucessComponent, {
         duration: this.durationInSeconds * 1000,

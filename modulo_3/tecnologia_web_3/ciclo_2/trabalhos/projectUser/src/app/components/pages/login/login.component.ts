@@ -94,7 +94,7 @@ export class LoginComponent implements OnInit {
       duration: this.durationInSeconds * 1000,
       horizontalPosition: 'left',
     });
-    this._router.navigateByUrl('home/' + this.form.value.perfil);
+    this._router.navigateByUrl('home/' + (this.form.value.perfil).toLowerCase());
   };
 
   matcher = new MyErrorStateMatcher();
