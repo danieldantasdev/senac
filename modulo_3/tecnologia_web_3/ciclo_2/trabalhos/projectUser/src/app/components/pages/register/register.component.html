@@ -1,7 +1,7 @@
 <section class="l-section">
   <mat-card class="example-card">
-    <mat-card-subtitle>Login</mat-card-subtitle>
-    <mat-card-title>Login</mat-card-title>
+    <mat-card-subtitle>Cadastro</mat-card-subtitle>
+    <mat-card-title>Cadastro</mat-card-title>
     <mat-card-content>
       <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
         <mat-form-field class="example-full-width" appearance="fill">
@@ -91,9 +91,8 @@
         [disabled]="!form.valid"
         type="submit"
       >
-        Logar
+        Cadastrar
       </button>
-      <button mat-button [routerLink]="'/register'">Cadastro</button>
     </mat-card-actions>
     <mat-card-footer>
       <mat-progress-bar
