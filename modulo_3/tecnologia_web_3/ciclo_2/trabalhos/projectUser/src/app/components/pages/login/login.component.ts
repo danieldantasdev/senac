@@ -1,5 +1,13 @@
+import { SnackbarService } from './../../../core/services/snackbar/snackbar.service';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+} from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
@@ -14,7 +22,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
-    private _router: Router
+    private _router: Router,
+    private snackbarService: SnackbarService
   ) {}
 
   ngOnInit(): void {
@@ -54,7 +63,7 @@ export class LoginComponent implements OnInit {
     return this.form.controls;
   }
 
-  onSubmit = () => {
+  onSubmit = async () => {
     sessionStorage.setItem('KEY', JSON.stringify(this.form.value));
     let user = JSON.parse(`${sessionStorage.getItem('KEY')}`);
 
@@ -72,29 +81,64 @@ export class LoginComponent implements OnInit {
 
           break;
         } else {
-          this.isLoading = true;
-          this._snackBar.openFromComponent(SnackBarErrorComponent, {
-            duration: this.durationInSeconds * 1000,
-            horizontalPosition: 'left',
-          });
-          this.isLoading = false;
+          // this._snackBar.openFromComponent(SnackBarErrorComponent, {
+          //   duration: this.durationInSeconds * 1000,
+          //   horizontalPosition: 'left',
+          // });
+
+          setTimeout(() => {
+            this.isLoading = true;
+          }, 2000);
+
+          this.snackbarService.onError(
+            'Usuário não foi encontrado',
+            'fechar',
+            3000,
+            'left'
+          );
         }
       }
     } else {
-      this._snackBar.openFromComponent(SnackBarErrorComponent, {
-        duration: this.durationInSeconds * 1000,
-        horizontalPosition: 'left',
-      });
+      // this._snackBar.openFromComponent(SnackBarErrorComponent, {
+      //   duration: this.durationInSeconds * 1000,
+      //   horizontalPosition: 'left',
+      // });
+
+      this.snackbarService.onError(
+        'Usuário não foi encontrado',
+        'fechar',
+        4000,
+        'left'
+      );
     }
   };
 
+  loaderError = () => {
+    this.snackbarService.onError(
+      'Usuário não foi encontrado',
+      'fechar',
+      3000,
+      'left'
+    );
+  };
+
   loader = () => {
+    let user = JSON.parse(`${sessionStorage.getItem('KEY')}`);
+
     this.isLoading = true;
-    this._snackBar.openFromComponent(SnackBarSucessComponent, {
-      duration: this.durationInSeconds * 1000,
-      horizontalPosition: 'left',
-    });
-    this._router.navigateByUrl('home/' + (this.form.value.perfil).toLowerCase());
+    // this._snackBar.openFromComponent(SnackBarSucessComponent, {
+    //   duration: this.durationInSeconds * 1000,
+    //   horizontalPosition: 'left',
+    // });
+
+    this.snackbarService.onSucsess(
+      `Bem-vindo ao sistema ${user.perfil}`,
+      'fechar',
+      4000,
+      'left'
+    );
+
+    this._router.navigateByUrl('home/' + this.form.value.perfil.toLowerCase());
   };
 
   matcher = new MyErrorStateMatcher();
