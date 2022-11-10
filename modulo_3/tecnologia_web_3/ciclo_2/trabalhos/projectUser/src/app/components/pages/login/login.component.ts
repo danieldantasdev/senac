@@ -64,14 +64,19 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit = async () => {
-    sessionStorage.setItem('KEY', JSON.stringify(this.form.value));
+    sessionStorage.setItem('KEY', JSON.stringify(this.form.value).trim());
     let user = JSON.parse(`${sessionStorage.getItem('KEY')}`);
 
     this.isLoading = true;
 
     if (this.form.valid) {
       for (const iterator of this.users) {
-        if (iterator.email === user.email) {
+        if (
+          iterator.email === user.email &&
+          iterator.name === user.name &&
+          iterator.password === user.password &&
+          iterator.perfil === user.perfil
+        ) {
           const myTimeout = setTimeout(this.loader, 5000);
 
           this._snackBar.open('Procurando usuário na base', 'fechar', {
