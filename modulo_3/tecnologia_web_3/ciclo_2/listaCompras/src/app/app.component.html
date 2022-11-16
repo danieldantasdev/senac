@@ -1,0 +1,22 @@
+<div>
+  <p>Lista de produtos que serão colocados no carrinho</p>
+  <button
+    (click)="incluirNaListaParaComprar()"
+    [disabled]="produtos.length === 0"
+  >
+    Incluir
+  </button>
+
+  <ul>
+    <li *ngFor="let produto of produtos">
+      {{ produto }}
+    </li>
+  </ul>
+
+  <h3>Coloquei no carrinho de compras</h3>
+  <ul>
+    <li *ngFor="let produto of produtosComprar">
+      {{ produto }}
+    </li>
+  </ul>
+</div>
