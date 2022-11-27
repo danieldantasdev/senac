@@ -1,0 +1,5 @@
+- probablidade condicional
+- distribuição normal
+- teorema de baes
+- intervalo confiança
+- teste de hipótese teórica

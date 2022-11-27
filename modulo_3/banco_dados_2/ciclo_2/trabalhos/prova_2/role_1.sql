@@ -1,0 +1,9 @@
+CREATE ROLE R_MEDICOS AUTHORIZATION rachel
+
+REVOKE SELECT ON Consultas TO rachel;
+REVOKE INSERT ON Consultas TO rachel;
+REVOKE UPDATE ON Consultas TO rachel;
+REVOKE DELETE ON Consultas TO rachel;
+
+EXEC sp_addrolemember 'R_MEDICOS', 'rachel'  
+REVOKE SELECT ON DATABASE::DBMEDICOS TO R_MEDICOS;  

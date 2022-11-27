@@ -1,0 +1,6 @@
+CREATE LOGIN medico WITH PASSWORD = '12345', DEFAULT_DATABASE=DBMEDICOS , CHECK_POLICY=OFF;
+
+CREATE USER rachel FOR LOGIN medico;
+
+SELECT * FROM sys.sql_logins WHERE name = 'medico';
+EXECUTE AS USER = 'rachel';  

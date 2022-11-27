@@ -1,22 +1,24 @@
-<div>
-  <p>Lista de produtos que serão colocados no carrinho</p>
-  <button
-    (click)="incluirNaListaParaComprar()"
-    [disabled]="produtos.length === 0"
-  >
-    Incluir
-  </button>
-
+<section class="l-section__carrinho">
+  <h1 *ngIf="produtos.length !== 0">Lista do que tenho para comprar</h1>
   <ul>
     <li *ngFor="let produto of produtos">
       {{ produto }}
     </li>
   </ul>
 
-  <h3>Coloquei no carrinho de compras</h3>
-  <ul>
-    <li *ngFor="let produto of produtosComprar">
-      {{ produto }}
-    </li>
-  </ul>
-</div>
+  <senac-lista-compras></senac-lista-compras>
+
+  <button
+    (click)="incluirNaListaParaComprar()"
+    [disabled]="produtos.length === 0"
+  >
+    Incluir
+  </button>
+<!-- 
+  <button
+  (click)="excluirNaListaParaComprar()"
+  [disabled]="produtos.length !== 0"
+>
+  Excluir
+</button> -->
+</section>

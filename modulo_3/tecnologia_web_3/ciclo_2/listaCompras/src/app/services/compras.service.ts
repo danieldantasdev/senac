@@ -14,11 +14,11 @@ export class ComprasService {
 
   constructor() {}
 
-  criarProduto = (produto: string) => {
+  colocarCarrinho = (produto: string) => {
     this.pendenteSource.next(produto);
   };
 
-  concluir = (produto: string) => {
+  retirarCarrinho = (produto: string) => {
     this.compradoSource.next(produto);
   };
 }

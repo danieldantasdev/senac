@@ -1,0 +1,39 @@
+CREATE PROCEDURE T6 (@codm INT, @codp INT, @valor INT)
+AS
+
+BEGIN
+
+ BEGIN TRY
+  IF EXISTS (SELECT CPF FROM Funcionarios WHERE CPF IN (SELECT CPF FROM Pacientes))
+              (SELECT (valor * 0.02) FROM Pagamentos)
+            
+  BEGIN TRANSACTION
+    INSERT INTO Consultas(codm, codp) VALUES (@codm, @codp)
+    INSERT INTO Pagamentos(valor) VALUES (@valor)
+    PRINT('INSERIDO COM SUCESSO')
+  COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+  PRINT('NÃO FOI POSSÍVEL REALIZAR A TRANSAÇÃO')
+  -- ROLLBACK TRANSACTION
+ END CATCH
+
+END
+
+EXECUTE T6 79, 1030, 20
+EXECUTE T6 79, 1040, 20
+EXECUTE T6 79, 1070, 20
+EXECUTE T6 79, 1080, 20
+
+SELECT * FROM Consultas;
+SELECT * FROM Ambulatorio;  
+SELECT * FROM Horario;
+SELECT * FROM Medicos;
+SELECT * FROM Pacientes;
+SELECT * FROM Funcionarios;
+SELECT * FROM Pagamentos;
+
+DROP PROCEDURE T6

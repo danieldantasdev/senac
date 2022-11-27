@@ -1,0 +1,38 @@
+CREATE PROCEDURE T3 (@codm int, @codp int, @data VARCHAR(50), @hora time)
+AS
+
+BEGIN
+
+ BEGIN TRY
+  IF EXISTS (SELECT * FROM Consultas c WHERE (codm <> @codm OR codp <> @codp) AND hora <> @hora)
+    IF EXISTS (SELECT * FROM Consultas WHERE LEN(codm) = 15 AND data = @data)
+
+  BEGIN TRANSACTION
+    INSERT INTO Consultas(codm, codp, data, hora) VALUES (@codm, @codp, @data, @hora)
+    PRINT('INSERIDO COM SUCESSO')
+  COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+  PRINT('NÃO FOI POSSÍVEL REALIZAR A TRANSAÇÃO')
+  -- ROLLBACK TRANSACTION
+ END CATCH
+
+END
+
+EXECUTE T2 79, 1030, "2022/04/02", "09:10"
+EXECUTE T2 81, 1040, "2022/08/01", "09:00"
+EXECUTE T2 97, 1050, "2022/08/01", "09:00"
+EXECUTE T2 51, 1011, "2016-10-09", "21:40:56"
+EXECUTE T2 98, 1060, "2022/08/01", "09:00"
+EXECUTE T2 75, 1070, "2022/08/01", "09:00"
+EXECUTE T2 76, 1080, "2022/08/01", "09:00"
+
+SELECT * FROM Consultas;
+SELECT * FROM Ambulatorio;  
+SELECT * FROM Horario;
+SELECT * FROM Medicos;
+
+DROP PROCEDURE T3

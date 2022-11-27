@@ -1,0 +1,15 @@
+<section class="l-section__carrinho">
+  <h1 *ngIf="produtos.length !== 0">Carrinho de compras</h1>
+  <ul>
+    <li *ngFor="let produto of produtos">
+      {{ produto }}
+    </li>
+  </ul>
+
+  <button
+    (click)="excluirNaListaParaComprar()"
+    [disabled]="produtos.length === 0"
+  >
+    Excluir
+  </button>
+</section>
