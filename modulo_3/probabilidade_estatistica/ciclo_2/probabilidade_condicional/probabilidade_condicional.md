@@ -38,8 +38,7 @@ Qual a probabilidade de:
     P (O / S) = 4 / 15 / 1 / 3
     P (O / S) = 4 / 5
 
-Exercício: Um grupo de 100 alunos foi classificado quanto ao sexo e à atividade
-de lazer preferida, obtendo-se a distribuição dada na tabela abaixo.
+Exercício: Um grupo de 100 alunos foi classificado quanto ao sexo e à atividade de lazer preferida, obtendo-se a distribuição dada na tabela abaixo.
 
 > 1. Qual é a probabilidade de uma pessoa escolhida ao acaso neste grupo ser do sexo masculino?
 
