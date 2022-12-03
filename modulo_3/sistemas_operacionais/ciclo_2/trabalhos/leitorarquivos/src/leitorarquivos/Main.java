@@ -39,7 +39,7 @@ public class Main {
 
 		System.out.println("Total de palavras: " + contagemPalavra);
 		System.out.println("Total de frases: " + contagemFrase);
-		System.out.println("Total number of characters = " + contagemCaracter);
+		System.out.println("Total número de caracteres: " + contagemCaracter);
 		System.out.println("Números de parágrafos: " + contagemParagrafo);
 		System.out.println("Total de espaços: " + contagemEspaco);
 	}
