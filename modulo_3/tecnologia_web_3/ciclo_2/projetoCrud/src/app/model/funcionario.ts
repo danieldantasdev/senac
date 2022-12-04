@@ -1,4 +1,4 @@
 export interface Funcionario {
-  _id: number;
+  id: number;
   nome: string;
 }
