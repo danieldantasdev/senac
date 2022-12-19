@@ -3,9 +3,9 @@
 **Dados:**
 
 ```
-X = 290 ml
-s = 35 ml
-n = 30
+média = 290 ml
+desvio = 35 ml
+amostra = 30
 ```
 
 **Margem de erro**
