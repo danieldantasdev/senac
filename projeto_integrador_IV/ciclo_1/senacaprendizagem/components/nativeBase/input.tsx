@@ -4,7 +4,9 @@ import { TextInput, StyleSheet, View } from 'react-native';
 import React from 'react';
 
 type Props = {
+  value?: string;
   style?: {};
+  onChange?(event: any): void;
 };
 
 export function InputNativeBase(props: Props): JSX.Element {
@@ -43,8 +45,10 @@ export function InputNativeBase(props: Props): JSX.Element {
         variant='rounded'
         style={props.style}
         placeholder='Procurar'
+        value={props.value}
         InputRightElement={filterTemplate()}
         InputLeftElement={searchTemplate()}
+        onChangeText={props.onChange}
       />
     </>
   );
