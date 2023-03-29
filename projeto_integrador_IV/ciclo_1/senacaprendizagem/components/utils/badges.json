@@ -1,14 +1,14 @@
 [  
-{ "id": 1, "image": "https://picsum.photos/700", "title": "c" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "c#" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "c++" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "java" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "angular" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "javaScript" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "nodeJS" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "mySQL" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "go" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "dotnet" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "python" },
-{ "id": 2, "image": "https://picsum.photos/700", "title": "sql" }
+{ "id": 1, "imagem": "https://picsum.photos/700", "descricao": "c" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "c#" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "c++" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "java" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "angular" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "javaScript" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "nodeJS" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "mySQL" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "go" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "dotnet" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "python" },
+{ "id": 2, "imagem": "https://picsum.photos/700", "descricao": "sql" }
 ]

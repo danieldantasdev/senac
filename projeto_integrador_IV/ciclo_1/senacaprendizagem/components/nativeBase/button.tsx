@@ -6,7 +6,6 @@ type Props = {
   children?: string | JSX.Element;
   colorScheme?: string;
   size?: string;
-  key: any;
   onPress?(event: any): void;
 };
 
@@ -16,7 +15,6 @@ export function ButtonNativeBase(props: Props): JSX.Element {
       <Button
         colorScheme={props.colorScheme}
         size={props.size}
-        key={props.key}
         variant={'subtle'}
         onPress={props.onPress}
       >

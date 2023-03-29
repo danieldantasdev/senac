@@ -1,6 +1,5 @@
 import { Link } from 'expo-router';
 import { NativeBaseProvider } from 'native-base';
-import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, SafeAreaView } from 'react-native';
 import { Card } from 'react-native-paper';
 
@@ -8,24 +7,11 @@ import EditScreenInfo from '../../components/EditScreenInfo';
 import { ButtonNativeBase } from '../../components/nativeBase/button';
 import { InputNativeBase } from '../../components/nativeBase/input';
 import { Text, View } from '../../components/Themed';
-import { Badge } from '../../model/badge';
 import { getAllBadges } from '../../services/badge/badge';
-import { api } from '../../services/http/http';
 
 export default function TabOneScreen() {
-  // const badgesList = getAllBadges();
-  const [badges, setBadges] = useState<Badge[]>([]);
-  const [search, setSearch] = useState('');
-  const [filteredData, setFilteredData] = useState<Badge[]>([]);
-  const [masterData, setMasterData] = useState<Badge[]>([]);
-
-  useEffect(() => {
-    api.get<Badge[]>('/Badge').then((response) => {
-      setBadges(response.data);
-      setMasterData(response.data);
-    });
-  }, []);
-
+  const { badges, setBadges, search, setSearch, filteredData, setFilteredData, masterData, setMasterData } =
+    getAllBadges();
 
   const styles = StyleSheet.create({
     container: {
@@ -41,13 +27,13 @@ export default function TabOneScreen() {
       justifyContent: 'center',
       flexDirection: 'row',
       flexWrap: 'wrap',
-      gap: 30,
-      marginBottom: 200,
+      gap: 20,
+      marginBottom: 50,
     },
     card: {
       alignItems: 'center',
       justifyContent: 'center',
-      width: 150,
+      width: 130,
       height: 'auto',
       backgroundColor: '#ffffff',
     },
@@ -82,16 +68,16 @@ export default function TabOneScreen() {
           {filteredData.map((badge) => {
             if (filteredData !== null) {
               return (
-                <>
-                <ButtonNativeBase colorScheme='gray' key={badge.id} onPress={e=>alert(badge.descricao)}>
-                <Card style={styles.card} elevation={5} mode={'elevated'}>
-                  <Card.Cover style={styles.image} source={{ uri: `data:image/png;base64,${badge.imagem}` }} />
-                  <Card.Content>
-                    <Text>{badge.descricao}</Text>
-                  </Card.Content>
-                </Card>
-                </ButtonNativeBase>
-                </>
+                <View key={badge.id}>
+                  <ButtonNativeBase colorScheme='gray' onPress={(e) => alert(badge.descricao)}>
+                    <Card style={styles.card} elevation={5} mode={'elevated'}>
+                      <Card.Cover style={styles.image} source={{ uri: `data:image/png;base64,${badge.imagem}` }} />
+                      <Card.Content>
+                        <Text>{badge.descricao}</Text>
+                      </Card.Content>
+                    </Card>
+                  </ButtonNativeBase>
+                </View>
               );
             }
           })}
@@ -112,21 +98,22 @@ export default function TabOneScreen() {
 
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={true}>
           <View style={styles.flex}>
-            <ButtonNativeBase colorScheme='primary' size='sm' key={2}>
+            <ButtonNativeBase colorScheme='primary' size='sm'>
               Todas
             </ButtonNativeBase>
             {masterData.map((badge) => {
               return (
-                <ButtonNativeBase
-                  key={badge.id}
-                  colorScheme='secondary'
-                  size='sm'
-                  onPress={(e) => {
-                    alert(badge.descricao);
-                  }}
-                >
-                  {badge.descricao}
-                </ButtonNativeBase>
+                <View key={badge.id}>
+                  <ButtonNativeBase
+                    colorScheme='secondary'
+                    size='sm'
+                    onPress={(e) => {
+                      alert(badge.descricao);
+                    }}
+                  >
+                    {badge.descricao}
+                  </ButtonNativeBase>
+                </View>
               );
             })}
           </View>
