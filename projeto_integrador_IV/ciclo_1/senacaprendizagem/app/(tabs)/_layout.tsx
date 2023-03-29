@@ -1,6 +1,8 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
+import { NavigationContainer } from '@react-navigation/native';
+import { Link, Tabs, Stack } from 'expo-router';
 import { Pressable, useColorScheme } from 'react-native';
+import TabOneScreen from '.';
 
 import Colors from '../../constants/Colors';
 
@@ -49,10 +51,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='three'
+        name='detailBadge'
         options={{
-          title: 'Tab three',
-          tabBarIcon: ({ color }) => <TabBarIcon name='user-circle' color={color} />,
+          title: 'Detail badge',
+          tabBarIcon: ({ color }) => <TabBarIcon name='desktop' color={color} />,
         }}
       />
     </Tabs>

@@ -1,4 +1,6 @@
 import { MaterialIcons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from 'expo-router';
 import { Icon, NativeBaseProvider } from 'native-base';
 import { ScrollView, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
@@ -14,6 +16,8 @@ import { getAllBadges } from '../../services/badge/badge';
 export default function TabOneScreen() {
   const { badges, setBadges, search, setSearch, filteredData, setFilteredData, masterData, setMasterData } =
     getAllBadges();
+
+  const navigation = useNavigation();
 
   const { ViewModal, setShowModal } = ModalNativeBase();
 
@@ -49,6 +53,10 @@ export default function TabOneScreen() {
       backgroundColor: '#ffffff',
     },
   });
+
+  function handlePress(badge: Badge) {
+    navigation.navigate('detailBadge', { paramKey: badge });
+  }
 
   const searchFilter = (text: string) => {
     if (text) {
@@ -99,7 +107,10 @@ export default function TabOneScreen() {
                         color: 'warmGray.100',
                       },
                     }}
-                    onPress={(e) => alert(badge.descricao)}
+                    onPress={(e) => {
+                      alert(badge.descricao);
+                      handlePress(badge);
+                    }}
                   >
                     <Card style={styles.card} elevation={5} mode={'elevated'}>
                       <Card.Cover style={styles.image} source={{ uri: `data:image/png;base64,${badge.imagem}` }} />

@@ -1,14 +1,21 @@
 import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+import { View } from '../../components/Themed';
+import { getAllBadges } from '../../services/badge/badge';
 
-export default function TabThreeScreen() {
+export default function DetailBadgeScreen() {
+  const { badges, setBadges, search, setSearch, filteredData, setFilteredData, masterData, setMasterData } =
+    getAllBadges();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+      {/* <Text style={styles.title}>{guildSelected.descricao}</Text> */}
+      {/* {badges.map((value) => {
+        return <Text>{value.status}</Text>;
+      })} */}
       <View style={styles.separator} lightColor='#eee' darkColor='rgba(255,255,255,0.1)' />
-      <EditScreenInfo path='app/(tabs)/three.tsx' />
+      <EditScreenInfo path='app/(tabs)/two.tsx' />
     </View>
   );
 }
