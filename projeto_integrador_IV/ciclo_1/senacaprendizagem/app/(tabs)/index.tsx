@@ -1,6 +1,5 @@
-import { Link } from 'expo-router';
 import { NativeBaseProvider } from 'native-base';
-import { ScrollView, StyleSheet, SafeAreaView } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
@@ -21,6 +20,7 @@ export default function TabOneScreen() {
     flex: {
       flexDirection: 'row',
       marginVertical: 25,
+      marginHorizontal: 30,
       gap: 10,
     },
     cardList: {
@@ -107,6 +107,10 @@ export default function TabOneScreen() {
       <View style={styles.container}>
         <InputNativeBase
           value={search}
+          fontSize='16'
+          inputMode='search'
+          variant='rounded'
+          type='text'
           onChange={(e) => {
             searchFilter(e);
           }}
@@ -115,10 +119,17 @@ export default function TabOneScreen() {
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={true}>
           <View style={styles.flex}>
             <ButtonNativeBase
-              colorScheme='orange'
               size='sm'
               borderRadius={'2xl'}
+              _android={{
+                bg: 'amber.100',
+                _text: {
+                  color: 'coolGray.800',
+                  fontWeight: 'medium',
+                },
+              }}
               _pressed={{
+                bg: 'amber.400',
                 _text: {
                   color: 'warmGray.100',
                 },
@@ -130,10 +141,17 @@ export default function TabOneScreen() {
               return (
                 <View key={badge.id}>
                   <ButtonNativeBase
-                    colorScheme='blue'
                     size='sm'
                     borderRadius={'2xl'}
+                    _android={{
+                      bg: 'blue.100',
+                      _text: {
+                        color: 'coolGray.800',
+                        fontWeight: 'medium',
+                      },
+                    }}
                     _pressed={{
+                      bg: 'blue.400',
                       _text: {
                         color: 'warmGray.100',
                       },
