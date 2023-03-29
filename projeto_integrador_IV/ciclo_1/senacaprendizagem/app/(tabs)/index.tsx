@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import { NativeBaseProvider } from 'native-base';
 import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, SafeAreaView } from 'react-native';
@@ -14,6 +15,9 @@ import { api } from '../../services/http/http';
 export default function TabOneScreen() {
   // const badgesList = getAllBadges();
   const [badges, setBadges] = useState<Badge[]>([]);
+  const [search, setSearch] = useState('');
+  const [filteredData, setFilteredData] = useState<Badge[]>([]);
+  const [masterData, setMasterData] = useState<Badge[]>([]);
 
   useEffect(() => {
     api.get<Badge[]>('/Badge').then((response) => {
@@ -21,9 +25,7 @@ export default function TabOneScreen() {
       setMasterData(response.data);
     });
   }, []);
-  const [search, setSearch] = useState('');
-  const [filteredData, setFilteredData] = useState<Badge[]>([]);
-  const [masterData, setMasterData] = useState<Badge[]>([]);
+
 
   const styles = StyleSheet.create({
     container: {
@@ -80,12 +82,16 @@ export default function TabOneScreen() {
           {filteredData.map((badge) => {
             if (filteredData !== null) {
               return (
+                <>
+                <ButtonNativeBase colorScheme='gray' key={badge.id} onPress={e=>alert(badge.descricao)}>
                 <Card style={styles.card} elevation={5} mode={'elevated'}>
                   <Card.Cover style={styles.image} source={{ uri: `data:image/png;base64,${badge.imagem}` }} />
                   <Card.Content>
                     <Text>{badge.descricao}</Text>
                   </Card.Content>
                 </Card>
+                </ButtonNativeBase>
+                </>
               );
             }
           })}
@@ -109,7 +115,7 @@ export default function TabOneScreen() {
             <ButtonNativeBase colorScheme='primary' size='sm' key={2}>
               Todas
             </ButtonNativeBase>
-            {filteredData.map((badge) => {
+            {masterData.map((badge) => {
               return (
                 <ButtonNativeBase
                   key={badge.id}

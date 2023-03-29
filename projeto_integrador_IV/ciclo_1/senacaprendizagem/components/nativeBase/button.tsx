@@ -3,7 +3,7 @@ import { TextInput, View, StyleSheet, Text } from 'react-native';
 import { Button } from 'native-base';
 
 type Props = {
-  children?: string;
+  children?: string | JSX.Element;
   colorScheme?: string;
   size?: string;
   key: any;
