@@ -1,16 +1,21 @@
-import { NativeBaseProvider } from 'native-base';
+import { MaterialIcons } from '@expo/vector-icons';
+import { Icon, NativeBaseProvider } from 'native-base';
 import { ScrollView, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { ButtonNativeBase } from '../../components/nativeBase/button';
 import { InputNativeBase } from '../../components/nativeBase/input';
+import { ModalNativeBase } from '../../components/nativeBase/modal';
 import { Text, View } from '../../components/Themed';
+import { Badge } from '../../model/badge';
 import { getAllBadges } from '../../services/badge/badge';
 
 export default function TabOneScreen() {
   const { badges, setBadges, search, setSearch, filteredData, setFilteredData, masterData, setMasterData } =
     getAllBadges();
+
+  const { ViewModal, setShowModal } = ModalNativeBase();
 
   const styles = StyleSheet.create({
     container: {
@@ -47,7 +52,7 @@ export default function TabOneScreen() {
 
   const searchFilter = (text: string) => {
     if (text) {
-      const newData = masterData.filter(function (item) {
+      const newData = masterData.filter((item) => {
         if (item.descricao) {
           const itemData = item.descricao.toUpperCase();
           const textData = text.toUpperCase();
@@ -59,6 +64,16 @@ export default function TabOneScreen() {
       setFilteredData(masterData);
     }
     setSearch(text);
+  };
+
+  const searchTag = (badge: Badge['descricao']) => {
+    const newData = masterData.filter((item) => {
+      if (item.descricao === badge) {
+        const itemData = item.descricao.toUpperCase();
+        return itemData.indexOf(itemData) > -1;
+      }
+    });
+    setFilteredData(newData);
   };
 
   const viewTemplate = (): JSX.Element => {
@@ -102,6 +117,24 @@ export default function TabOneScreen() {
     );
   };
 
+  const viewTemplateLeft = (): JSX.Element => {
+    return <Icon as={<MaterialIcons name='search' />} size={6} ml='2' color='muted.400' />;
+  };
+
+  const viewTemplateRight = (): JSX.Element => {
+    return (
+      <Icon
+        as={<MaterialIcons name='filter-alt' />}
+        size={6}
+        mr='2'
+        color='muted.400'
+        onPress={(e) => {
+          setShowModal(true);
+        }}
+      />
+    );
+  };
+
   return (
     <NativeBaseProvider>
       <View style={styles.container}>
@@ -111,6 +144,8 @@ export default function TabOneScreen() {
           inputMode='search'
           variant='rounded'
           type='text'
+          templateLeft={viewTemplateLeft()}
+          templateRight={viewTemplateRight()}
           onChange={(e) => {
             searchFilter(e);
           }}
@@ -134,6 +169,7 @@ export default function TabOneScreen() {
                   color: 'warmGray.100',
                 },
               }}
+              onPress={() => setFilteredData(masterData)}
             >
               Todas
             </ButtonNativeBase>
@@ -157,7 +193,7 @@ export default function TabOneScreen() {
                       },
                     }}
                     onPress={(e) => {
-                      alert(badge.descricao);
+                      searchTag(badge.descricao);
                     }}
                   >
                     {badge.descricao}
@@ -167,6 +203,7 @@ export default function TabOneScreen() {
             })}
           </View>
         </ScrollView>
+        {ViewModal}
       </View>
       <EditScreenInfo view={viewTemplate()} />
     </NativeBaseProvider>
