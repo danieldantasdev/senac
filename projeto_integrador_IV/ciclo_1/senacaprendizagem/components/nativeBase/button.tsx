@@ -1,11 +1,17 @@
 import React from 'react';
 import { TextInput, View, StyleSheet, Text } from 'react-native';
-import { Button } from 'native-base';
+import { Button, IButtonProps } from 'native-base';
+import { ResponsiveValue } from 'native-base/lib/typescript/components/types';
 
 type Props = {
   children?: string | JSX.Element;
   colorScheme?: string;
   size?: string;
+  _pressed?: Partial<IButtonProps> | undefined;
+  _android?: Partial<IButtonProps> | undefined;
+  borderRadius?: ResponsiveValue<
+    'lg' | 'md' | 'sm' | 'xs' | 'xl' | '2xl' | (string & {}) | 'none' | (number & {}) | '3xl' | 'full'
+  >;
   onPress?(event: any): void;
 };
 
@@ -16,6 +22,9 @@ export function ButtonNativeBase(props: Props): JSX.Element {
         colorScheme={props.colorScheme}
         size={props.size}
         variant={'subtle'}
+        borderRadius={props.borderRadius}
+        _pressed={props._pressed}
+        _android={props._android}
         onPress={props.onPress}
       >
         {props.children}

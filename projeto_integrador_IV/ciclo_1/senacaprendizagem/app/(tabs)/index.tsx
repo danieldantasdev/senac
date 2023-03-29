@@ -69,7 +69,23 @@ export default function TabOneScreen() {
             if (filteredData !== null) {
               return (
                 <View key={badge.id}>
-                  <ButtonNativeBase colorScheme='gray' onPress={(e) => alert(badge.descricao)}>
+                  <ButtonNativeBase
+                    borderRadius={'2xl'}
+                    _android={{
+                      bg: 'contrastThreshold',
+                      _text: {
+                        color: 'coolGray.800',
+                        fontWeight: 'medium',
+                      },
+                    }}
+                    _pressed={{
+                      bg: 'coolGray.300',
+                      _text: {
+                        color: 'warmGray.100',
+                      },
+                    }}
+                    onPress={(e) => alert(badge.descricao)}
+                  >
                     <Card style={styles.card} elevation={5} mode={'elevated'}>
                       <Card.Cover style={styles.image} source={{ uri: `data:image/png;base64,${badge.imagem}` }} />
                       <Card.Content>
@@ -98,15 +114,30 @@ export default function TabOneScreen() {
 
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={true}>
           <View style={styles.flex}>
-            <ButtonNativeBase colorScheme='primary' size='sm'>
+            <ButtonNativeBase
+              colorScheme='orange'
+              size='sm'
+              borderRadius={'2xl'}
+              _pressed={{
+                _text: {
+                  color: 'warmGray.100',
+                },
+              }}
+            >
               Todas
             </ButtonNativeBase>
             {masterData.map((badge) => {
               return (
                 <View key={badge.id}>
                   <ButtonNativeBase
-                    colorScheme='secondary'
+                    colorScheme='blue'
                     size='sm'
+                    borderRadius={'2xl'}
+                    _pressed={{
+                      _text: {
+                        color: 'warmGray.100',
+                      },
+                    }}
                     onPress={(e) => {
                       alert(badge.descricao);
                     }}
