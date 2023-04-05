@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { View } from '../../components/Themed';
-import { getAllBadges } from '../../services/badge/badge';
+import EditScreenInfo from '../../../components/custom/EditScreenInfo';
+import { View } from '../../../components/custom/Themed';
+import { getAllBadges } from '../../../common/services/badge/badge';
 
 export default function DetailBadgeScreen() {
   const { badges, setBadges, search, setSearch, filteredData, setFilteredData, masterData, setMasterData } =

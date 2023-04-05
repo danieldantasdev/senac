@@ -1,10 +1,10 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { NavigationContainer } from '@react-navigation/native';
-import { Link, Tabs, Stack } from 'expo-router';
+import { Link, Tabs } from 'expo-router';
 import { Pressable, useColorScheme } from 'react-native';
-import TabOneScreen from '.';
 
-import Colors from '../../constants/Colors';
+import Colors from '../../common/constants/Colors';
+import { RouteBadge } from '../../common/routes/badge/routeBadge';
+import { routes } from '../../common/routes/routes';
 
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
@@ -15,6 +15,7 @@ function TabBarIcon(props: { name: React.ComponentProps<typeof FontAwesome>['nam
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const ROUTES: routes = new routes();
 
   return (
     <Tabs
@@ -23,7 +24,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name='index'
+        name={ROUTES.badge.list}
         options={{
           title: 'Tab One',
           tabBarIcon: ({ color }) => <TabBarIcon name='code' color={color} />,
@@ -51,7 +52,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='detailBadge'
+        name={ROUTES.badge.detail}
         options={{
           title: 'Detail badge',
           tabBarIcon: ({ color }) => <TabBarIcon name='desktop' color={color} />,

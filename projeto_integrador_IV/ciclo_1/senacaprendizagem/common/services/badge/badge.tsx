@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Badge } from '../../model/badge';
-import { api } from '../http/http';
+import { api } from '../../http/http';
 
 export function getAllBadges() {
   // const [badges, setBadges] = useState<Badge[]>([]);

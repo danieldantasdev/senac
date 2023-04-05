@@ -1,6 +1,6 @@
 import { Badge, Button, Modal, ScrollView, Stack } from 'native-base';
 import React, { useState } from 'react';
-import { getAllBadges } from '../../services/badge/badge';
+import { getAllBadges } from '../../common/services/badge/badge';
 import { ButtonNativeBase } from './button';
 
 export function ModalNativeBase() {

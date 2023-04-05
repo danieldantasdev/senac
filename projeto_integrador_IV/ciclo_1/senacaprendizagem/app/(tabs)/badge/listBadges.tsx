@@ -1,19 +1,18 @@
 import { MaterialIcons } from '@expo/vector-icons';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from 'expo-router';
 import { Icon, NativeBaseProvider } from 'native-base';
 import { ScrollView, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { ButtonNativeBase } from '../../components/nativeBase/button';
-import { InputNativeBase } from '../../components/nativeBase/input';
-import { ModalNativeBase } from '../../components/nativeBase/modal';
-import { Text, View } from '../../components/Themed';
-import { Badge } from '../../model/badge';
-import { getAllBadges } from '../../services/badge/badge';
+import EditScreenInfo from '../../../components/custom/EditScreenInfo';
+import { ButtonNativeBase } from '../../../components/nativeBase/button';
+import { InputNativeBase } from '../../../components/nativeBase/input';
+import { ModalNativeBase } from '../../../components/nativeBase/modal';
+import { Text, View } from '../../../components/custom/Themed';
+import { Badge } from '../../../common/model/badge/badge';
+import { getAllBadges } from '../../../common/services/badge/badge';
 
-export default function TabOneScreen() {
+export default function ListBadgesScreen() {
   const { badges, setBadges, search, setSearch, filteredData, setFilteredData, masterData, setMasterData } =
     getAllBadges();
 
@@ -55,7 +54,7 @@ export default function TabOneScreen() {
   });
 
   function handlePress(badge: Badge) {
-    navigation.navigate('detailBadge', { paramKey: badge });
+    navigation.navigate('badge/detailBadge', { paramKey: badge });
   }
 
   const searchFilter = (text: string) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput, View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import { Button, IButtonProps } from 'native-base';
 import { ResponsiveValue } from 'native-base/lib/typescript/components/types';
 

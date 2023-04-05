@@ -1,5 +1,4 @@
-import { Input, Icon, Stack, Pressable, Center, NativeBaseProvider } from 'native-base';
-import { MaterialIcons } from '@expo/vector-icons';
+import { Input } from 'native-base';
 import { InputModeOptions } from 'react-native';
 import React from 'react';
 import { ResponsiveValue } from 'native-base/lib/typescript/components/types';
