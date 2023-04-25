@@ -1,14 +1,13 @@
 import React from 'react';
 import { Text, TextInput } from 'react-native-paper';
 import { View } from 'react-native';
-import { Student } from '../model/student';
 import { Sisu } from '../model/sisu';
 import { Fies } from '../model/fies';
 import { Prouni } from '../model/prouni';
 
 export default function Input(): JSX.Element {
   const [note, setNote] = React.useState<string>('');
-  const [student, setStudent] = React.useState<Student>({ note: '' });
+
   const sisu: Sisu = new Sisu();
   const fies: Fies = new Fies();
   const prouni: Prouni = new Prouni();
@@ -278,7 +277,6 @@ export default function Input(): JSX.Element {
         value={note}
         onChangeText={(note) => {
           setNote(note);
-          setStudent({ note: note });
         }}
       />
       {verifyNoteSisu()}
